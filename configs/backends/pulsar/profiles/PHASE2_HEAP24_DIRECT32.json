@@ -1,0 +1,32 @@
+{
+  "backend_id": "pulsar",
+  "format": "messaging-benchmark.pulsar-profile.v1",
+  "parent_profile_id": "BASELINE_H16_D32",
+  "product_version": "5.0.0-M1",
+  "profile_id": "PHASE2_HEAP24_DIRECT32",
+  "purpose": "Phase 2 memory-screening profile with 24-GiB heap and 32-GiB direct-memory limit",
+  "settings": {
+    "managed_ledger": {
+      "ack_quorum": 1,
+      "ensemble_size": 1,
+      "write_quorum": 1
+    },
+    "runtime": {
+      "functions_worker_enabled": false,
+      "java_major": 21,
+      "jvm_memory": "-Xms24g -Xmx24g -XX:MaxDirectMemorySize=32g",
+      "product_version": "5.0.0-M1",
+      "storage": "ram-backed",
+      "stream_storage_enabled": false
+    },
+    "service_count": 1,
+    "service_mode": "standalone",
+    "standalone_properties": {
+      "allowAutoTopicCreation": false,
+      "exposeConsumerLevelMetricsInPrometheus": false,
+      "exposeTopicLevelMetricsInPrometheus": false,
+      "includeStandardPrometheusMetrics": true
+    }
+  },
+  "sha256": "544cf58c4200a21c7d0c6dc1534b6c84fe5f880af6fdae880b59c14164afa521"
+}

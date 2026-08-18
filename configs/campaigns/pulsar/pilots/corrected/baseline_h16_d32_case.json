@@ -1,0 +1,79 @@
+{
+  "schema_version": "messaging-benchmark.case.v1",
+  "backend_id": "pulsar",
+  "workload": {
+    "mode": "single",
+    "scenario": "simultaneous",
+    "payload_size_bytes": 4096,
+    "payload_mode": "fixed_size",
+    "send_pattern": "steady",
+    "producer_ranks": 40,
+    "consumer_ranks": 40,
+    "virtual_devices_per_rank": 10000,
+    "duration_sec": 30,
+    "warmup_sec": 15,
+    "drain_timeout_sec": 60,
+    "latency_enabled": true,
+    "latency_sample_every": 10,
+    "latency_clock_samples": 100,
+    "latency_clock_max_uncertainty_us": 250.0,
+    "latency_clock_max_drift_us": 250.0
+  },
+  "backend": {
+    "pulsar": {
+      "service_count": 1,
+      "service_mode": "standalone",
+      "topic_name": "persistent://public/default/pulsar-corrected-baseline-h16-d32",
+      "partitions": 120,
+      "subscription_name": "messaging-benchmark-corrected-baseline",
+      "subscription_type": "shared",
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+      "producer": {
+        "send_timeout_ms": 120000,
+        "compression_type": "none",
+        "batching_enabled": true,
+        "batching_max_messages": 1000,
+        "batching_max_bytes": 1048576,
+        "batching_max_publish_delay_ms": 20,
+        "max_pending_messages": 1000,
+        "max_pending_messages_across_partitions": 20000,
+        "block_if_queue_full": true
+      },
+      "consumer": {
+        "receiver_queue_size": 1000,
+        "max_total_receiver_queue_size_across_partitions": 120000,
+        "negative_ack_redelivery_delay_ms": 60000
+      },
+      "managed_ledger": {
+        "ensemble_size": 1,
+        "write_quorum": 1,
+        "ack_quorum": 1
+      },
+      "standalone_properties": {
+        "allowAutoTopicCreation": false,
+        "includeStandardPrometheusMetrics": true,
+        "exposeTopicLevelMetricsInPrometheus": false,
+        "exposeConsumerLevelMetricsInPrometheus": false
+      },
+      "runtime": {
+        "product_version": "5.0.0-M1",
+        "java_major": 21,
+        "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+        "functions_worker_enabled": false,
+        "stream_storage_enabled": false,
+        "storage": "ram-backed"
+      }
+    }
+  },
+  "campaign": {
+    "case_id": "pulsar-corrected-baseline-h16-d32",
+    "campaign_id": "pulsar-corrected-acceptance",
+    "metadata": {
+      "purpose": "Corrected coordinated-drain and bounded-backpressure baseline",
+      "phase": "acceptance-pilot",
+      "submission_gate": "Do not submit Phase 1 until the corrected pilot passes"
+    }
+  },
+  "qualification_policy_id": "qualification.pulsar.v1"
+}

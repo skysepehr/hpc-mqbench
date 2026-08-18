@@ -1,0 +1,11 @@
+block,order,stage,case_id,config_id,config_path,profile_id,purpose,seed
+1,1,batch-runner-acceptance,pulsar-batch10-cfg-001,cfg_001,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_001.json,BASELINE_H16_D32,baseline,20260820
+1,2,batch-runner-acceptance,pulsar-batch10-cfg-007,cfg_007,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_007.json,BASELINE_H16_D32,producer-rank upper-level OFAT,20260820
+1,3,batch-runner-acceptance,pulsar-batch10-cfg-013,cfg_013,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_013.json,BASELINE_H16_D32,consumer-rank upper-level OFAT,20260820
+1,4,batch-runner-acceptance,pulsar-batch10-cfg-087,cfg_087,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_087.json,BASELINE_H16_D32,asymmetric seeded mixed case,20260820
+1,5,batch-runner-acceptance,pulsar-batch10-cfg-049,cfg_049,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_049.json,BASELINE_H16_D32,64-by-64 rank-pair case,20260820
+1,6,batch-runner-acceptance,pulsar-batch10-cfg-021,cfg_021,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_021.json,BASELINE_H16_D32,large-payload OFAT,20260820
+1,7,batch-runner-acceptance,pulsar-batch10-cfg-018,cfg_018,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_018.json,BASELINE_H16_D32,small-payload OFAT,20260820
+1,8,batch-runner-acceptance,pulsar-batch10-cfg-029,cfg_029,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_029.json,BASELINE_H16_D32,batching-byte upper-level OFAT,20260820
+1,9,batch-runner-acceptance,pulsar-batch10-cfg-017,cfg_017,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_017.json,BASELINE_H16_D32,partition-count upper-level OFAT,20260820
+1,10,batch-runner-acceptance,pulsar-batch10-cfg-041,cfg_041,configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_041.json,BASELINE_H16_D32,receiver queue upper-level OFAT,20260820

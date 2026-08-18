@@ -1,0 +1,51 @@
+block_number,order_in_block,repetition,config_id,original_config_id,config_path,selection_reason,scenario
+1,1,1,val_b01_o01_cfg_037,cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,simultaneous
+1,2,1,val_b01_o02_cfg_092,cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,top three qualified configurations by measured balanced throughput,simultaneous
+1,3,1,val_b01_o03_cfg_001,cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,baseline configuration marked in the sweep manifest,simultaneous
+1,4,1,val_b01_o04_cfg_119,cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,highest observed balanced throughput regardless of qualification,simultaneous
+1,5,1,val_b01_o05_cfg_106,cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,highest-throughput backlog-only point with backlog between 5% and 15%,simultaneous
+1,6,1,val_b01_o06_cfg_091,cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,highest-throughput backlog-only point with backlog between 5% and 20%,simultaneous
+1,7,1,val_b01_o07_cfg_076,cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",simultaneous
+1,8,1,val_b01_o08_cfg_074,cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,top three qualified configurations by measured balanced throughput,simultaneous
+1,9,1,val_b01_o09_cfg_115,cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,top three qualified configurations by measured balanced throughput,simultaneous
+1,10,1,val_b01_o10_cfg_055,cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,highest unchanged legacy manually weighted penalized-throughput score,simultaneous
+2,1,2,val_b02_o01_cfg_106,cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,highest-throughput backlog-only point with backlog between 5% and 15%,simultaneous
+2,2,2,val_b02_o02_cfg_115,cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,top three qualified configurations by measured balanced throughput,simultaneous
+2,3,2,val_b02_o03_cfg_074,cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,top three qualified configurations by measured balanced throughput,simultaneous
+2,4,2,val_b02_o04_cfg_076,cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",simultaneous
+2,5,2,val_b02_o05_cfg_092,cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,top three qualified configurations by measured balanced throughput,simultaneous
+2,6,2,val_b02_o06_cfg_091,cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,highest-throughput backlog-only point with backlog between 5% and 20%,simultaneous
+2,7,2,val_b02_o07_cfg_119,cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,highest observed balanced throughput regardless of qualification,simultaneous
+2,8,2,val_b02_o08_cfg_055,cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,highest unchanged legacy manually weighted penalized-throughput score,simultaneous
+2,9,2,val_b02_o09_cfg_001,cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,baseline configuration marked in the sweep manifest,simultaneous
+2,10,2,val_b02_o10_cfg_037,cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,simultaneous
+3,1,3,val_b03_o01_cfg_001,cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,baseline configuration marked in the sweep manifest,simultaneous
+3,2,3,val_b03_o02_cfg_092,cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,top three qualified configurations by measured balanced throughput,simultaneous
+3,3,3,val_b03_o03_cfg_074,cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,top three qualified configurations by measured balanced throughput,simultaneous
+3,4,3,val_b03_o04_cfg_106,cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,highest-throughput backlog-only point with backlog between 5% and 15%,simultaneous
+3,5,3,val_b03_o05_cfg_115,cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,top three qualified configurations by measured balanced throughput,simultaneous
+3,6,3,val_b03_o06_cfg_037,cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,simultaneous
+3,7,3,val_b03_o07_cfg_076,cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",simultaneous
+3,8,3,val_b03_o08_cfg_119,cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,highest observed balanced throughput regardless of qualification,simultaneous
+3,9,3,val_b03_o09_cfg_091,cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,highest-throughput backlog-only point with backlog between 5% and 20%,simultaneous
+3,10,3,val_b03_o10_cfg_055,cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,highest unchanged legacy manually weighted penalized-throughput score,simultaneous
+4,1,4,val_b04_o01_cfg_001,cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,baseline configuration marked in the sweep manifest,simultaneous
+4,2,4,val_b04_o02_cfg_115,cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,top three qualified configurations by measured balanced throughput,simultaneous
+4,3,4,val_b04_o03_cfg_091,cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,highest-throughput backlog-only point with backlog between 5% and 20%,simultaneous
+4,4,4,val_b04_o04_cfg_055,cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,highest unchanged legacy manually weighted penalized-throughput score,simultaneous
+4,5,4,val_b04_o05_cfg_074,cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,top three qualified configurations by measured balanced throughput,simultaneous
+4,6,4,val_b04_o06_cfg_076,cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",simultaneous
+4,7,4,val_b04_o07_cfg_092,cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,top three qualified configurations by measured balanced throughput,simultaneous
+4,8,4,val_b04_o08_cfg_106,cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,highest-throughput backlog-only point with backlog between 5% and 15%,simultaneous
+4,9,4,val_b04_o09_cfg_037,cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,simultaneous
+4,10,4,val_b04_o10_cfg_119,cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,highest observed balanced throughput regardless of qualification,simultaneous
+5,1,5,val_b05_o01_cfg_074,cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,top three qualified configurations by measured balanced throughput,simultaneous
+5,2,5,val_b05_o02_cfg_119,cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,highest observed balanced throughput regardless of qualification,simultaneous
+5,3,5,val_b05_o03_cfg_106,cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,highest-throughput backlog-only point with backlog between 5% and 15%,simultaneous
+5,4,5,val_b05_o04_cfg_115,cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,top three qualified configurations by measured balanced throughput,simultaneous
+5,5,5,val_b05_o05_cfg_037,cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,simultaneous
+5,6,5,val_b05_o06_cfg_092,cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,top three qualified configurations by measured balanced throughput,simultaneous
+5,7,5,val_b05_o07_cfg_001,cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,baseline configuration marked in the sweep manifest,simultaneous
+5,8,5,val_b05_o08_cfg_091,cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,highest-throughput backlog-only point with backlog between 5% and 20%,simultaneous
+5,9,5,val_b05_o09_cfg_076,cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",simultaneous
+5,10,5,val_b05_o10_cfg_055,cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,highest unchanged legacy manually weighted penalized-throughput score,simultaneous

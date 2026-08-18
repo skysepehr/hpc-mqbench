@@ -1,0 +1,89 @@
+{
+  "schema_version": "messaging-benchmark.case.v1",
+  "backend_id": "pulsar",
+  "workload": {
+    "latency_sample_every": 10,
+    "total_simulated_devices": 640000,
+    "consumer_ranks": 64,
+    "latency_clock_samples": 100,
+    "producer_ranks": 40,
+    "target_records_per_sec": null,
+    "duration_sec": 30,
+    "virtual_devices_per_rank": 10000,
+    "warmup_sec": 15,
+    "payload_size_bytes": 2048,
+    "payload_mode": "fixed_size",
+    "send_pattern": "steady",
+    "latency_clock_max_uncertainty_us": 250.0,
+    "latency_enabled": true,
+    "mode": "single",
+    "latency_clock_max_drift_us": 250.0,
+    "scenario": "simultaneous",
+    "drain_timeout_sec": 60
+  },
+  "backend": {
+    "pulsar": {
+      "service_count": 1,
+      "service_mode": "standalone",
+      "topic_name": "persistent://public/default/pulsar-pv-b01-cfg093",
+      "partitions": 180,
+      "subscription_name": "messaging-benchmark-pulsar-pv-b01-cfg093",
+      "subscription_type": "shared",
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+      "producer": {
+        "send_timeout_ms": 120000,
+        "compression_type": "none",
+        "batching_enabled": true,
+        "batching_max_messages": 1000,
+        "batching_max_bytes": 2097152,
+        "batching_max_publish_delay_ms": 10,
+        "max_pending_messages": 1000,
+        "max_pending_messages_across_partitions": 10000,
+        "block_if_queue_full": true
+      },
+      "consumer": {
+        "receiver_queue_size": 2000,
+        "max_total_receiver_queue_size_across_partitions": 120000,
+        "negative_ack_redelivery_delay_ms": 60000
+      },
+      "managed_ledger": {
+        "ensemble_size": 1,
+        "write_quorum": 1,
+        "ack_quorum": 1
+      },
+      "standalone_properties": {
+        "allowAutoTopicCreation": false,
+        "includeStandardPrometheusMetrics": true,
+        "exposeTopicLevelMetricsInPrometheus": false,
+        "exposeConsumerLevelMetricsInPrometheus": false
+      },
+      "runtime": {
+        "product_version": "5.0.0-M1",
+        "java_major": 21,
+        "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+        "functions_worker_enabled": false,
+        "stream_storage_enabled": false,
+        "storage": "ram-backed"
+      }
+    }
+  },
+  "campaign": {
+    "case_id": "pulsar-pv-b01-cfg093",
+    "campaign_id": "pulsar-final-workload-validation",
+    "metadata": {
+      "stage": "final-workload-validation",
+      "anchor_config_id": "cfg_093",
+      "anchor_purpose": "qualified p99 latency leader",
+      "phase1_selection_categories": "qualified p99 latency leader",
+      "profile_id": "BASELINE_H16_D32",
+      "seed": 20260812,
+      "screening_only": false,
+      "validation_block": 1,
+      "repeat_index": 1,
+      "phase1_shortlist_sha256": "e7ffcf21ae8809e9ef70224de2445b51ee9868104274ff50ae33ace5a0c1a9fc",
+      "phase2_final_selection_sha256": "ad7c49a994de1bb18109fcb3fa9822dc07b91a1fed64b963a23bcbedcaea9c14"
+    }
+  },
+  "qualification_policy_id": "qualification.pulsar.v1"
+}

@@ -1,0 +1,5 @@
+# Python's csv module intentionally emits RFC-compatible CRLF records.
+*.csv whitespace=cr-at-eol,-blank-at-eof
+
+# Generated report Markdown may contain one presentation spacer at EOF.
+results/published/**/*.md whitespace=-blank-at-eof

@@ -1,0 +1,41 @@
+{
+  "fixed_semantics": {
+    "acks": "1",
+    "broker_count": 1,
+    "compression_type": "none",
+    "garbage_collector": "Java 17 server JVM default (G1)",
+    "java_major_version": 17,
+    "log_storage": "RAM-backed /dev/shm",
+    "network_interface": "ib0",
+    "replication_factor": 1,
+    "topic_partitions_varied_per_case": true
+  },
+  "format": "kafka_broker_profile.v2",
+  "profile_id": "V1_FIXED_B0",
+  "profile_sha256": "0db75402321b5c96c5fc2def4fe5cf950325084c71b94766f8d5d954cd7e6963",
+  "scope": "reproducibly instrumented Kafka V1 campaigns",
+  "server_properties_contract": {
+    "controller.listener.names": "CONTROLLER",
+    "group.initial.rebalance.delay.ms": "0",
+    "inter.broker.listener.name": "PLAINTEXT",
+    "listener.security.protocol.map": "PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT",
+    "log.retention.check.interval.ms": "300000",
+    "log.retention.hours": "1",
+    "num.partitions": "3",
+    "num.recovery.threads.per.data.dir": "1",
+    "offsets.topic.replication.factor": "1",
+    "process.roles": "broker,controller",
+    "transaction.state.log.min.isr": "1",
+    "transaction.state.log.replication.factor": "1"
+  },
+  "settings": {
+    "heap_opts": "-Xms8g -Xmx8g",
+    "log_segment_bytes": 1073741824,
+    "num_io_threads": 16,
+    "num_network_threads": 8,
+    "queued_max_requests": 1000,
+    "socket_receive_buffer_bytes": 1048576,
+    "socket_request_max_bytes": 104857600,
+    "socket_send_buffer_bytes": 1048576
+  }
+}

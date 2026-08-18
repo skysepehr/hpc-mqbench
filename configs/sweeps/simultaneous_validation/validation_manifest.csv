@@ -1,0 +1,11 @@
+config_id,config_path,selection_categories,selection_reason,planned_repetitions
+cfg_092,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json,qualified leader,top three qualified configurations by measured balanced throughput,5
+cfg_074,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json,qualified leader,top three qualified configurations by measured balanced throughput,5
+cfg_115,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json,qualified leader,top three qualified configurations by measured balanced throughput,5
+cfg_119,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json,raw upper bound,highest observed balanced throughput regardless of qualification,5
+cfg_055,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json,legacy score winner,highest unchanged legacy manually weighted penalized-throughput score,5
+cfg_037,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json,controlled one-factor comparison,strong one-factor client-tuning comparison against the manifest baseline; changed consumer_fetch_min_bytes and shifted balanced throughput by 141.389 MB/s,5
+cfg_091,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json,upper transition,highest-throughput backlog-only point with backlog between 5% and 20%,5
+cfg_106,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json,high-throughput transition,highest-throughput backlog-only point with backlog between 5% and 15%,5
+cfg_076,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json,closest backlog boundary,"overdriven only by backlog, higher throughput than the best qualified run, and closest to the 5% backlog limit",5
+cfg_001,configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json,manifest baseline,baseline configuration marked in the sweep manifest,5

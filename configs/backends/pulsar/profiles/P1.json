@@ -1,0 +1,30 @@
+{
+  "format": "messaging-benchmark.pulsar-profile.v1",
+  "backend_id": "pulsar",
+  "profile_id": "P1",
+  "product_version": "5.0.0-M1",
+  "settings": {
+    "service_count": 1,
+    "service_mode": "standalone",
+    "managed_ledger": {
+      "ensemble_size": 1,
+      "write_quorum": 1,
+      "ack_quorum": 1
+    },
+    "standalone_properties": {
+      "allowAutoTopicCreation": false,
+      "includeStandardPrometheusMetrics": true,
+      "exposeTopicLevelMetricsInPrometheus": false,
+      "exposeConsumerLevelMetricsInPrometheus": false
+    },
+    "runtime": {
+      "product_version": "5.0.0-M1",
+      "java_major": 21,
+      "jvm_memory": "-Xms8g -Xmx8g -XX:MaxDirectMemorySize=32g",
+      "functions_worker_enabled": false,
+      "stream_storage_enabled": false,
+      "storage": "ram-backed"
+    }
+  },
+  "sha256": "3b9a0641fb5df7616958ef8e21388f743e6511e7730cab46836f48f3a92f4795"
+}

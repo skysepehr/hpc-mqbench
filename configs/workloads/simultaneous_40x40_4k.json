@@ -1,0 +1,14 @@
+{
+  "mode": "single",
+  "scenario": "simultaneous",
+  "payload_size_bytes": 4096,
+  "payload_mode": "fixed_size",
+  "send_pattern": "steady",
+  "producer_ranks": 40,
+  "consumer_ranks": 40,
+  "virtual_devices_per_rank": 50000,
+  "duration_sec": 120,
+  "warmup_sec": 0,
+  "drain_timeout_sec": 0,
+  "latency_enabled": false
+}

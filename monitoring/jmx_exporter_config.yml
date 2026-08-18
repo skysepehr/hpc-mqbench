@@ -1,0 +1,81 @@
+startDelaySeconds: 0
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
+
+rules:
+  # Broker-wide topic throughput counters.
+  - pattern: 'kafka.server<type=BrokerTopicMetrics, name=(BytesInPerSec|BytesOutPerSec|MessagesInPerSec)><>Count'
+    name: kafka_server_brokertopicmetrics_$1_total
+    type: COUNTER
+
+  # Per-topic throughput counters. These are useful when multiple benchmark
+  # topics are active in a campaign or during manual debugging.
+  - pattern: 'kafka.server<type=BrokerTopicMetrics, name=(BytesInPerSec|BytesOutPerSec|MessagesInPerSec), topic=(.+)><>Count'
+    name: kafka_server_brokertopicmetrics_$1_total
+    labels:
+      topic: "$2"
+    type: COUNTER
+
+  # Broker-wide throughput rates reported by Kafka's internal meters.
+  - pattern: 'kafka.server<type=BrokerTopicMetrics, name=(BytesInPerSec|BytesOutPerSec|MessagesInPerSec)><>(OneMinuteRate|MeanRate)'
+    name: kafka_server_brokertopicmetrics_$1_$2
+    type: GAUGE
+
+  # Request timing by request type.
+  - pattern: 'kafka.network<type=RequestMetrics, name=(.+), request=(.+)><>(Count|Mean|OneMinuteRate|95thPercentile|99thPercentile)'
+    name: kafka_network_requestmetrics_$1_$3
+    labels:
+      request: "$2"
+    type: GAUGE
+
+  # Request-channel queue depths and thread-pool saturation evidence.
+  - pattern: 'kafka.network<type=RequestChannel, name=(RequestQueueSize|ResponseQueueSize)><>Value'
+    name: kafka_network_requestchannel_$1
+    type: GAUGE
+  - pattern: 'kafka.server<type=KafkaRequestHandlerPool, name=RequestHandlerAvgIdlePercent><>(Count|MeanRate|OneMinuteRate)'
+    name: kafka_server_kafkarequesthandlerpool_requesthandleravgidlepercent_$1
+    type: GAUGE
+  - pattern: 'kafka.network<type=SocketServer, name=NetworkProcessorAvgIdlePercent><>(Count|MeanRate|OneMinuteRate)'
+    name: kafka_network_socketserver_networkprocessoravgidlepercent_$1
+    type: GAUGE
+
+  # Replica and partition health.
+  - pattern: 'kafka.server<type=ReplicaManager, name=(UnderReplicatedPartitions|UnderMinIsrPartitionCount|PartitionCount|LeaderCount)><>Value'
+    name: kafka_server_replicamanager_$1
+    type: GAUGE
+
+  # Controller health.
+  - pattern: 'kafka.controller<type=KafkaController, name=(ActiveControllerCount|OfflinePartitionsCount)><>Value'
+    name: kafka_controller_kafkacontroller_$1
+    type: GAUGE
+
+  # Quorum controller metrics for KRaft clusters.
+  - pattern: 'kafka.controller<type=ControllerStats, name=(.+)><>(Count|Mean|OneMinuteRate|95thPercentile|99thPercentile)'
+    name: kafka_controller_controllerstats_$1_$2
+    type: GAUGE
+
+  # JVM memory and thread metrics exposed through standard MXBeans.
+  - pattern: 'java.lang<type=Memory><HeapMemoryUsage>(used|committed|max)'
+    name: jvm_memory_heap_$1_bytes
+    type: GAUGE
+  - pattern: 'java.lang<type=Memory><NonHeapMemoryUsage>(used|committed|max)'
+    name: jvm_memory_nonheap_$1_bytes
+    type: GAUGE
+  - pattern: 'java.lang<type=Threading><>(ThreadCount|DaemonThreadCount|PeakThreadCount)'
+    name: jvm_threads_$1
+    type: GAUGE
+  - pattern: 'java.lang<type=OperatingSystem><>(ProcessCpuLoad|SystemCpuLoad|OpenFileDescriptorCount|MaxFileDescriptorCount)'
+    name: jvm_operatingsystem_$1
+    type: GAUGE
+
+  # Garbage collection counts and time by collector.
+  - pattern: 'java.lang<type=GarbageCollector, name=(.+)><>CollectionCount'
+    name: jvm_gc_collection_count
+    labels:
+      gc: "$1"
+    type: COUNTER
+  - pattern: 'java.lang<type=GarbageCollector, name=(.+)><>CollectionTime'
+    name: jvm_gc_collection_time_ms
+    labels:
+      gc: "$1"
+    type: COUNTER

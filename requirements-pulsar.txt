@@ -1,0 +1,4 @@
+# Optional dependency for backend_id=pulsar. A pinned wheel is vendored under
+# tools/archives for offline GWDG installation.
+pulsar-client==3.13.0
+certifi==2026.7.22

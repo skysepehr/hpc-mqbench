@@ -1,0 +1,87 @@
+{
+  "schema_version": "messaging-benchmark.case.v1",
+  "backend_id": "kafka",
+  "workload": {
+    "scenario": "simultaneous",
+    "payload_size_bytes": 4096,
+    "producer_ranks": 48,
+    "latency_sample_every": 10,
+    "virtual_devices_per_rank": 50000,
+    "latency_clock_samples": 100,
+    "target_records_per_sec": null,
+    "payload_mode": "fixed_size",
+    "send_pattern": "steady",
+    "total_simulated_devices": 2400000,
+    "drain_timeout_sec": 60,
+    "consumer_ranks": 24,
+    "latency_clock_max_drift_us": 250.0,
+    "duration_sec": 30,
+    "latency_enabled": true,
+    "warmup_sec": 15,
+    "mode": "single",
+    "latency_clock_max_uncertainty_us": 250.0
+  },
+  "backend": {
+    "kafka": {
+      "acks": "1",
+      "broker_profile_id": "V1_FIXED_B0",
+      "topic_name": "kafka-v1r-screen-cfg-086",
+      "broker_count": 1,
+      "extra": {
+        "broker_profile_path": "configs/campaigns/kafka/v1_reproducible/broker_profiles/V1_FIXED_B0.json",
+        "kafka_common_client_config": {
+          "socket.keepalive.enable": true,
+          "socket.receive.buffer.bytes": 1048576,
+          "socket.send.buffer.bytes": 1048576
+        },
+        "kafka_consumer_config": {
+          "fetch.message.max.bytes": 8388608,
+          "fetch.min.bytes": 2097152,
+          "fetch.wait.max.ms": 50,
+          "queued.max.messages.kbytes": 1048576,
+          "queued.min.messages": 100000,
+          "receive.message.max.bytes": 100000000
+        },
+        "kafka_heap_opts": "-Xms8g -Xmx8g",
+        "kafka_log_segment_bytes": 1073741824,
+        "kafka_num_io_threads": 16,
+        "kafka_num_network_threads": 8,
+        "kafka_producer_config": {
+          "message.timeout.ms": 120000,
+          "queue.buffering.max.kbytes": 524288,
+          "queue.buffering.max.messages": 500000,
+          "request.timeout.ms": 30000
+        },
+        "kafka_queued_max_requests": 1000,
+        "kafka_socket_receive_buffer_bytes": 1048576,
+        "kafka_socket_request_max_bytes": 104857600,
+        "kafka_socket_send_buffer_bytes": 1048576,
+        "measured_phase": "simultaneous",
+        "measured_roles": [
+          "producer",
+          "consumer"
+        ],
+        "purpose": "reproducible instrumented simultaneous screening sweep",
+        "sweep_id": "kafka_v1_reproducible_phase1",
+        "sweep_config_id": "cfg_086"
+      },
+      "partitions": 240,
+      "replication_factor": 1,
+      "batch_size": 1048576,
+      "linger_ms": 5,
+      "broker_profile_sha256": "0db75402321b5c96c5fc2def4fe5cf950325084c71b94766f8d5d954cd7e6963",
+      "compression_type": "none"
+    }
+  },
+  "campaign": {
+    "case_id": "cfg_086",
+    "campaign_id": "kafka_v1_reproducible_phase1",
+    "metadata": {
+      "measurement_contract_id": "measurement.messaging.reproducible.v1",
+      "backlog_event": "pending delivery callbacks at flush start",
+      "backlog_denominator": "measurement-period send attempts",
+      "sweep_seed": 42
+    }
+  },
+  "qualification_policy_id": "qualification.application.v1"
+}

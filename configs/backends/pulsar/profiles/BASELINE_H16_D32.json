@@ -1,0 +1,32 @@
+{
+  "format": "messaging-benchmark.pulsar-profile.v1",
+  "backend_id": "pulsar",
+  "profile_id": "BASELINE_H16_D32",
+  "product_version": "5.0.0-M1",
+  "parent_profile_id": "P1",
+  "purpose": "Phase-1 fixed broker profile with a 16-GiB heap and 32-GiB direct-memory limit",
+  "settings": {
+    "service_count": 1,
+    "service_mode": "standalone",
+    "managed_ledger": {
+      "ensemble_size": 1,
+      "write_quorum": 1,
+      "ack_quorum": 1
+    },
+    "standalone_properties": {
+      "allowAutoTopicCreation": false,
+      "includeStandardPrometheusMetrics": true,
+      "exposeTopicLevelMetricsInPrometheus": false,
+      "exposeConsumerLevelMetricsInPrometheus": false
+    },
+    "runtime": {
+      "product_version": "5.0.0-M1",
+      "java_major": 21,
+      "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+      "functions_worker_enabled": false,
+      "stream_storage_enabled": false,
+      "storage": "ram-backed"
+    }
+  },
+  "sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c"
+}

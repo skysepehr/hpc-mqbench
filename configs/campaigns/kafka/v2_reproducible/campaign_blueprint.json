@@ -1,0 +1,76 @@
+{
+  "case_budget": {
+    "final_validation": 50,
+    "instrumentation_pilot": 6,
+    "maximum_campaign_total": 119,
+    "profile_confirmation": "20 or 30",
+    "profile_screening": 30,
+    "rate_calibration": 3
+  },
+  "case_isolation": {
+    "clean_ram_backed_broker_storage_between_cases": true,
+    "restart_kafka_between_cases": true
+  },
+  "clock": {
+    "max_drift_us": 250.0,
+    "max_uncertainty_us": 250.0,
+    "samples_before_and_after": 100
+  },
+  "execution_plan": {
+    "batch_size_limit": 30,
+    "final_validation_jobs": 2,
+    "instrumentation_pilot_jobs": 1,
+    "kafka_restart_model": "fresh Kafka process and RAM storage per case",
+    "maximum_total_jobs": 6,
+    "profile_confirmation_jobs": 1,
+    "profile_screening_jobs": 1,
+    "rate_calibration_jobs": 1,
+    "submission_model": "up to 30 sequential cases per exclusive four-node Slurm job"
+  },
+  "final_shortlist": "generated from new reproducible V1 Phase 1 results",
+  "final_shortlist_count": 10,
+  "format": "kafka_broker_tuning_campaign.v2",
+  "latency_anchor": "latency_anchor",
+  "latency_sampling": {
+    "fixed_to_match_pulsar": true,
+    "record_identity_and_correctness_scope": "every record",
+    "rule": "sequence_number modulo 10 equals zero",
+    "timestamp_sample_every": 10
+  },
+  "maximum_load_anchor_count": 4,
+  "maximum_load_anchors": "generated from new reproducible V1 Phase 1 results",
+  "measurement_contract_id": "measurement.messaging.reproducible.v1",
+  "profile_selection_rules": {
+    "failed_send_or_drain_regression_allowed": false,
+    "maximum_latency_anchor_p99_ratio_to_B0": 1.1,
+    "maximum_tmpfs_used_percent": 75.0,
+    "minimum_geometric_mean_throughput_ratio_to_B0": 1.03,
+    "required_measurements_and_correctness_valid": true,
+    "sustainable_anchor_qualification_not_below_B0": true
+  },
+  "profiles": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ],
+  "qualification": {
+    "failed_send_percent_max": 0.1,
+    "flush_sec_max": 10.0,
+    "pending_backlog_percent_max": 5.0
+  },
+  "qualification_policy_id": "qualification.application.v1",
+  "seed": 20260728,
+  "timing": {
+    "drain_timeout_sec": 60,
+    "measurement_sec": 30,
+    "pending_callbacks_snapshotted_before_flush": true,
+    "producer_flush_before_consumer_drain": true,
+    "producer_stop_at_measurement_end": true,
+    "profile_measurement_overrides_sec": {},
+    "rate_calibration_measurement_sec": 30,
+    "warmup_sec": 15
+  }
+}

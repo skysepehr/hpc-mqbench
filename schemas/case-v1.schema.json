@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/messaging-benchmark/case-v1.schema.json",
+  "title": "Distributed Messaging Benchmark Case v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "backend_id",
+    "workload",
+    "backend",
+    "campaign",
+    "qualification_policy_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "messaging-benchmark.case.v1"
+    },
+    "backend_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualification_policy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scenario",
+        "payload_size_bytes",
+        "producer_ranks",
+        "consumer_ranks",
+        "duration_sec"
+      ],
+      "properties": {
+        "mode": {
+          "enum": ["single", "campaign"]
+        },
+        "scenario": {
+          "enum": [
+            "ingress_ramp",
+            "egress_only",
+            "simultaneous",
+            "consume_and_process"
+          ]
+        },
+        "payload_size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "payload_mode": {
+          "type": "string"
+        },
+        "send_pattern": {
+          "type": "string"
+        },
+        "producer_ranks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "consumer_ranks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "virtual_devices_per_rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "total_simulated_devices": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "duration_sec": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "warmup_sec": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "drain_timeout_sec": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_records_per_sec": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0
+        },
+        "latency_enabled": {
+          "type": "boolean"
+        },
+        "latency_sample_every": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "latency_clock_samples": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "latency_clock_max_uncertainty_us": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "latency_clock_max_drift_us": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "backend": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "campaign": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "type": "string"
+        },
+        "campaign_id": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

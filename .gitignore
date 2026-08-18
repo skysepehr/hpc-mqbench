@@ -1,0 +1,67 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+analysis_deps/
+analysis_inputs/
+
+# Local credentials and operator-specific environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+secrets.json
+
+# Benchmark runtime output and generated scientific reports
+logs/
+report/
+reports/
+Report/
+results/
+.local/
+
+# Source-only release output. Generate this outside Git history with
+# scripts/prepare_public_repository.py.
+source-release/
+public-source/
+github-source/
+
+# Analysis report build byproducts
+kafka_benchmark_complete_analysis.aux
+kafka_benchmark_complete_analysis.log
+kafka_benchmark_complete_analysis.out
+
+# Local monitoring installs created by scripts/install_monitoring_tools.sh
+tools/tmp/
+tools/prometheus-current
+tools/node_exporter-current
+tools/kafka_exporter-current
+tools/prometheus-*/
+tools/node_exporter-*/
+tools/kafka_exporter-*/
+tools/runtime/
+
+# Downloaded third-party runtime distributions are intentionally omitted from
+# the source-only repository. Keep checksum metadata and source probes tracked.
+tools/archives/*
+!tools/archives/*checksums.txt
+tools/jmx_exporter/*.jar
+tools/*.zip
+
+# Editor and OS noise
+.DS_Store
+*.swp

@@ -1,0 +1,70 @@
+{
+  "acks": "1",
+  "batch_size": 1048576,
+  "broker_count": 1,
+  "broker_profile_id": "B1",
+  "broker_profile_sha256": "aa578e7a127f69f847c6521bb897f1a84aeabb89d08312e10ffe4157512deae1",
+  "campaign_id": "focused_broker_tuning_latency_v2",
+  "case_id": "screen_b04_o06_cfg_119_B1",
+  "compression_type": "none",
+  "consumer_ranks": 64,
+  "drain_timeout_sec": 60,
+  "duration_sec": 20,
+  "extra": {
+    "broker_process_monitor_interval_sec": 1,
+    "broker_profile_path": "configs/tuning_v2/broker_profiles/B1.json",
+    "kafka_common_client_config": {
+      "socket.keepalive.enable": true,
+      "socket.receive.buffer.bytes": 1048576,
+      "socket.send.buffer.bytes": 1048576
+    },
+    "kafka_consumer_config": {
+      "fetch.message.max.bytes": 33554432,
+      "fetch.min.bytes": 8388608,
+      "fetch.wait.max.ms": 100,
+      "queued.max.messages.kbytes": 1048576,
+      "queued.min.messages": 100000,
+      "receive.message.max.bytes": 100000000
+    },
+    "kafka_producer_config": {
+      "message.timeout.ms": 120000,
+      "queue.buffering.max.kbytes": 1048576,
+      "queue.buffering.max.messages": 500000,
+      "request.timeout.ms": 30000
+    },
+    "measured_phase": "simultaneous",
+    "measured_roles": [
+      "producer",
+      "consumer"
+    ],
+    "monitoring_range_step_sec": 1,
+    "prometheus_scrape_interval_sec": 1,
+    "purpose": "focused Kafka broker-tuning and latency validation V2",
+    "sweep_config_id": "cfg_119",
+    "sweep_id": "simultaneous_budgeted",
+    "v2_anchor_id": "cfg_119",
+    "v2_block": 4,
+    "v2_case_id": "screen_b04_o06_cfg_119_B1",
+    "v2_order": 6,
+    "v2_stage": "profile_screening"
+  },
+  "latency_clock_max_drift_us": 250.0,
+  "latency_clock_max_uncertainty_us": 250.0,
+  "latency_clock_samples": 100,
+  "latency_enabled": true,
+  "latency_sample_every": 1,
+  "linger_ms": 0,
+  "mode": "single",
+  "partitions": 90,
+  "payload_mode": "fixed_size",
+  "payload_size_bytes": 16384,
+  "producer_ranks": 64,
+  "replication_factor": 1,
+  "scenario": "simultaneous",
+  "send_pattern": "steady",
+  "target_records_per_sec": null,
+  "topic_name": "kbtv2-screen-b04-o06-cfg-119-B1",
+  "total_simulated_devices": 3200000,
+  "virtual_devices_per_rank": 50000,
+  "warmup_sec": 30
+}

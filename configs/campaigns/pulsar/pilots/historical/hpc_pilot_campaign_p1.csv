@@ -1,0 +1,2 @@
+block,order,stage,case_id,config_path
+1,1,pilot,pulsar-hpc-pilot-p1,configs/campaigns/pulsar/pilots/historical/hpc_pilot_case_p1.json

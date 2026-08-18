@@ -1,0 +1,4132 @@
+{
+  "file_count": 825,
+  "files": [
+    {
+      "bytes": 236,
+      "path": ".gitattributes",
+      "sha256": "11d7f506507ff4b092742bd05520cc1b539885945625b99ce7a79b4b78cbcfb5"
+    },
+    {
+      "bytes": 1283,
+      "path": ".gitignore",
+      "sha256": "fa874ed1f5963e07eccb21f7f35e10ca4397bddba9ac16e81526cc0d82cc9d01"
+    },
+    {
+      "bytes": 833,
+      "path": "CONTRIBUTING.md",
+      "sha256": "a06874285249f373fd279bfcbc5345e703353c5095ce21ccdc168ca4cafce3b8"
+    },
+    {
+      "bytes": 1072,
+      "path": "LICENSE",
+      "sha256": "fd73698d81aebfc70a2ff9744041a85daec3e56f8fe82ee47c009f37813b95fc"
+    },
+    {
+      "bytes": 18537,
+      "path": "README.md",
+      "sha256": "458eeb905863545bf95c8d7ee830a1492251d025d546f1c3587696ebf35ed118"
+    },
+    {
+      "bytes": 2432,
+      "path": "SECURITY.md",
+      "sha256": "77ab7adacf9bb208e6ed2b42ba3ba89764a9d8d3ef6a5793e90d7c85f4b5b771"
+    },
+    {
+      "bytes": 6947,
+      "path": "benchmark.sh",
+      "sha256": "e872a0f145d3d9f3dcb69f04216102775c43fa42cabc9378081d7fd279f7c22b"
+    },
+    {
+      "bytes": 474,
+      "path": "configs/backends/kafka/default_single_broker.json",
+      "sha256": "39279c6d6f44dcf1ec09b4dbe861a1bc95103f0ac87667f410253a291c44496f"
+    },
+    {
+      "bytes": 1030,
+      "path": "configs/backends/pulsar/profiles/BASELINE_H16_D32.json",
+      "sha256": "4f3c7b53d89a17406d859381288a0cbd8f5537f56f1fab3bc218e39c5d876262"
+    },
+    {
+      "bytes": 889,
+      "path": "configs/backends/pulsar/profiles/P0.json",
+      "sha256": "bede902fbb89fc028f72050f124dfd0deda1abf2fb442c4814a5e6909f2c3d38"
+    },
+    {
+      "bytes": 890,
+      "path": "configs/backends/pulsar/profiles/P1.json",
+      "sha256": "f4781176ee7f6f2e9fdec87210ed0cc1e81bab46e474bce97511db49af8a8fa1"
+    },
+    {
+      "bytes": 1052,
+      "path": "configs/backends/pulsar/profiles/PHASE2_HEAP16_DIRECT48.json",
+      "sha256": "3bf5498d2938f181e9a73e92ae921d925a75a30697a7bc7eac6f78c65bab2d47"
+    },
+    {
+      "bytes": 1052,
+      "path": "configs/backends/pulsar/profiles/PHASE2_HEAP24_DIRECT32.json",
+      "sha256": "4d0c0f6309dcf1c05ce6f9f887dc2c0171501d30e292fc6ef0dec5c9aa74285b"
+    },
+    {
+      "bytes": 1052,
+      "path": "configs/backends/pulsar/profiles/PHASE2_HEAP24_DIRECT48.json",
+      "sha256": "638c141634a6a5234b9bc8d1a15592fc84f76dcc93c5a9554e6ef2a6b315e727"
+    },
+    {
+      "bytes": 1052,
+      "path": "configs/backends/pulsar/profiles/PHASE2_HEAP32_DIRECT32.json",
+      "sha256": "92e399e71c2c6edf919dd7b31be1d7574f0ac324886156f7e0fd7921bd6cac91"
+    },
+    {
+      "bytes": 1052,
+      "path": "configs/backends/pulsar/profiles/PHASE2_HEAP32_DIRECT48.json",
+      "sha256": "b189e1b39f69fb8519a345390ddc621154416a3de166963de8e87737f8084005"
+    },
+    {
+      "bytes": 2120,
+      "path": "configs/campaigns/kafka/example_simultaneous_case.json",
+      "sha256": "8487a8046808e7c587d59d638b07bb588ae81d180fd0f8e7c3c6bb9ff8474e26"
+    },
+    {
+      "bytes": 13321,
+      "path": "configs/campaigns/kafka/v1_reproducible/SHA256SUMS",
+      "sha256": "f21ab4e338841204530212697ae7590ed160a44743587cc8f1f0dd7fdf7051c0"
+    },
+    {
+      "bytes": 1901,
+      "path": "configs/campaigns/kafka/v1_reproducible/baseline_snapshot.json",
+      "sha256": "e39158bffa91d5378712f3f401cc831c0b4082c5c557ad7f074729e720184d87"
+    },
+    {
+      "bytes": 1461,
+      "path": "configs/campaigns/kafka/v1_reproducible/broker_profiles/V1_FIXED_B0.json",
+      "sha256": "d56c26d891f727b880e3045e8a286138a4e6c0f40321669df1e5e6c179f153f9"
+    },
+    {
+      "bytes": 2836,
+      "path": "configs/campaigns/kafka/v1_reproducible/campaign_plan.json",
+      "sha256": "43432e01ca6b9a1522d566a3ab8a3c2101c8709ef3796f849f130c10803297ea"
+    },
+    {
+      "bytes": 11672,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/batches/batch_001.csv",
+      "sha256": "0e8b3105ee5ac89a5c0b68089977c0d36979d557338999e1af3af46a60f12e29"
+    },
+    {
+      "bytes": 11684,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/batches/batch_002.csv",
+      "sha256": "edca43ebd1b74d9ba4e30bbb913a16ad0b029e9bafa8bf99fc2cedf687857516"
+    },
+    {
+      "bytes": 11191,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/batches/batch_003.csv",
+      "sha256": "9b87d8f108922e56d948a9f4297e47ac65eff43681351b290ba067c097ce8e5e"
+    },
+    {
+      "bytes": 11197,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/batches/batch_004.csv",
+      "sha256": "1041b306ef15d3ae08a803e7dab6bc95f5e131a3e6f0a7c640492993b9bc492d"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_001.json",
+      "sha256": "29296d5ee9b472e188126c7ed494508cf377cad6ca40ada2bf62785bbbc282cb"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_002.json",
+      "sha256": "8de0b61a475ec644957b9011f36143abcb5b591f0d2b6bccbacce1abed7ad02d"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_003.json",
+      "sha256": "f849932efb2e319a439fd79378a40afa3dd13660b1acab9538789d9e5235680f"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_004.json",
+      "sha256": "b3bfd72f5b9595fe6579979a33b32d661cd8783796ac6b990c117372e7f3dfa6"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_005.json",
+      "sha256": "f8b12588c4bfee7a9ae134b426aa0fb24bdd43bbcd3046aa4cc31ce9b723c456"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_006.json",
+      "sha256": "e88e05d669cd2358d1ff8b4aea9f2b90df66512e956f6e841fac549b4b245e42"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_007.json",
+      "sha256": "afbd6fd2b47e07f534a02791648de67de954bd09abe2fef297458bc9073e4cb6"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_008.json",
+      "sha256": "0fb0594f841e912e9ac0a21e33310f27b298992a830f2e4542fb9434a278d889"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_009.json",
+      "sha256": "6fa5bd34505ed07aa9c1d16b68e3689ea8384039bd651663eac0b65559cf8155"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_010.json",
+      "sha256": "03d27994dd8eada1ce3ff2e5265d2f72f5fd8345d360c536029aad01c60f2882"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_011.json",
+      "sha256": "e749996247479ecd010972bf14a63f4741f95a9e636a0b6a555d0bcae66b64e0"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_012.json",
+      "sha256": "730fe78859dec61f57e127242cafa998a26dc1126c56cbf42b926c078187c54e"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_013.json",
+      "sha256": "8c4ea3eb0577e830bbc3c569d8c6ac86c33e5d8d0a2238807388f49974bbc32d"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_014.json",
+      "sha256": "7fa9d39cd0be1c4dd845f40c20be2a9c7956fb422af903362d5e24999b1bcb84"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_015.json",
+      "sha256": "b75774ee06c77515e32b26b165fe9233127f31a1a07354f1da7e0790c8d1dec4"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_016.json",
+      "sha256": "afb6da2e19b793a3dcf4696e0a8c074f5e04a4822518ae1af94f01d7eb8539e0"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_017.json",
+      "sha256": "982be15a56f6c134abefe3b981d33da94ab87291024aae5646f0907f557c4854"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_018.json",
+      "sha256": "e935177787d4c11a6c349f59abfb6dd185b05f3ec0b228dc219b0232e89bd8fb"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_019.json",
+      "sha256": "16711c87bf422ced27f57d2ee20449fe8a5a2c89795aa04f234514ef119950b3"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_020.json",
+      "sha256": "0f7489446a22b281859e1ef73d7b7088c911f776f83304f8b2c4776593d632c8"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_021.json",
+      "sha256": "15125860851e96a1ff9d8de662b0a16ca9b893a587743bf61faf9d4c6d935bd5"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_022.json",
+      "sha256": "b825cf69a0aae31b35bad1d6255e0c0debd23b3246384ffd362f4ebb46f7628c"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_023.json",
+      "sha256": "d3c065d153fd497d4b9e6fbd245cd05a61f11dac80cccbd3220f3bba37d96ee4"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_024.json",
+      "sha256": "40036bb97d6ac0e19bfd2d3571ba300d7d33ef9f9699efc8d48b0380d6e22ecf"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_025.json",
+      "sha256": "baad2da0e89f00038e0ce17931c0842a31befca77d84827ef12de726f6846e57"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_026.json",
+      "sha256": "d83408e66d3717cc94c05148a2c51ae0c7b251c8856c26fb226c88b213222f31"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_027.json",
+      "sha256": "7c8f45d833383c7abab6d1ad917ab5b57bbb81b01815255dc3b0cb6fa613928a"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_028.json",
+      "sha256": "d8ddbadc429bc7935c8eaafab146ed584845141b0e41276d942ec375785f0536"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_029.json",
+      "sha256": "e78ef18565967e0740080833a16cb8338bfc302586e68dbb7d873e6beb0bc5d4"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_030.json",
+      "sha256": "4fe1bb01c3dccc8b396a8b4e5e4092890eb1bc2611d33dc1e0f2883a132aca0c"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_031.json",
+      "sha256": "ea072ddfe4029d12110c3df3c0fe495f60e19c751593081d30eb3b9ca75362d6"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_032.json",
+      "sha256": "69605e13dcf60b2d2a6e41d030f79dc807e74eaa571480b434e8346ea8e33c3f"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_033.json",
+      "sha256": "031ecd915fd5afd3212b0b1ea70cffcea97eaa87af8174d884f157758ea57455"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_034.json",
+      "sha256": "b62d3e92603e5047fcd4b76a5266a38803a089ba03f5171ee95df042d5b0fd54"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_035.json",
+      "sha256": "56e75f0d59a176c9c46639b151228ab14b610986cd8b25e5f212c1cba351c621"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_036.json",
+      "sha256": "3e8f540ac0f956b576667255050a1a155bcc26efdef81a02b2249619091c92a5"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_037.json",
+      "sha256": "aab4df17742b55f99ac4525a8523eaf420aebc32e617dbad0c2fd4e374451f2a"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_038.json",
+      "sha256": "18bb9b4a75400fa14b3f81695df1862200ed6c74cb22ea46b98ffdb46fcbe715"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_039.json",
+      "sha256": "c721b8f39086e91f1754e2ba69f2ebbba8bc3be5b4d9224c7835c375dfd1120d"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_040.json",
+      "sha256": "2e18cfe764d71eeea8c2b3f988bd64ce96def0d3580c42d482dd0719e598d04e"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_041.json",
+      "sha256": "32b46c350bf4aaaf0335929f1b3c46d47c42f7503cefc29832674e88a21e4b66"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_042.json",
+      "sha256": "ea9453f3973d52186c0a13833222a258c4d173793a8962f16797508bcc075bc9"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_043.json",
+      "sha256": "02047cc4caec71b7a3eda41e5adc19b07de31331fde96cd0492b25ac960f6e3d"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_044.json",
+      "sha256": "2cb278158462e1289d39e226044184997ab05d0978fe72c8e8cf1e8de6483fa2"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_045.json",
+      "sha256": "297a2fbc15dd913d883a5bc009a9f3ddeaa2399528328674fcfbf81d966ce832"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_046.json",
+      "sha256": "793d255205418a57a8d35d750c1c57ad707f97ca4920286e3a760cc492b5e095"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_047.json",
+      "sha256": "f55a64b6f78cda06bb6c0807f8c145e26f9309aa0ffb1a309d4a0b4b9fff7fbe"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_048.json",
+      "sha256": "c5d6ddc7e23c8ec1fac190b973da27aec4481a0325082365974a4ecb362662a1"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_049.json",
+      "sha256": "3700b15fb447cfac0b5c3c9edbcf0a648cf29996590acf878c266e28661e3d76"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_050.json",
+      "sha256": "20115bd12fb08047e2f38ec17d349b5dd6d79aa2ea1b13fc55a3f988a241f7a9"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_051.json",
+      "sha256": "f1c6952ff3f2cef921fe0d229237fb170776c928531cbbd82d0f420412cc329c"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_052.json",
+      "sha256": "c47a301ddf7bea9aa7b41caa07cd1ce35bfc0fc5688ece15256555b70b20e50e"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_053.json",
+      "sha256": "de0f12a151cfdf7bdfe3b5977652e9089d94aa31b2e9a600af9d10773443f33c"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_054.json",
+      "sha256": "cccc76b49ec5e52b74431002d5908fc033e0aae5dffdb938a4d022aef14a1da9"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_055.json",
+      "sha256": "89b217dcd520d182b32192152e378399c69c85979c4c669d54c0cdda0508830b"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_056.json",
+      "sha256": "167a40b3edd22316c9a55eedf370dd1bc7806054273c6690bcd79dad41452dcc"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_057.json",
+      "sha256": "d1173f1ac08468d69ef7b5ded5f8715f605171d7081a30c71f7746000c4b1f20"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_058.json",
+      "sha256": "bfac55ed07c13970f5b913e1cbd2eef2a0b34c9a90f2bad49f261b885353c42c"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_059.json",
+      "sha256": "56aa05e054dcc04255379a0db070666865938ded2d78239fb33e80a6e6e48ee0"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_060.json",
+      "sha256": "5d5205c975465201f57d069c3dee8d8abb7423432425ff78c5144b8e514e7d5a"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_061.json",
+      "sha256": "83ef08a8220cc1b370be0977abd8c62a5c9d2ac001a98be85bddbe3f6f6d652c"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_062.json",
+      "sha256": "f9c90b5629bd860ecacc3df6c95e8ae917785830257669d2e69e560d4ee191e3"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_063.json",
+      "sha256": "1e7ec3ddea608d24da4d8830fdad6fd0669867c3f4e33723cdaebe18c699f42c"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_064.json",
+      "sha256": "714f44cb46d69a3158c7573470c35d323e61626bb38edf9c61d5eb18b97e74e9"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_065.json",
+      "sha256": "0bb23223cb7d17f7902f86171a0c8b1a67bc56ce9c77231848e8bdcef7951e5d"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_066.json",
+      "sha256": "de6bfa108582ca1935b82abb8b9d42d1ca1d929b02d1c4274bc2dd47b09cab94"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_067.json",
+      "sha256": "253f73eff0fb812c5c7c2e3ac725e8f5120db4a1a453415fb754d9dccc07cc8b"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_068.json",
+      "sha256": "fdd1fb3baa38280819e7f2d63845399445b6e58bb34419a0d93198e3983b0f84"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_069.json",
+      "sha256": "461ce20a873d4bf7773e8c7c4027b38ee85f9924411c14320ada95e8f66a36b2"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_070.json",
+      "sha256": "6606611eda397d815f0248ba6a45bd197a032aa8d4e5b2d8492fe8bb3517259c"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_071.json",
+      "sha256": "86997e7419be2a3c2c7d7f0e12c55002a4987e68ec8f51319959192a9c71c487"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_072.json",
+      "sha256": "45160d998cc3dcb07902f9e44301f6b305a418ac4029fa6be9b23b373e3a35b4"
+    },
+    {
+      "bytes": 3007,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_073.json",
+      "sha256": "e63d7c7f6885b7ef471b553aa2073da57da7ece1c79ddd5fd5b19ce50e3f413f"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_074.json",
+      "sha256": "302f4356967ca13066a33953d1c2cb51b38ba498b3347df20a96f077d974ac82"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_075.json",
+      "sha256": "db25870b3bc28f60741d8f7cf08b5401e25def2e194f66a824fa1abd05423cd5"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_076.json",
+      "sha256": "c0b03e03fc24f0c863355e647325fb367c39234d2ce5a61a6e3b9005800a28f9"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_077.json",
+      "sha256": "fb44e63d76c1b269026b6da6756e5f67164b4d4b0e0f7ef85ba8ac93426bdc45"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_078.json",
+      "sha256": "8fcfab6c302a8096026f6e2c0ede9872c33fd3a9ae3172eda9b6f9a7ed5c69d6"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_079.json",
+      "sha256": "71cd0e703b07ba02b7cf7b0236e11cca9b74ca06942309b6328d7718299410fa"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_080.json",
+      "sha256": "10e96bc0f3839c25737aee1667e9aa7a77726ff16972ffda900f60b8f79fbf05"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_081.json",
+      "sha256": "1fe8d92409298b43a1b5c40f5f346ecdcb5db1e3e48f76013e9df700d5b27bef"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_082.json",
+      "sha256": "08fb7098cb5d86a575258d97078ae12a02fa332c02898f0ecbe8c3c29a21c186"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_083.json",
+      "sha256": "3a03c500d8083571b6e50ce7f43943175523622db5a7979133bb84513c6409ee"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_084.json",
+      "sha256": "856a815a41549c64a8900d5242644728178180ef5e25038549adf98009d16974"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_085.json",
+      "sha256": "8235109f47f738cc6f5fa4cde9ce3fd8c53cca5f0ef7901a4d95040dea57e443"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_086.json",
+      "sha256": "3847208caacb5167267df377fef0ffa5618f48e129fbd117c0ef310c242a4b17"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_087.json",
+      "sha256": "49b2307864cc89dc471a40ac28fc16af86db64bb4e8f4e705364882e5a76542e"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_088.json",
+      "sha256": "fb0c684931ac2c1dbd57d063a0f32e8f1181141775d42c4c0355cad7353e594e"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_089.json",
+      "sha256": "8022cec1df7794dc75547fe1482f74fb72ace4237d6e0ed980dd2ef7f402d7f1"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_090.json",
+      "sha256": "a3dd15bc7ade24ba853d67c2d081a3e3cfc628618ac82d12887e90e02ca0ae1e"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_091.json",
+      "sha256": "9736e063bda592cc0f5062989249d4a63992ab2303e9d719e0020920bfb276dc"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_092.json",
+      "sha256": "0712a0596dc8d35e510c7af13cbb6a8d3be6f4b7457daa08c14a271797b96045"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_093.json",
+      "sha256": "c7029e9ccc931271129ad9c1080b0e0132d1dabac4ef0990e769299b95634676"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_094.json",
+      "sha256": "7cf40ebf6763861b27d6e639b50eca5691709e0a236a3ecdcad9796c24f033be"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_095.json",
+      "sha256": "4ffc8dfdb08ac5b4e28eb8ea0e32759b2092cae6269c782eb59e792a09b4ab41"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_096.json",
+      "sha256": "ea26907a49cd55aae9f97f1e98826b6c37d0f6f10a18576cf7434db70cc1222f"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_097.json",
+      "sha256": "f729842b342e39cc3e4e80036189b0ad92f435084417a6fc8c5430e4d7ab2105"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_098.json",
+      "sha256": "8ef7fc41ad5b86c278e467af4ffab873701f5d013ecada6fd492e270787d17d9"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_099.json",
+      "sha256": "881f42c31389835f0cc64c1a799712a4426daf225ae166c7376e7fbc4ae7af19"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_100.json",
+      "sha256": "20804ab6a7df3e6a3e8af178a17e98272cfc93b1756c62f31e71f05c611eb1db"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_101.json",
+      "sha256": "ea0690f4566cb8af80e37f08383e84607a49d096b2bf3c41656bc653f7f6b19e"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_102.json",
+      "sha256": "cce36ab9a9edf21f0b0a4e1025f47b7a1594a3ec5f645760c345dbed56c60ba7"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_103.json",
+      "sha256": "962c8ff4abef5021d3642b282a027d2551687284177694fdc5b3398a0f54fbb8"
+    },
+    {
+      "bytes": 3007,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_104.json",
+      "sha256": "dc2ce50e03f820ed36667e2c8327885fc7f7137f5dd5be8b864e9d86d658b77f"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_105.json",
+      "sha256": "c622b747a13efd1fb30e3ada3bb8923bb627da4c1ea7971c6a755b5693fc1d47"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_106.json",
+      "sha256": "887bea907090423c292861359582bce65c0d0bfde859dfbbfd204d9feb037ade"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_107.json",
+      "sha256": "b5b9c8e2e3ddf65c86d84d1573784d643d7b9b0b41a366fa806fb36ec7ef16e4"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_108.json",
+      "sha256": "f6f42bbd02fb438ef43ffa5cea548dba3865c470f65f082b2637d8e437267c76"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_109.json",
+      "sha256": "a54067e646d8060d28651da90f1326383340e93e604c4c4e93a5007297b0306f"
+    },
+    {
+      "bytes": 3008,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_110.json",
+      "sha256": "7c552f0c100e88155b725862302f0301afb4e5fa5b5fb1f37755cbe640482153"
+    },
+    {
+      "bytes": 3012,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_111.json",
+      "sha256": "8ad5f666e46420c8a2c11bf5bbb08af633061fb37e2a694b3ec12619c15c6435"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_112.json",
+      "sha256": "05cefdd52f29333f3bec6dee7064d64eed1c3e67b41022aba6d10bc79bbf02c5"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_113.json",
+      "sha256": "d30e9ccfedb5dc5b45f2be9438f88d18108511f0478d709887730532c817a102"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_114.json",
+      "sha256": "d9def463bc575416e5f9293c38c5047dcc6d84098a6954b53fb88cbe4470a318"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_115.json",
+      "sha256": "4b52eb86eec5910e4a00c8dc835c41e4c560346d0f023d25a59e2f6a65ca0935"
+    },
+    {
+      "bytes": 3010,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_116.json",
+      "sha256": "fc000cadc490a430e968e6ccb903186a6f0ee0a5d269efcb7c2bbee7562c922e"
+    },
+    {
+      "bytes": 3006,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_117.json",
+      "sha256": "28242982de851b88c646cbaedb78562d6efee26dcb0ad0f9fb5bcc504f6d0c2d"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_118.json",
+      "sha256": "424333c544cd2b73b307ac025c369fd22938d0445e985053a69f86184978c8f7"
+    },
+    {
+      "bytes": 3011,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_119.json",
+      "sha256": "38bd4274adc700a46921da54f53fbed57e47c135b37bf3be82cad478c676a180"
+    },
+    {
+      "bytes": 3009,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/generated_configs/cfg_120.json",
+      "sha256": "0697e7a2f2b10fc40a51e041ff349a5dcef8f081efcbcec81c66c43e6f687d86"
+    },
+    {
+      "bytes": 44451,
+      "path": "configs/campaigns/kafka/v1_reproducible/phase1/sweep_manifest.csv",
+      "sha256": "2adccab712571ee458151eda1af8619af6b53955d54013c5ff7dca273195ae15"
+    },
+    {
+      "bytes": 802,
+      "path": "configs/campaigns/kafka/v1_reproducible/pilots/cfg_001_acceptance.csv",
+      "sha256": "535db5b69759d92f93e38fa96ee6e8de936938cf0df89722335415b56104b18d"
+    },
+    {
+      "bytes": 2300,
+      "path": "configs/campaigns/kafka/v2_reproducible/SHA256SUMS",
+      "sha256": "04ac650b7865d62169a963d2dba89ca219e3ad94d2ddfdac08c0c220b4c67f12"
+    },
+    {
+      "bytes": 1425,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B0.json",
+      "sha256": "7c30c9b531743fa9956f70737be54206467121bebdb9e58357d0f7d1645cd8d8"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B1.json",
+      "sha256": "e5146dfdaf5e1603ec79380ce67b9fa694f5923f1848f4deec00e1a31cb9a7e0"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B2.json",
+      "sha256": "7434e06ebf749dd2fa81a9518860786b165c01af82e2cf2d05918366df86cfff"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B3.json",
+      "sha256": "d9e031b36d6e7cfa59534e2147d7ca36c280f35b61c0cfc45112e4d93ba5c6c1"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B4.json",
+      "sha256": "1ac4c0d069d3e0507f16be3118fb5bd65471080538e158ea7eb845cf508fc1b4"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/campaigns/kafka/v2_reproducible/broker_profiles/B5.json",
+      "sha256": "3f4305d5d20f75043f6c1a52fce03676d75dbf830cca9974073405a985e0c56b"
+    },
+    {
+      "bytes": 2439,
+      "path": "configs/campaigns/kafka/v2_reproducible/campaign_blueprint.json",
+      "sha256": "1e5cb19ec95ba5f9f28a60c8626c925a8eb0a09f5484aca711607b426f32e583"
+    },
+    {
+      "bytes": 1712,
+      "path": "configs/campaigns/kafka/v2_reproducible/campaigns/batches/instrumentation_pilot/batch_001.csv",
+      "sha256": "4cb66c93557cd63bceae842ed191bee0dab36a3a61fa78d0d2176a20ad9ed14b"
+    },
+    {
+      "bytes": 932,
+      "path": "configs/campaigns/kafka/v2_reproducible/campaigns/batches/rate_calibration/batch_001.csv",
+      "sha256": "931eb5866e73d6dbff7732ddc10cc56ece95e492f735b21512f5081d571b6b98"
+    },
+    {
+      "bytes": 1712,
+      "path": "configs/campaigns/kafka/v2_reproducible/campaigns/instrumentation_pilot.csv",
+      "sha256": "4cb66c93557cd63bceae842ed191bee0dab36a3a61fa78d0d2176a20ad9ed14b"
+    },
+    {
+      "bytes": 932,
+      "path": "configs/campaigns/kafka/v2_reproducible/campaigns/rate_calibration.csv",
+      "sha256": "931eb5866e73d6dbff7732ddc10cc56ece95e492f735b21512f5081d571b6b98"
+    },
+    {
+      "bytes": 3038,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b01_o01_sample10_cfg074.json",
+      "sha256": "b5a6193e0afe0d508ee00e110389ad8092686abd7ced0459be008d46347e784b"
+    },
+    {
+      "bytes": 3024,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b01_o02_off_cfg074.json",
+      "sha256": "b8aa46aba8192ead4d812857fb9dbb7f48ea78d43f283237e2f1ae12a5ec904c"
+    },
+    {
+      "bytes": 3024,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b02_o01_off_cfg074.json",
+      "sha256": "5082bea98886b7376bedda41ada400f52286d50d4b486a0bde5937844cb9acf1"
+    },
+    {
+      "bytes": 3038,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b02_o02_sample10_cfg074.json",
+      "sha256": "a3e1eaba637e03dede57430e1053a4b650639093ee1dc876781e307a7b64c743"
+    },
+    {
+      "bytes": 3024,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b03_o01_off_cfg074.json",
+      "sha256": "15363e983dcab8068f6bf3e49dbf0d6e066070da0220ef550580cd050f3c58a1"
+    },
+    {
+      "bytes": 3038,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/instrumentation_pilot/pilot_b03_o02_sample10_cfg074.json",
+      "sha256": "2c3ea91f169e80fa9536b792b669634bb7db37b6ec4c13ec7d454188e2e187a6"
+    },
+    {
+      "bytes": 3026,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/rate_calibration/rate30_b01_latency_anchor_B0.json",
+      "sha256": "681be493e47fd6a07ef0e50b2178d28b7fa288864b7a715dac5f7f99b1bbe446"
+    },
+    {
+      "bytes": 3026,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/rate_calibration/rate30_b02_latency_anchor_B0.json",
+      "sha256": "6817232307e67d132785640be33637e886f811a725f1599abb08a8ed2f6874ef"
+    },
+    {
+      "bytes": 3026,
+      "path": "configs/campaigns/kafka/v2_reproducible/generated_configs/rate_calibration/rate30_b03_latency_anchor_B0.json",
+      "sha256": "6d06b1cb81753147c4bfdf913745a1ab31838eb48682b36b4a7ae90bce32964f"
+    },
+    {
+      "bytes": 129,
+      "path": "configs/campaigns/pulsar/examples/example_campaign.csv",
+      "sha256": "64aecceaa801dcd65badc017f9edad9f89f5523c35d95e1a4dcd157e7ca9192b"
+    },
+    {
+      "bytes": 2468,
+      "path": "configs/campaigns/pulsar/examples/example_simultaneous_case.json",
+      "sha256": "97440f9ecaf874e5af10bf4bb04dbb09cc0a01450d5fe9db7735ae1e56104768"
+    },
+    {
+      "bytes": 10603,
+      "path": "configs/campaigns/pulsar/final_validation/batches/batch_01.csv",
+      "sha256": "35fce4d48eefc34f2bcaa6ad8bc00cf87eac71fb6350f6a9d937dd8c576b3d5e"
+    },
+    {
+      "bytes": 7155,
+      "path": "configs/campaigns/pulsar/final_validation/batches/batch_02.csv",
+      "sha256": "ac569f6082ff12622e045cc208433d54885f2e0a84bd6ff04f1fe47d770b81f6"
+    },
+    {
+      "bytes": 17499,
+      "path": "configs/campaigns/pulsar/final_validation/final_validation_manifest.csv",
+      "sha256": "5c988d26f989027f72bd67e98357cea8616a7b38b548ae841c46b90e290231c1"
+    },
+    {
+      "bytes": 12292,
+      "path": "configs/campaigns/pulsar/final_validation/final_validation_plan.json",
+      "sha256": "3a59b7bfa1e42e9aa896e4ad87fe09b1bdd66630cdcb20e95c59c11d10f641f6"
+    },
+    {
+      "bytes": 3055,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg001.json",
+      "sha256": "95fc5c4263ccfebcb451c6b382511ed1477cb4c4d6d563b8b90aea74bdadbdc8"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg007.json",
+      "sha256": "6d73accd8a768557d72542dec737c8d4b55376bea0ff4545a65a7ac4a48e36a8"
+    },
+    {
+      "bytes": 3053,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg049.json",
+      "sha256": "76422f4948e766f249a1b5a66d465ebb41627b66a7b8e2fbce5ee5f33b73fd98"
+    },
+    {
+      "bytes": 3120,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg055.json",
+      "sha256": "e46bc2c5971fb88635b1f7d09ca7bfee197001b278b8a18a2d5f322768e96133"
+    },
+    {
+      "bytes": 3061,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg063.json",
+      "sha256": "c89ae80dbaf5a505f20f7fd00337c1de22f1f6fc134a46c02fd36ba9ac2c1048"
+    },
+    {
+      "bytes": 3116,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg080.json",
+      "sha256": "5e5b82e00cfc04cf7409e09c36e9d7358afea0ab4b4e96ff4455211057260e2e"
+    },
+    {
+      "bytes": 3081,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg089.json",
+      "sha256": "a49f149ef18e66ca7f1f29bd8767474afa6fc2b8015a9174fcd2c486a44acd62"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg093.json",
+      "sha256": "7250e28a76b66fca1f6282c0a5a3cc40388b57bad17e572496b1eba80369d8cc"
+    },
+    {
+      "bytes": 3056,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg101.json",
+      "sha256": "5fca2f6d03bb88fdabb667a881b5cd115ed9e4663f0799e39164ac87f24b9496"
+    },
+    {
+      "bytes": 3174,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg120.json",
+      "sha256": "040b0b90004964aa0dc82a88116deffd83ef9cbd9b566f707de0278b6bdff47f"
+    },
+    {
+      "bytes": 3055,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg001.json",
+      "sha256": "07f9d3d3c4588c4d57bc19c8b08a596457848ba37f9cfeaa5f7f8cd36371f8dd"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg007.json",
+      "sha256": "0b8d93d0425f390d2750274ad12f01300c15352a90489aabe85ce852edff78fa"
+    },
+    {
+      "bytes": 3053,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg049.json",
+      "sha256": "92bf0760f789063ffe60e07ac0e365a9c806c178cb105f8b02106b990bbdfc4a"
+    },
+    {
+      "bytes": 3120,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg055.json",
+      "sha256": "a3af29dc14a4cb8c7a6ceaf96a8c5cc9e273339ab9dcea5336d61e898faa8a24"
+    },
+    {
+      "bytes": 3061,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg063.json",
+      "sha256": "14864601ed16e8b56acf96576804d16772d24c4464d6b25a1936bc1784d2bdd3"
+    },
+    {
+      "bytes": 3116,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg080.json",
+      "sha256": "fae7047da842ba740dafd95272ac3ccd351b9d8a7916875333d45097b970554f"
+    },
+    {
+      "bytes": 3081,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg089.json",
+      "sha256": "b53735ea5d69c7cb41cea5248a38352f43e6f76e7e1e0683cc06564f04579f19"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg093.json",
+      "sha256": "e2ee0dc92c16900eee15fa8c4c3a97d9456c3c52936203ca79ca4c5c88f4dd3a"
+    },
+    {
+      "bytes": 3056,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg101.json",
+      "sha256": "4e79aec73d6be2849c3412ccb8ad9375ce5863d81805d82d4d609864535bc96b"
+    },
+    {
+      "bytes": 3174,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg120.json",
+      "sha256": "9d8f4c29cd058676316fea12dd8e331d7ffa93c9b90aa2e4f203fa7dd4e649cb"
+    },
+    {
+      "bytes": 3055,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg001.json",
+      "sha256": "322ed888d4d5174dedddee9285ae7ca53cad47291cf694b44106415520ecccd9"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg007.json",
+      "sha256": "99daa3eb937dd217ed1fcc3dcbdcfccba58231d9c3d6db9a39205621695806ce"
+    },
+    {
+      "bytes": 3053,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg049.json",
+      "sha256": "4d309b99fb8d9d2daa609b481c850738c911b2510c69f188fb050db53f8b0f31"
+    },
+    {
+      "bytes": 3120,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg055.json",
+      "sha256": "d6daa87e55a98925969520c15ad52ed1258f806a43b254587e9ac64f3504ce6e"
+    },
+    {
+      "bytes": 3061,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg063.json",
+      "sha256": "886c35d90951faf0f7fce64ac7a5ad2979014f4be2cba3dc3ee2f6d4627e3c23"
+    },
+    {
+      "bytes": 3116,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg080.json",
+      "sha256": "1101fc88b072a26157ee32d139048860df46fc8646064c094c29ffb6d84cd655"
+    },
+    {
+      "bytes": 3081,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg089.json",
+      "sha256": "32a1134031ddec5fdeeb5fdc5fb7d764aa17302351ab4d703e8db4709326dbb9"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg093.json",
+      "sha256": "fc97a2902732f0a28519dda2e39a3f83973d19741617271e61d63b7e9474383e"
+    },
+    {
+      "bytes": 3056,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg101.json",
+      "sha256": "59bf62dfd0b8d805740ed72282b7fdfe39e41be1ec96cfe2a3d98d2092c7d297"
+    },
+    {
+      "bytes": 3174,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg120.json",
+      "sha256": "143d02aec0f2455e07fbb4e8c3a8b94fb288e6db874e7a6901a895ca5e773e3e"
+    },
+    {
+      "bytes": 3055,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg001.json",
+      "sha256": "49378873bfff4e705aab2cebbdfec793b34f0f19030751b0e67c9c56ca2645d6"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg007.json",
+      "sha256": "acd13f427da5c0c8a2a9e473acd83f87a9eec4068776dc7e0cde5a4762150111"
+    },
+    {
+      "bytes": 3053,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg049.json",
+      "sha256": "ff227f95486b29318df08e4aca39374617e822ef264109c539785767dd38e16d"
+    },
+    {
+      "bytes": 3120,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg055.json",
+      "sha256": "3df7acc09e6e3670ec5b3a415334c7b9579a4094a9a1d69df13b19b1d1783801"
+    },
+    {
+      "bytes": 3061,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg063.json",
+      "sha256": "00a43799d0c5c8ce6a7b3f32545341f3be6e8dc283da89490e5a2d0e55d6ae3c"
+    },
+    {
+      "bytes": 3116,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg080.json",
+      "sha256": "078a2c8c2f5334c1e441afa1ce26e4812648629d707f1303f1cd5d5f92d7829a"
+    },
+    {
+      "bytes": 3081,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg089.json",
+      "sha256": "0aca10d5244b7a3cad6288670b83e6b02a03052f000622ed91bf8a59602e6616"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg093.json",
+      "sha256": "06ccaded01cea600219bc4b151a43aafdc53fa47c71031a7de8f0edbb912f4e4"
+    },
+    {
+      "bytes": 3056,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg101.json",
+      "sha256": "cd4c80ea56166606bf5039bafa49d9e247f66302374a0ccc5e7000ed63f168b3"
+    },
+    {
+      "bytes": 3174,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg120.json",
+      "sha256": "f37e954981ac5daa7272f7e17d7997451dad8aa6f86934c752ede5b177553ea0"
+    },
+    {
+      "bytes": 3055,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg001.json",
+      "sha256": "d31e8865df2454ab8be0653d177c182f02d16363919a8af335a6b78d7a5b1402"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg007.json",
+      "sha256": "722926bd30a73e2e73054d9f51283e028cf0c99c37775a4bf996866deb3f0dd1"
+    },
+    {
+      "bytes": 3053,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg049.json",
+      "sha256": "812c454bada7cf813784a475d12111663407ef77debd96da021a8134ac291a8f"
+    },
+    {
+      "bytes": 3120,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg055.json",
+      "sha256": "55f5e0894f684469f3f1c5216a44926739b9ce066c176acefcf313fd4cc996dd"
+    },
+    {
+      "bytes": 3061,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg063.json",
+      "sha256": "711f53f222237de16145a108dbbc010e10b091c82c2dd8c171aef81dc1136887"
+    },
+    {
+      "bytes": 3116,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg080.json",
+      "sha256": "c215824c35242e2f893f13df5d241f0af87d200cea8d7b62ec582cacc453601d"
+    },
+    {
+      "bytes": 3081,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg089.json",
+      "sha256": "c5548342da9ecf7f029db76705072b4635966b2ab5857ac0b382e6cfe7ef06b6"
+    },
+    {
+      "bytes": 3077,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg093.json",
+      "sha256": "46daaabe054704dfca422374ea94748524996e85d9203cf34518ffd2798bdc2e"
+    },
+    {
+      "bytes": 3056,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg101.json",
+      "sha256": "450e653e062d1788e915a6a04ff08906b61a0030b733798fcd01fef30d1006b9"
+    },
+    {
+      "bytes": 3174,
+      "path": "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg120.json",
+      "sha256": "d8664b1e0c081a06c89da991cd4b87a842241e25b47def3d4139eaf3d544342e"
+    },
+    {
+      "bytes": 6670,
+      "path": "configs/campaigns/pulsar/phase1/batches/batch_01.csv",
+      "sha256": "6b97394b0fa219da8a525b37a910134c72bd1eb0d3c7862f45e5774d0aecfe52"
+    },
+    {
+      "bytes": 6606,
+      "path": "configs/campaigns/pulsar/phase1/batches/batch_02.csv",
+      "sha256": "71df12cba4a647893f380b3e499f7e276efd998cbae9b6febdd348b01057c29e"
+    },
+    {
+      "bytes": 6664,
+      "path": "configs/campaigns/pulsar/phase1/batches/batch_03.csv",
+      "sha256": "d8224a50a23e274699ec52e6888165f0d48540bef02ef78192226701206051d2"
+    },
+    {
+      "bytes": 6622,
+      "path": "configs/campaigns/pulsar/phase1/batches/batch_04.csv",
+      "sha256": "91325d196f5677946ee6d9fc0c7a45ce6afa31202d5a2d243a1beeff4ce2ea3a"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_001.json",
+      "sha256": "a3e1a8f5a807f58b10c77a6681248c4292d1796461ce1f0d4170455995c5e186"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_002.json",
+      "sha256": "4755f612b37f5d86c2f77a1a7f03b4f4adb9ecfde5cc6ec9931654206be1c311"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_003.json",
+      "sha256": "ca4828cea72e7197322e7d537bbf88766a38c03a0fd6e91f731d0d7782a09ae8"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_004.json",
+      "sha256": "9321260c12d208ccf4e1e92933d3952da218ed675e18ffd63795917f648beb19"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_005.json",
+      "sha256": "7af9615b20c2cb222db1523ef519b964788d4c610d9d6f0b039bafb7b7e47854"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_006.json",
+      "sha256": "2b263c1168ccd677d8fc5472a22d034d240c1b844300de8544ced79fc06db522"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_007.json",
+      "sha256": "693c704a2f1dac59e1fbac5e44188cc5cbc5f90534c160bf20027e6fa7cd3b06"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_008.json",
+      "sha256": "ae49361d2cd11a555a315a664ddd4e7ba7e9597683507b9185e07d052a121523"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_009.json",
+      "sha256": "f8ed27f673bc1f206ea641b3fd23ccecb14a2db9f337cea910fee976361ce348"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_010.json",
+      "sha256": "e7856c8e6f6bc9a29cc0cdf87e812d5fd3df0f3d761950b0aeb9f266e2d7b2dd"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_011.json",
+      "sha256": "95b1fd5e79962a794e839ec5e22ee0cf70518205acdf4038d1272c97850f404a"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_012.json",
+      "sha256": "95a8f0859c721503d051ff0bea58731f22d9c12f7a57acd7a0004b031f03fb25"
+    },
+    {
+      "bytes": 2629,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_013.json",
+      "sha256": "033bc55aea5c02b51049e57448a67c0aad85796c010ec80314a71abaae296de1"
+    },
+    {
+      "bytes": 2624,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_014.json",
+      "sha256": "d92ca2ecbbf39bb4d8f305443619ea762693d185f40e733c0d6044d2927740df"
+    },
+    {
+      "bytes": 2624,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_015.json",
+      "sha256": "5519dbde64bdd5c25a8497201ac419ee15848c9d4089b13b4402a055d244447d"
+    },
+    {
+      "bytes": 2626,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_016.json",
+      "sha256": "922a3ae6882116a1cf74c6ca10a8bd526a2e2c625e2195538d6955ba4098b191"
+    },
+    {
+      "bytes": 2626,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_017.json",
+      "sha256": "be9877c052f8b95c4614a5b6349e6c43f6f931d87acbafb5d66a19b2935d0e15"
+    },
+    {
+      "bytes": 2635,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_018.json",
+      "sha256": "c6cbe2eacdeccab1925ed7cacb1016473a9938b40ce545273b75526ad6039ad4"
+    },
+    {
+      "bytes": 2635,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_019.json",
+      "sha256": "e6827d55ba4d2e23f0ebb198300756367a30fbb450f1574cceef95a48aa5690a"
+    },
+    {
+      "bytes": 2635,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_020.json",
+      "sha256": "8cc0d03c5db13376554c981bed20a682a1d264300a013cb763e3e555e7944b4b"
+    },
+    {
+      "bytes": 2637,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_021.json",
+      "sha256": "d827b9c6e75718e1f066c3985692e0f277fe28f519999ca307f02dfa52548844"
+    },
+    {
+      "bytes": 2636,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_022.json",
+      "sha256": "7c46f614e81d3d84ecb6502fed868edf1c9d1f91737a6c1545697a68a50cf07e"
+    },
+    {
+      "bytes": 2636,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_023.json",
+      "sha256": "c59d9253a51eac93007a8a4608639f6f40ff1506126fb3ce3d133ba2f33f6669"
+    },
+    {
+      "bytes": 2638,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_024.json",
+      "sha256": "b0a5c4e1b2ff507b3bf6b3605353240a4136927824a598fa1021745ce882a8e6"
+    },
+    {
+      "bytes": 2638,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_025.json",
+      "sha256": "0d778eefbb9639cbc240b61806a2287ab9160599d88df8d436e2f01279089d14"
+    },
+    {
+      "bytes": 2636,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_026.json",
+      "sha256": "e33442b5ae23a594c2a7457c355aea1b07b445f2f33ad214e4ad66e7ca242747"
+    },
+    {
+      "bytes": 2636,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_027.json",
+      "sha256": "294eb0db348623688905d12ab41466ceabcffe37516350327c5f794cf9cd9514"
+    },
+    {
+      "bytes": 2638,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_028.json",
+      "sha256": "1417e95b167a8245b8b2aa45bbe8e724577bbb6b5238805a7a8dbf2b2d08ed0c"
+    },
+    {
+      "bytes": 2638,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_029.json",
+      "sha256": "391f9d48a56676538b933588052be83b93a48f985b57d9832b7d64edeb9a5d66"
+    },
+    {
+      "bytes": 2642,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_030.json",
+      "sha256": "48d50b9154b48f0c111cc706d55071da9c94481bc1d23b759ef7e0f8627fb192"
+    },
+    {
+      "bytes": 2642,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_031.json",
+      "sha256": "67a00373fe98f81d87817805a08f5b34720e60283281131d661ae84bc6066ece"
+    },
+    {
+      "bytes": 2644,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_032.json",
+      "sha256": "d58bd288d9c38f201fe3c1e2b1d38898cb81f94486968f81edb2451cd4cf3abe"
+    },
+    {
+      "bytes": 2644,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_033.json",
+      "sha256": "d26a4f82cf5c7f3dd63de53eedd49481ce93583d6f97fb8ef96a850e4b8c392d"
+    },
+    {
+      "bytes": 2644,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_034.json",
+      "sha256": "78302ad54ba3fcc11a7bb03971281e3833863f3a6f110f0b7399e0bf1405313f"
+    },
+    {
+      "bytes": 2635,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_035.json",
+      "sha256": "9fc817847264354d157b7bbcbbe96f58812c452eeee2e019ad9429b6df5fae68"
+    },
+    {
+      "bytes": 2637,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_036.json",
+      "sha256": "9c84319f9e340d7dfd05f1ce862ee4906e61a4c08313ed701a69c37768ca175b"
+    },
+    {
+      "bytes": 2656,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_037.json",
+      "sha256": "bfd27432ad594eb92a77afb4a82315e7c92becb00af1bec03195ff55f52dff25"
+    },
+    {
+      "bytes": 2656,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_038.json",
+      "sha256": "f9aea4001619d442f274b6b7604b85d8fb165b63ba6bde79e9934a7960447fbe"
+    },
+    {
+      "bytes": 2634,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_039.json",
+      "sha256": "9a6c33086b5f27d8858b00470aa2c3aac61c586775116a6019bf216119d92de9"
+    },
+    {
+      "bytes": 2634,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_040.json",
+      "sha256": "63195adfa1862e03a6d8ac2d3bfbd6e29c95ea8ccee6e0a62eea9107c4b54d80"
+    },
+    {
+      "bytes": 2636,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_041.json",
+      "sha256": "16cab246d8d2501ae504b6283095c5a36a41bd814c48eb290e72272ffe362847"
+    },
+    {
+      "bytes": 2664,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_042.json",
+      "sha256": "33bd8ccb8b2763647a101260d6a4cee653a580e71e520a473c7de58158691133"
+    },
+    {
+      "bytes": 2664,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_043.json",
+      "sha256": "ad0e36502d19e473d10c74651c2579b46a275c12df72bcdfd212c45c017e718f"
+    },
+    {
+      "bytes": 2666,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_044.json",
+      "sha256": "3fadbae2912045b2f9732f8778423071c2ede41c78fda5137b0889a6aa35f6c8"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_045.json",
+      "sha256": "3a9cfa53ca0ad5506cacbb0346a4141858bb5abbefd587981973dc4cdc454726"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_046.json",
+      "sha256": "8de143011d83c05b57675ce1cd34e05d4e7f1a862fe522dbe9192e3d5c3c642b"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_047.json",
+      "sha256": "82547f1231139e31da81646b93649f6c725a7dc6c5adc689b3f6d0e67f7edc1d"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_048.json",
+      "sha256": "e419fc4e46ce97c9a1643b1981836d5d32114a95a569b4355d517ec797eaa738"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_049.json",
+      "sha256": "8a8983871d7ef3ef2609780b843a66b1235831931d7d153e67190f682fb2c310"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_050.json",
+      "sha256": "4fabc62871b21f420cbd636afad93ccfdbdfc8778348a9a456cf98df6a52911b"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_051.json",
+      "sha256": "3586bc902931e0220dd05b39633eab6fa52d60f19466b3e79471994913d1422b"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_052.json",
+      "sha256": "dc8cdbc6487b7d0d495a2086c297e0aa184180e8dc1a325f71a6fcce1d47e8a0"
+    },
+    {
+      "bytes": 2616,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_053.json",
+      "sha256": "67a7dbef2d30c4744f65d44fb3af74757d90195676d489a2625511bea8830145"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_054.json",
+      "sha256": "42a560ce1a4a912f591563d9c9817357599e29eac1b6c9545230ca76a8548ed8"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_055.json",
+      "sha256": "d6f0a78f67645b89f3abace0927647a29e7fc13744ea5ba54c405679a598bf2e"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_056.json",
+      "sha256": "2cfc30a89936bfb23eea5edd14c0bde608400fe0561c527fc7cc641c2bb1e4d4"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_057.json",
+      "sha256": "6de51474897067773bd47571f9d7d6cad08dcf7e2d5b59a1d94c98c7a4d75021"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_058.json",
+      "sha256": "71bf6560b239b48a9f12f7448215b7f0b74da1557f56c30f9272b549b3e2e43d"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_059.json",
+      "sha256": "195bf35d1d63223d2ac7477d40faf88bf09b9ee4f7d008f007c1d7f234ad4b1c"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_060.json",
+      "sha256": "4b03f2f366ea70d4bc23095efac2b1d37328ab239019c9ee1d207ab72230433f"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_061.json",
+      "sha256": "eda79d9525dd3aee3704462f1bc3fa2138a4c389a07b3803efbcb90a5a2f5598"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_062.json",
+      "sha256": "957424eafaccbe49e79e8573f26628c624b012e7f80c1ea7f3c4b81ff374a016"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_063.json",
+      "sha256": "a6f740cdd1a7d9b0be688122350db3fb6d81f08295d85303462baed1ccbba499"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_064.json",
+      "sha256": "8a70cada362fde81fbf4053641cd256c68656dd2bd72e0241b1d9e7efb3927e8"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_065.json",
+      "sha256": "a54bcab76348ed2af6386951c008d9fe9201f9ec5679d1fb97d5bea8fa262962"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_066.json",
+      "sha256": "115068614964c21e6a83582f2d9db2eb51089d4dcf4e62662cdfc3b711264a96"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_067.json",
+      "sha256": "5d5eff45e0f2200a61d996ffd87faea79284fe1b1c5c730bad5d440251652d94"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_068.json",
+      "sha256": "89a1e8ca11d9b673149b8d7ecf63e56dedde087a96ca47b2e322465aa641392f"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_069.json",
+      "sha256": "f78b38183537954390938de488425b6bd6879a4c46767c7b1d5aeaba16dc7e99"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_070.json",
+      "sha256": "a00fb89a044095d96da10c927b0f3d2e2af2123c891c8f646c0f76352f386eb2"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_071.json",
+      "sha256": "488d8a9ab3f84396f0883d48fadfe55f9e36b49dad794c410e05555bcd613e18"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_072.json",
+      "sha256": "d298ea0417606dbaab844b40c53ae0b79a09d9a8453888216596782032ef0ab5"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_073.json",
+      "sha256": "5e8a636c2c4c98088eaaf9095a4b0bc56e07bb86c64622648d55b37225d8a505"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_074.json",
+      "sha256": "ab6bed2296cba072d0f8da45124c5eafb590eaac27d12e03cf3e754a21418201"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_075.json",
+      "sha256": "93a043711485333145c8d82470306586062f34fd92b9b288382522b207e439cd"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_076.json",
+      "sha256": "67d570e47462ba06a1c8175021f3486da3e46d7a6b264cd6a4586e6a0cb1c617"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_077.json",
+      "sha256": "70b314400b773d03241858fb80b76342b1a9a015b78fcb79f1d22c9ba1100e47"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_078.json",
+      "sha256": "d64ab62dc1002ddb14e660f4425b060791a26a0049d9abd3cb39000f8bce12a3"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_079.json",
+      "sha256": "105636d6c820a251e3191643c536eeff94b2a5163288a844f5da45473341c6d9"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_080.json",
+      "sha256": "a2125b1b38c1ddd6c67a1467abc4695166d0f33ca3461c4c682618ba222cdf7a"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_081.json",
+      "sha256": "72689d8eb2f048849abe3eebe168a66c1033ab48c8c77e2376c61b263e1c4615"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_082.json",
+      "sha256": "d39eabc4000fc583f85cc3c085cdad41a531c69e8e6d515960ec789bacbe8c42"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_083.json",
+      "sha256": "65022c7bdb3506eb0c87f760e701b686eb21ecb1319573d021789b13c54fcbd1"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_084.json",
+      "sha256": "07af284af0ad4b683ee5dae480e3d5c66725d08b5193bacefd93329e3f822fbd"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_085.json",
+      "sha256": "63f44f1e9f424a2f5a38b8427c06008af28df990b23a1161372136eeca1640eb"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_086.json",
+      "sha256": "2cca34ee6137c12ff4d97d390f74b25a8bdde1149cf3f65d40f1a2e143f1062f"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_087.json",
+      "sha256": "665c7ccc50e0210ecbeb74cfa1eaff636d5a5a0f55db5bba97fc92c70316da2c"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_088.json",
+      "sha256": "80ff4881a58037d4792c05bc6c568d6ccc89578559d33044b9c45735d491e6d4"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_089.json",
+      "sha256": "64a0ff438bd1f423af7e0c044f03c11b9dd1b3a66265e0940276812463630f4b"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_090.json",
+      "sha256": "be51d0f3a762e5ee806df4ba0e0b8d1f0a975a9c911293974d568e83b0fa8689"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_091.json",
+      "sha256": "0e149a837dbaf485eeaf9a3f4f18aa43aced1e17fe1351f93d67729d4f3292d3"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_092.json",
+      "sha256": "8d0e923ee11d9acfe43cec1aec3f0394e3f3cf5460c2b37000ae0f3705466414"
+    },
+    {
+      "bytes": 2613,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_093.json",
+      "sha256": "36058974b57bcc981cb78b621adb2e216e3c2cf4e0016944039e6dbbd20c1c3a"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_094.json",
+      "sha256": "629a6ddb3035c4682754df8a9494b2f66c07293e7c28640c0e9bdb56ca9d3ca5"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_095.json",
+      "sha256": "841202573a0175cb1bf88de5cfe02ec7586e4151f2a5ec24e5a2238e6ca49698"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_096.json",
+      "sha256": "3eff20a6ffa5ebbed4e73c2ce125167a63866739b135e38686bdb780e7467b53"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_097.json",
+      "sha256": "1333cd3a5f74d11cc5aa0ca6f00bdb56a632d820a8968e56f21e9498ad8ba5c6"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_098.json",
+      "sha256": "82981ddb13de4cb397985e081e37d675cb7b6f1e4f1c5681aec3632c8c54492e"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_099.json",
+      "sha256": "1f24fd59136aae971f98548794f6b0823b62291d07f8bd1eeb6d13473abfac81"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_100.json",
+      "sha256": "42d4bdaeed965eaca8a4cec7589b354eb60edc27407ce646774db91d88cae8ec"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_101.json",
+      "sha256": "0339965e8a7ee96d66ecf53081abcc93aa881adab430373054aed29b5b3a5d14"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_102.json",
+      "sha256": "35136b3ffe4a257095402b8d14be81342619b3b708ffc7f6ba84612ff43cd075"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_103.json",
+      "sha256": "c7476255f874b0ade2e6f66f9839bc842890df5209999aac0a3dabc208ff8cf4"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_104.json",
+      "sha256": "8933b5b6aeda86b286d30e8ad0d9918ed7e3ef345604406ba1391bf411b14796"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_105.json",
+      "sha256": "e59d2be2935d14a38077620a82a34ce8593e1e90ebb3660e9bced31169ae4f16"
+    },
+    {
+      "bytes": 2609,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_106.json",
+      "sha256": "2f5a96fd3ec31b1317f3cdf40133e8ce23f35199be08f9e13e607c3d06725a40"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_107.json",
+      "sha256": "3bc627ab998c7105ccc149b30bc99ba5117db2825030fa4b2daef2c02a5ea490"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_108.json",
+      "sha256": "71977d8c518fae0a7d9b2502018410cacd7d0fbaf0b6bc6371b00f8a8c3c38d3"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_109.json",
+      "sha256": "5f4ddcd3d8197c7311c4d108a4e6a52303af064c41e5911f144ade81749c7e9f"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_110.json",
+      "sha256": "eececd7186cfb21b046ea9e98623e4d48ed783a90f905735bebd898678c52060"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_111.json",
+      "sha256": "c3068f6850eacdd65ceee4e261bf0f0167e8b532b7f49b5ddd0022fb99446941"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_112.json",
+      "sha256": "629616d3f7a038a1114f79648284f8b4a502e265f773604cf0d152ee74005668"
+    },
+    {
+      "bytes": 2612,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_113.json",
+      "sha256": "948ce0c828f1f155ae8658a0b1e66ea28251de82cade29f94765899fdf3b499a"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_114.json",
+      "sha256": "180a04b3cfd80200c2d781ea4dfb501bc7c9c97dcd3b552517ccb469512de27e"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_115.json",
+      "sha256": "166a881c904bc2a8ff54cad029319b5017d17b67b66a19298f56cac9d0ecaaad"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_116.json",
+      "sha256": "06ed00532f9d6a52060e86643db7841c9c8c4b7cb0640ed3f3b512707a5242cb"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_117.json",
+      "sha256": "27710b8e348850c1aaffdbf4492656e402e15c1ce3b2d7d2b3726ea427f68610"
+    },
+    {
+      "bytes": 2611,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_118.json",
+      "sha256": "a501501895e27aba4a7567f9b1428b4c1b9f0de914c6e4e760de2f69f58e9b59"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_119.json",
+      "sha256": "f4cca0b155bd42e89ee6c2386776735ffac43d4771fb114223f3e100ecd9d241"
+    },
+    {
+      "bytes": 2610,
+      "path": "configs/campaigns/pulsar/phase1/generated_configs/cfg_120.json",
+      "sha256": "d1634bba08606d7289ee559ef127d9968288e24ff14a1593e80da9c2dc7b4a70"
+    },
+    {
+      "bytes": 1281,
+      "path": "configs/campaigns/pulsar/phase1/phase1_campaign_plan.json",
+      "sha256": "133d407a0b96113a31cea53a0110546844f0b47bfb2e59b4ce94166267366c50"
+    },
+    {
+      "bytes": 25485,
+      "path": "configs/campaigns/pulsar/phase1/phase1_manifest.csv",
+      "sha256": "d7e7a4f1f20941b593dc5155b585344e9e9ce6c0ab30ab8174ce018b973aa380"
+    },
+    {
+      "bytes": 9566,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/confirmation_plan.json",
+      "sha256": "a166bf74733d191e1b27a7c517d358f66d17b3bd63314204ba2e51b35a1e83c7"
+    },
+    {
+      "bytes": 2957,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h16-d32.json",
+      "sha256": "a26abae66435e21e105973549c96fb4deb0bc9b08f9642d6d56746afb755b71b"
+    },
+    {
+      "bytes": 2969,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h16-d48.json",
+      "sha256": "c8f29171e1417b18fa6622ce4e6b233ea320f0205909388b75ee296ffb692d78"
+    },
+    {
+      "bytes": 2969,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h32-d48.json",
+      "sha256": "6cb4311edf4cfe413be7bf28dc46b53a8590db0f962c505058386948cea0032a"
+    },
+    {
+      "bytes": 2983,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h16-d32.json",
+      "sha256": "4ac9ce0a520730668807957979cf98f6dbaa77f1e08c624c9ea5e645df336af5"
+    },
+    {
+      "bytes": 2995,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h16-d48.json",
+      "sha256": "5a3520006c95fc473f70c5aeec7b474082fcc8de83e50b30e630ee59c7b99949"
+    },
+    {
+      "bytes": 2995,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h32-d48.json",
+      "sha256": "63ba61704b14e8cf14d3bdd54d699cbd2a967ead0f8fd8bbc0f3031cc45bc090"
+    },
+    {
+      "bytes": 2979,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h16-d32.json",
+      "sha256": "710047e6de33afc8646e849bb8f5871b1237ac2ee81b63206d2d055b3528b2d6"
+    },
+    {
+      "bytes": 2991,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h16-d48.json",
+      "sha256": "24cba06fdd714f9ddcca523d4bed86bfde1a0e92fc4b1f76fa329ade96e65068"
+    },
+    {
+      "bytes": 2991,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h32-d48.json",
+      "sha256": "c1c62bd4f45aa8bc0e77438db0f3a7c158087d38f2c878b90dfe82fbd29d927b"
+    },
+    {
+      "bytes": 2968,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h16-d32.json",
+      "sha256": "646cd87891ca74191daa97a14566d0f0b824d2ad6f0c2d3e87442e0e69eb36ab"
+    },
+    {
+      "bytes": 2980,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h16-d48.json",
+      "sha256": "1c7e220e17be72382881662c6d55b945df837b8efe9f8c6fda088023c5875c09"
+    },
+    {
+      "bytes": 2980,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h32-d48.json",
+      "sha256": "b8fdf16b289e23b1c2dfd74318daec91de48462433f35feba0280872dbf55b94"
+    },
+    {
+      "bytes": 3030,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h16-d32.json",
+      "sha256": "32808ef8164d2dc702f7df22b848d1eaf1dbd40ed8c5a9527b2327268e42c6f1"
+    },
+    {
+      "bytes": 3042,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h16-d48.json",
+      "sha256": "127579f4c9fdbb0b9939aa89ab7ae6a7e94617c22064f872afb85b1c0153f432"
+    },
+    {
+      "bytes": 3042,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h32-d48.json",
+      "sha256": "51404e7af094c03d3319cb3c1a7bcab4fbe3b59e7fd137e62533f4f6a77da0c0"
+    },
+    {
+      "bytes": 2957,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h16-d32.json",
+      "sha256": "ecdcf2056b2de357a848d1005d96cc1aacbeb91e06e738c50a69c449f9005914"
+    },
+    {
+      "bytes": 2969,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h16-d48.json",
+      "sha256": "103541c97fd5f5579abeced66b1ab4d1aa6f39ae1450e0966fb50f91461c022a"
+    },
+    {
+      "bytes": 2969,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h32-d48.json",
+      "sha256": "e1375b343404fe755eff15d7268d5f12fdb34eb576b8b82f3f79b8b4abbc267b"
+    },
+    {
+      "bytes": 2983,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h16-d32.json",
+      "sha256": "fd5b9c7c779dabafc33e37a3364410afab3aa02f078c63c73f78bf11bed5726c"
+    },
+    {
+      "bytes": 2995,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h16-d48.json",
+      "sha256": "15a12d5ebc7e34e611d87732f048cc4c7d019107419d27895e7fb6d3930f94e9"
+    },
+    {
+      "bytes": 2995,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h32-d48.json",
+      "sha256": "e6a8e8e1b1e618887e3b3b0ae71ec653c712bb088813a5f0caf11a796378c02e"
+    },
+    {
+      "bytes": 2979,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h16-d32.json",
+      "sha256": "1b4e41f41e616ad7ff5b6e7c17819fbe383cef7f189e5f7701922e6a8dfc2428"
+    },
+    {
+      "bytes": 2991,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h16-d48.json",
+      "sha256": "73dbd74f443f9b873f06d968298a04a3c876796e0b126af2661c95b273e68061"
+    },
+    {
+      "bytes": 2991,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h32-d48.json",
+      "sha256": "0a1cb2f395df9710560ae0707fffec2ebf3ba113414b254c2382ad38767fc165"
+    },
+    {
+      "bytes": 2968,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h16-d32.json",
+      "sha256": "caf2d193861138ddf85abe7f1e8e166524a31d6b0e8c0128b7c85f38f0b06d85"
+    },
+    {
+      "bytes": 2980,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h16-d48.json",
+      "sha256": "981ea96fedae2c7f66a9a4b527f08a6bcff6b9f1878631147a9eea5a921bc51f"
+    },
+    {
+      "bytes": 2980,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h32-d48.json",
+      "sha256": "3aaef9a3d0d0ea0ac8994376c046374fa7a12c11b970fd521119a41994132d67"
+    },
+    {
+      "bytes": 3030,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h16-d32.json",
+      "sha256": "8ac3eede308bea4213e40f587daa29da659285fb361e9af4f185067ffb5e2f23"
+    },
+    {
+      "bytes": 3042,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h16-d48.json",
+      "sha256": "db0e1276b2832a910f8a53f341f171ece6116ff482d26a00c84a74c03e57b5a4"
+    },
+    {
+      "bytes": 3042,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h32-d48.json",
+      "sha256": "ad2a42271cb9551b2809c7d13d34557ba0e635c1d19af96fe46c8032b712b1cb"
+    },
+    {
+      "bytes": 11077,
+      "path": "configs/campaigns/pulsar/phase2/confirmation/memory_confirmation_manifest.csv",
+      "sha256": "7c0e8bb0f0811e313251d009f13a2ebaa562595d216001249f6ccab1c43e86a2"
+    },
+    {
+      "bytes": 2803,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h16-d32.json",
+      "sha256": "380faf85e2283cedf6da4fa6de13d6495f18fac281d6ba34b3753484abc76ae5"
+    },
+    {
+      "bytes": 2815,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h16-d48.json",
+      "sha256": "8f5b697bf6d5fdf90a9ef91bdbd6b31e782235a9adf8d1d547508c1edf1eb860"
+    },
+    {
+      "bytes": 2815,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h24-d32.json",
+      "sha256": "1cfbe0cfd9a4f54da4da1165072197f353339bd1c2986ff84fcec81b790ea267"
+    },
+    {
+      "bytes": 2815,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h24-d48.json",
+      "sha256": "0a206ced067d5612d3a081b98c477ad85d56c11d5f5142f114d0ba0e44c6c7e3"
+    },
+    {
+      "bytes": 2815,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h32-d32.json",
+      "sha256": "366bb1c56506b507dd8800ecabf876dad2a5f1897e5eb2a979a59f2ddb339db9"
+    },
+    {
+      "bytes": 2815,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h32-d48.json",
+      "sha256": "69af850beea1d3e02645cd0b29e96eedc473b4027fec0fab6cd20f926ed3fd05"
+    },
+    {
+      "bytes": 2829,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h16-d32.json",
+      "sha256": "5eece3bbecbee4307e741be5c1470a65945ed87cc20c50448e6d06394ad68396"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h16-d48.json",
+      "sha256": "adfb3a3b3b74c382ae068b6d877f051f0c5872870daff598d938089ed78e52fe"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h24-d32.json",
+      "sha256": "a680ffe17fe43afd925c296a2600f74e3b83bdcfb6f72f210b191dd518316e51"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h24-d48.json",
+      "sha256": "53e715e65b4ed61aee7fd859da63b93b763d86e0d336869b053cb0ae52d71c4a"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h32-d32.json",
+      "sha256": "5e1efc0705b0877c0358f5ae26c0a0b8c9599ff78cee8e6bebc0e7067223dde2"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h32-d48.json",
+      "sha256": "94d5226b1b8cbc28d63695581315f842d4418d14010917b58b667345e4c027b9"
+    },
+    {
+      "bytes": 2825,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h16-d32.json",
+      "sha256": "4aa8f6633a52a108502555ca2c10a1e0956ac263125068f0b845f31a793205a4"
+    },
+    {
+      "bytes": 2837,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h16-d48.json",
+      "sha256": "62f3f4d96bdf91f17c3b6253edc5f235cc6512dfad21c3dd2fc5857cb538235e"
+    },
+    {
+      "bytes": 2837,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h24-d32.json",
+      "sha256": "8235a93eb1b9d1ebf3d6766b0cde6d5c41ff8de772a0c52855119308df0e29f3"
+    },
+    {
+      "bytes": 2837,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h24-d48.json",
+      "sha256": "64e9581d399be63477e4419a9337a439acb7890efadd4cbcb35f5ea5822611c6"
+    },
+    {
+      "bytes": 2837,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h32-d32.json",
+      "sha256": "ce81f8d088a28722ff3e3949e8c84953c1160f06aa9815fdad1c624147400754"
+    },
+    {
+      "bytes": 2837,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h32-d48.json",
+      "sha256": "225476e259671b8300f22f2014a8dc047fc7d272706066140bf6a57b08adaa50"
+    },
+    {
+      "bytes": 2814,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h16-d32.json",
+      "sha256": "0ef975f94bfab67d4b09ee655f31369b5e404c9c78223f0230631efcd46388d8"
+    },
+    {
+      "bytes": 2826,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h16-d48.json",
+      "sha256": "6f6c7e9c1644daa32685d47c8b5c2a24246441d9b7de78cc537d615f6f6bca3d"
+    },
+    {
+      "bytes": 2826,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h24-d32.json",
+      "sha256": "4423ed587211109241c82dda16b4688ba4b022d8d4a2453b7a0af797ccb499e5"
+    },
+    {
+      "bytes": 2826,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h24-d48.json",
+      "sha256": "08f4314818c134240bb7dfbec1c57684ccd01e90520308960d3d9e91ed3663b7"
+    },
+    {
+      "bytes": 2826,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h32-d32.json",
+      "sha256": "c84f1b88c8314fbecf30609a9e84c02d1fb3a5c5b6e5945d9117b88e996d0eaa"
+    },
+    {
+      "bytes": 2826,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h32-d48.json",
+      "sha256": "7658c0745ae1715aafbbbc893ac749fdcd10a5f7ef2d2dd09af2ae30aa307a9a"
+    },
+    {
+      "bytes": 2876,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h16-d32.json",
+      "sha256": "f0665fcc4595e98eef8e85cf486cabde50e29f9f985cff5bc01cc0e84854a204"
+    },
+    {
+      "bytes": 2888,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h16-d48.json",
+      "sha256": "9e9806ada2934bb260630409d62688308b2765f11e6547dc63507aa98e37799d"
+    },
+    {
+      "bytes": 2888,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h24-d32.json",
+      "sha256": "b01487e4da83ef060d05738f661ac00a0eeff103b58d0699f57058f9d4cccce4"
+    },
+    {
+      "bytes": 2888,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h24-d48.json",
+      "sha256": "eb1cc48904493e9df3fef6126056e5d1b62f45e4df7f63f35907acb96a23a632"
+    },
+    {
+      "bytes": 2888,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h32-d32.json",
+      "sha256": "5343faf1042384b944041a5d241448118a6c86b294d88829eb21eac453a5c146"
+    },
+    {
+      "bytes": 2888,
+      "path": "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h32-d48.json",
+      "sha256": "6030d13041a067ab9eb0f82c9826034c2f056aba9c6264fd2bcb0148d8352227"
+    },
+    {
+      "bytes": 10426,
+      "path": "configs/campaigns/pulsar/phase2/memory_screening_manifest.csv",
+      "sha256": "d6668ceb859dd1ff052d679c2a8f4da094df98f262338abaa37afdb1bb3398a5"
+    },
+    {
+      "bytes": 13232,
+      "path": "configs/campaigns/pulsar/phase2/phase2_campaign_plan.json",
+      "sha256": "1dac9863fc76bddd247f20f886e5689e7992ddd824beaef280025514f9b3ffe8"
+    },
+    {
+      "bytes": 2830,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_001.json",
+      "sha256": "774bb82e99bad2b4e22bf9967a8fdc88e17365ff67375c202fda75efdaddbc94"
+    },
+    {
+      "bytes": 2852,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_007.json",
+      "sha256": "eb7e3531f5d4851c87398851222afada22009eb280541ce51d3b90e552de92fe"
+    },
+    {
+      "bytes": 2852,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_013.json",
+      "sha256": "abcf3afc380453cef632fa1a348c967055d8667695158928bc69419205854cbd"
+    },
+    {
+      "bytes": 2854,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_017.json",
+      "sha256": "1e5ff160c25696c2f897ba66543a3f0d2f581a691754b52ab95ead91134ffd33"
+    },
+    {
+      "bytes": 2840,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_018.json",
+      "sha256": "c894bf66b7da5d5870cf0e8894d596fafd93d73703269be4595ad31283207402"
+    },
+    {
+      "bytes": 2841,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_021.json",
+      "sha256": "b2d047b8b615ded602536be940ed68507121da55000adaf185487835a50486e6"
+    },
+    {
+      "bytes": 2852,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_029.json",
+      "sha256": "67c74a7d49624b0cbd109c6625441231995537165d7e7bfd8c2e8011954abf12"
+    },
+    {
+      "bytes": 2853,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_041.json",
+      "sha256": "9e12516301294ea45735599f12834101ef638d0384583f24aa2ecd4e74d51af8"
+    },
+    {
+      "bytes": 2845,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_049.json",
+      "sha256": "dd9164e4d4d66d33c17e8c703f36dffd96599488c02be14b783008bdb5becb8a"
+    },
+    {
+      "bytes": 2849,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_configs/cfg_087.json",
+      "sha256": "8a25db14244226d99dc46948d510ffa3a5b794cfa7d683693f86256365aa2934"
+    },
+    {
+      "bytes": 1882,
+      "path": "configs/campaigns/pulsar/pilots/batch_runner_10_manifest.csv",
+      "sha256": "7d96e6df41baf0781affea0acce793c1ef3137bcbb6de3a105f8edfd54a36d2a"
+    },
+    {
+      "bytes": 2658,
+      "path": "configs/campaigns/pulsar/pilots/corrected/baseline_h16_d32_case.json",
+      "sha256": "8ceee803c780da8e0fcc966b395e4ab45cc0ca95e5d362ee479b073237da6b9e"
+    },
+    {
+      "bytes": 2716,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b01-latency-off.json",
+      "sha256": "f5bf51364c45d1fd2947c8500fe107a91e2448d9fa2daa90a86287ad32e3877c"
+    },
+    {
+      "bytes": 2711,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b01-latency-on.json",
+      "sha256": "6a8e4c4235f6f1d109036b5215dad06e08a03f06cd16a12200ba1b16c44f126f"
+    },
+    {
+      "bytes": 2716,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b02-latency-off.json",
+      "sha256": "f70ba44678e716f135b63cae972b73c9e0d322312f7e5d0007f47549742c3404"
+    },
+    {
+      "bytes": 2711,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b02-latency-on.json",
+      "sha256": "0aed8732201e8caf55fa363430768158599f3e62bec53b8457e978afff55c640"
+    },
+    {
+      "bytes": 2716,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b03-latency-off.json",
+      "sha256": "475db41eef4790a6003dd46c7ad08a68279234d46e2fef48f3157c976e19ce77"
+    },
+    {
+      "bytes": 2711,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-inst-b03-latency-on.json",
+      "sha256": "805ce13beab5b3a371a51ef940022c268104715958e67e5cfad6abd09fcbbfee"
+    },
+    {
+      "bytes": 2708,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b01-moderate-h16-d32.json",
+      "sha256": "5ea4860b39d05a5d82d79b04c1123660f3ae9d938a66ecc00235fd09c502ba2b"
+    },
+    {
+      "bytes": 2689,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b01-moderate-h8-d32.json",
+      "sha256": "fafdb03c4e4e7a0204ecd7e47da8bfc1dfaf355175cc584a8499fca1daf1c955"
+    },
+    {
+      "bytes": 2700,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b01-stress-h16-d32.json",
+      "sha256": "a09c18777339d4c57383d9383acafba40c6be28bc15a1950ca8488eb2c4c322c"
+    },
+    {
+      "bytes": 2681,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b01-stress-h8-d32.json",
+      "sha256": "f57f77614e39297c89886736759516130d24e075902f9a1e30f79ed5a9e36275"
+    },
+    {
+      "bytes": 2708,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b02-moderate-h16-d32.json",
+      "sha256": "aab84dac3d24a9b30d30e64f2650bb7181e64dcda6d5c79bcb311562acfac568"
+    },
+    {
+      "bytes": 2689,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b02-moderate-h8-d32.json",
+      "sha256": "918a6a156a6dda25fc7d16fed3216199dac7a6b345b7903d8c04d49e3c2d30fb"
+    },
+    {
+      "bytes": 2700,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b02-stress-h16-d32.json",
+      "sha256": "fc0d1ec7694ac80ca446c287f3e56630bc6c98dda896ae18570e5d116c62b25c"
+    },
+    {
+      "bytes": 2681,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b02-stress-h8-d32.json",
+      "sha256": "d6af4124ad9514d5197e31ac6902c9eaf7d66e4098d893352fab50d49eaef496"
+    },
+    {
+      "bytes": 2708,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b03-moderate-h16-d32.json",
+      "sha256": "50cd42f905ee35ce280d3fc257c46da859fa437992bcb2654477179b36b9cef2"
+    },
+    {
+      "bytes": 2689,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b03-moderate-h8-d32.json",
+      "sha256": "3b19bfe14721475b693ef920ffec0a96b4e843ef11a5874368149bcef07ee704"
+    },
+    {
+      "bytes": 2700,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b03-stress-h16-d32.json",
+      "sha256": "cc30056557a89439ce96e224881d51677e8b08a0a6c145edc9a9f3e59584e604"
+    },
+    {
+      "bytes": 2681,
+      "path": "configs/campaigns/pulsar/pilots/corrected/generated_configs/pulsar-memory-b03-stress-h8-d32.json",
+      "sha256": "c537e21a8615784de2b18fcb256497656a4f148697c2886604b2daa1b287a282"
+    },
+    {
+      "bytes": 2175,
+      "path": "configs/campaigns/pulsar/pilots/corrected/instrumentation_overhead_manifest.csv",
+      "sha256": "8d4e8ee222e6a315a7f0736773dcf950fcaed0a0d520c7e08a32239daee23ded"
+    },
+    {
+      "bytes": 4113,
+      "path": "configs/campaigns/pulsar/pilots/corrected/memory_acceptance_manifest.csv",
+      "sha256": "6ac8a66139bad9da731085fc9278d654cee3e62b58a0cc96efbaefbdce1db37f"
+    },
+    {
+      "bytes": 1074,
+      "path": "configs/campaigns/pulsar/pilots/corrected/pilot_gate.json",
+      "sha256": "383eb90185be4495c6ac4ecd12c4ded20aaaed8c17e6e59a88e198ee30c05c63"
+    },
+    {
+      "bytes": 134,
+      "path": "configs/campaigns/pulsar/pilots/historical/hpc_pilot_campaign_p0.csv",
+      "sha256": "cf9701836eba74fd3f17352f65f8272cdd5ca8759f32626d02dce840febb5441"
+    },
+    {
+      "bytes": 134,
+      "path": "configs/campaigns/pulsar/pilots/historical/hpc_pilot_campaign_p1.csv",
+      "sha256": "9c86301843170873d80c53a30682011192ccf5a98b604bf797dbaf15c8d81baf"
+    },
+    {
+      "bytes": 2519,
+      "path": "configs/campaigns/pulsar/pilots/historical/hpc_pilot_case_p0.json",
+      "sha256": "650be9d47b18190a578834c4d559d894d43555340fd43a3a029a432bdf71d508"
+    },
+    {
+      "bytes": 2608,
+      "path": "configs/campaigns/pulsar/pilots/historical/hpc_pilot_case_p1.json",
+      "sha256": "9089db38f91c3af8a23435a040d18c86c5a291e91e258e2697409e3a1ca92f09"
+    },
+    {
+      "bytes": 1691,
+      "path": "configs/one_broker_mpi_balanced.json",
+      "sha256": "6b2ce9e400fbc6e8ec6dfa300062dea018a4308d861dfc67d1e3ac012244fd18"
+    },
+    {
+      "bytes": 1692,
+      "path": "configs/one_broker_mpi_egress_only.json",
+      "sha256": "7debfd0c79e8416633702f1ff6b81f3012bb78b15a5fa8faa7f93582d3e584f1"
+    },
+    {
+      "bytes": 1732,
+      "path": "configs/one_broker_mpi_high_throughput.json",
+      "sha256": "19f8b9af4fb6d8903a1670ac7dae265533acdf11da465c304f3f9dc5b940c099"
+    },
+    {
+      "bytes": 1660,
+      "path": "configs/one_broker_mpi_ingress_only.json",
+      "sha256": "82f8fd211a23d78d91d37aec61453088a9b58367a57069cc83c8fa69e99e8c76"
+    },
+    {
+      "bytes": 1573,
+      "path": "configs/one_broker_mpi_simultaneous.json",
+      "sha256": "56506dfdfc17fc49ccf846280b5ed939c481943424fa715437c591ac601bba26"
+    },
+    {
+      "bytes": 10210,
+      "path": "configs/sweeps/simultaneous_budgeted/batches/batch_001.csv",
+      "sha256": "93622ae57deea387a0d5a82d5193005a15f4ea9cb9c8b4275512a85004634ef0"
+    },
+    {
+      "bytes": 9251,
+      "path": "configs/sweeps/simultaneous_budgeted/batches/batch_002.csv",
+      "sha256": "af891ec11ec3b347194872a4346735efc932443fe25819ba2e38b6971cb20b46"
+    },
+    {
+      "bytes": 3859,
+      "path": "configs/sweeps/simultaneous_budgeted/batches/batch_003.csv",
+      "sha256": "699ee0a28ed47f50cabec84c5222d008202eff886ae6c722b5fe41be799e8c63"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_001.json",
+      "sha256": "9c2176577cad3df80457f826c3be88b9ef56ba23fd20fc857e18a5de4f1b21bb"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_002.json",
+      "sha256": "1562735e34bcf3f5434d6166a121a9a75808627776e20df1403b620ff59d6e11"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_003.json",
+      "sha256": "e718e9b9f5b7324d06f8b5fb44316ee12d0ce66516c3b302552a498a2334eb16"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_004.json",
+      "sha256": "ce86c959f6a361b826e8aae0716dce2b7e1ede99dc3caa8f1d4767858784de00"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_005.json",
+      "sha256": "ccb19ae0b52e69f59aa6d7a6023738b01e8844ee0c2412f702388c25f6f8c755"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_006.json",
+      "sha256": "a4dc5bbf1f97d14d6f434e9713a96a930be2f889137fc06f4ab1e4f6cb6098c5"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_007.json",
+      "sha256": "f221888b1b11da03150d51c7360f400fbd7519519920709b9dff7140598cf6be"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_008.json",
+      "sha256": "b08606bbfa46680b7d20429ec7b07d4eae4beeb0b3344479b6726ae0168b8dea"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_009.json",
+      "sha256": "2459bc77c0886a6d25e9e08ab1a69efa17f74cb1f886def9f2a183896a07fb95"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_010.json",
+      "sha256": "9c5fe11f3204a12f5b9e83e528b9746c4d28e26e6afcab414537d5784a581b3b"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_011.json",
+      "sha256": "fea26949c911c507a2c4088d887a2cb2d37a6daf337af0dc949c2c8d338c77d5"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_012.json",
+      "sha256": "696bf6ce3f48b7edc441332977248d5ac11a586c00484dc7aed76e3afa60c00c"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_013.json",
+      "sha256": "3e6db1d2d9b000ea682c859129aeadc4eef1660daed512f459b41b3a8285abed"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_014.json",
+      "sha256": "4551768bdace2ffa5b53069ea1197dd1fc3b702fc2fb1a5c69bc518a3c5f53fa"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_015.json",
+      "sha256": "c9e36df9b3e17b45061e5e14afd9eaf2de781d7db0a0b9ca6735c91bf82fb109"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_016.json",
+      "sha256": "7b0e10c3b0bd7b94bc31d55c57e57788c1d647a96910b75d542b102f0796791b"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_017.json",
+      "sha256": "682c5d2da533ab4656d0ea05b7d66c9e13897504adbd8ae95d748964b48612b9"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_018.json",
+      "sha256": "e6363b04d74f3467407e09bfd5746733db93d9d84bc254020fc48a48c1cd8aa0"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_019.json",
+      "sha256": "0e69b163d05cc07edfce94237f89f721dc712c6949ef23937daff2f62f8deda7"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_020.json",
+      "sha256": "46d7c97ff6590bb70cf9e4f1458da19d8e652eb45e7b8b26b716d1028900f591"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_021.json",
+      "sha256": "a4564a623f36af223633b79a7904d6d192528303b3b5f850dcfeba95239a8806"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_022.json",
+      "sha256": "00dc736d136f686e8ca05e7c57c65bde0948f72eb047a54ef63f6a065d4385e3"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_023.json",
+      "sha256": "c02f613a7be34de12549f3d294b772b6ceaa845639d8c2676540847611de2c1c"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_024.json",
+      "sha256": "d019b1af28e07686928ef119b8f7e5e2a602be44c7b5e5bdc30f9ae2b24730f0"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_025.json",
+      "sha256": "18d8f476b684437e344cdf0a6100f3907cbf2abc129c0483b8214f29134ef0fc"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_026.json",
+      "sha256": "8b124dfa398fb7cf319be8b8a9f294315cb2ade0f3e429e26296a8fd4fcc739c"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_027.json",
+      "sha256": "73a3101dbfbc57e7dbbd2fc4517daef5d4913f72f405025cbec8b08ea39803ae"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_028.json",
+      "sha256": "00a8705f26e8d8b7e31302dad7add6aa7d0a0af91c5576d1d2cf991cb6aea104"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_029.json",
+      "sha256": "d185e0aa0c8abd3fe48ce4442d8a209819b9ca90029b44fd7d981b732bfa250a"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_030.json",
+      "sha256": "bac1bec4251a3593044b1620bc6984dd5b7c672fef75cc60a7b5c6781f3bb37c"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_031.json",
+      "sha256": "7f459bc646cb32aa3739322c8b8118aea041c9ac7bc1f9f07eda07a7286f0b12"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_032.json",
+      "sha256": "f4298fd4fef4148969eac05312995ab784902ede57e0eba57031848dfc010dd2"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_033.json",
+      "sha256": "e05d3dee8838d0b2114978d585ea5e8d7eaa3c3a7526894a678a14fc9f1a369d"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_034.json",
+      "sha256": "296275295aa1a1f90153f3945e0de413fb5bbd91ee9eea9889bda7d68ffca2ca"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_035.json",
+      "sha256": "33eed73d67cf7bb918d839c210730f18f480f5e36974341c23d05b421c18f002"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_036.json",
+      "sha256": "0f32b9418b1e60feb6df518a74b3a5465ad6e9f9b725e193deda1e879562abe9"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_037.json",
+      "sha256": "45f6a764a4dd30d78f64dc32151cc75e568ec8657595eebc4f9dd78e9e5334a1"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_038.json",
+      "sha256": "31bfbc798e74e51fd810c8958c37f405b23b2d3006e47c32ed1e7c9981bf8771"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_039.json",
+      "sha256": "0f16dfaabc55c97a4bfc00e25732f068d4b696889bcff7064b839798da903fbe"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_040.json",
+      "sha256": "05d92f51930dfb37cd3b67053fd1fd8e5768fdcce086a71b6ab12a92f8d1986b"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_041.json",
+      "sha256": "b111310b25a43d1d22c72cc78e03047ea491835d5df7358e85daa907ff902aae"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_042.json",
+      "sha256": "fe3f6859c9d4567680b1fd1a252dcda8ff50b8691f2f3001cc7de40ace2aec2b"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_043.json",
+      "sha256": "97469fd7707553a9cd4c22c545976de3024a63050c1023632a9c726cb2ac98b5"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_044.json",
+      "sha256": "0c42a292d0e0dc5212229f72619fd6dcd8c9e7f45f3156c5ea8f633651412bc3"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_045.json",
+      "sha256": "38680849e901f7f19da9d09c39420799b0cbb8f54a599757591ef64bcbafb9ce"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_046.json",
+      "sha256": "5e209bad0946618fecbd049db832236e400746bf9c4f91c52680d2b4270d4faf"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_047.json",
+      "sha256": "01b381e64d7dac20cd71195681cdcdcfe80a5984e41f1a28b613b3053d26d856"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_048.json",
+      "sha256": "d4f8d87dc811292af260c5c9e9f3510194508841867f123d49891c98f698133b"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_049.json",
+      "sha256": "0270fc7485c7262788d3cbcf8832a4e3ffabac4fd775155d8f44f0b68cd0e1a8"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_050.json",
+      "sha256": "40678336cbaa406b886e3bdb9dac7466b5e945caf0d4b01e7ee6d50c108ecd81"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_051.json",
+      "sha256": "d7960d1a651223ddff4816c860b3a74b9731eb95ddef994e6c8789d470bd8ae6"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_052.json",
+      "sha256": "30409d5a870025515d689f9b981edaf64325da16333fe6317394cdc69550abea"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_053.json",
+      "sha256": "c26d09b537ae343e03985d5a622f6116163108183b23481c32f000561c12c649"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_054.json",
+      "sha256": "37d0d05cd332978d40ecff1dc8cf3678e3a01807571fc35617c44cb8d379164a"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_055.json",
+      "sha256": "be9039e90b42a5ce3108f17d3afb58179eb2f0079a4e46fa4946fca62a9f1b3c"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_056.json",
+      "sha256": "5c900a0214b71c707792436eee069b2fb914aab13843c6b16b1a21c742109a13"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_057.json",
+      "sha256": "42567ef8cbe56ff7212a6b4e8dd817ce3303e6dd26e80e5ac90c5cd9dfdd7960"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_058.json",
+      "sha256": "a44e74de5b596c6a5de043066e18453af83d7674ec43688b4db3655b367dc202"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_059.json",
+      "sha256": "f5b8e7c4c88350108bedaa773768125fe3f07b830e084bbd523db7a501f2560d"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_060.json",
+      "sha256": "ecee7d6a30506ce2fa12b295838b752f0258c7c3d6aefe6142d14b3b82bd03c5"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_061.json",
+      "sha256": "b975d44d1609fa4bcc15cd91267d15fd23f443b71dbd1bed4e4bcc5dfdc619de"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_062.json",
+      "sha256": "8ef7db02722fd868175b567d19ef24c6bba3fb33ff12e45bbe2f026fa9652117"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_063.json",
+      "sha256": "5df07bd56ab18d3000545695707a80723cf2be9560a8697bee48c30c73bd2e1f"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_064.json",
+      "sha256": "5cc6e052346a3218a29d0394f48f280887fc35a54314bfc05c2719a0b5df6775"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_065.json",
+      "sha256": "5db65340c4e536af9b1d7a98b54b322715065159d733e53b86cf0fec06100920"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_066.json",
+      "sha256": "911470e66770749eae10f78aaed3eb203e68be6b2999a8ba4a2486e382dcb8c6"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_067.json",
+      "sha256": "268b23854bb4303526e32fdca2ff5eaee010442a8d463240a6bdbc61e623678a"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_068.json",
+      "sha256": "99971bfe4833f7149dd48a98d2b0cb50c0ad4a286e47493ac2365860913dfb12"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_069.json",
+      "sha256": "5432bbbe8818193e16d47fba8cf37356b304134638efb765fcc7b97e4d317f04"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_070.json",
+      "sha256": "73182f56b267593f3d194cef3d50b7ddceb8602fb59cda09c257804478e60a05"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_071.json",
+      "sha256": "d7f9846dafe4cd57bced4d11f2a3183ac3085cd6fd2187cdd9f0bf2c8efda108"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_072.json",
+      "sha256": "5c9ec33f38b7fab601645676183b6360bd3849d16de2bee1c17d11c19271bf99"
+    },
+    {
+      "bytes": 1584,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_073.json",
+      "sha256": "484d542cd5d5464fa7609efcc7f046aa19b2e54f53f53c2011d04e7b519ac61c"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_074.json",
+      "sha256": "9b816817edf3455788ca0ae85df964effbd1032aeee4ce010b1d15e7bb43f4ba"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_075.json",
+      "sha256": "e96874db50831425b34a61a41c49ada303314cd22e18fb62c0379ff8aa15d91c"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_076.json",
+      "sha256": "6f91987d4bdcf7ccc37105ae1f6741cea7ef7f983f83216ad2fc16ac18198a49"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_077.json",
+      "sha256": "618c3b052f8e2f7d22222e24eb9ad0b4b35e964866ccd5fd8e33b36762b1b283"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_078.json",
+      "sha256": "aee9289cce9e30dce641d7a5d09fe2665f802be7fad8ff09f935531f32242a6c"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_079.json",
+      "sha256": "4d2b6715c235c0214ee483985057ef3abe1b962d0299427b2df368041c21f47d"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_080.json",
+      "sha256": "2a7483720b871e23b26ec8c0496fb69c73dcbcf6f1446808419e6e5404f99875"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_081.json",
+      "sha256": "851c2ed8842e106e983ab42994c39002ba82c551d6cd2b91535dd4bbbd7c6f02"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_082.json",
+      "sha256": "661fe434faec43fc76afc33fd492c150eee9b0fc4349e8e2970fcbe23ed1f8ec"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_083.json",
+      "sha256": "73906e88f518a51e638f068bed47b5e92d093e713701764af04899676e49dd8d"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_084.json",
+      "sha256": "fa08f45958575b607b31a449d345087ef2eb000a793eacca3335d5032c89abd5"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_085.json",
+      "sha256": "5591e9cceb6d0240c31ccf811367ee0438058476b0b55275357bd24c2594759e"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_086.json",
+      "sha256": "d4e4bcad06813947f1d0befd240699529a2716582c443ad2028c37324b25c53f"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_087.json",
+      "sha256": "c5a510f5f5fda84b12f7bdcfce6eac069e4707ea8b4882156aac6c383fb35370"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_088.json",
+      "sha256": "92896b84f63fb7ba6f404617b95828ed6e01d9bb6d8dcaf52c351e4f8a0f057b"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_089.json",
+      "sha256": "8f9b8272154a044fdadbda46ae68d06d223591f24ff4977a6bd2569aaba4d051"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_090.json",
+      "sha256": "6d18faa08b97579c5f22e66835cac98a3961e6c7b02e457b39c13460462636e0"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_091.json",
+      "sha256": "4ad342f3711128f9a68dda8f47401304035e8a702168cfc76efa7cd64dd7fa7a"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_092.json",
+      "sha256": "1ce9ce2dd448476047e5dbd32ffe14cb0f1b4fe3fd91b550fb8382c3be5a292b"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_093.json",
+      "sha256": "aeda66b7ed689a3235625adb2cd182d2516aca9a26f5073031f8edac226ac9ce"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_094.json",
+      "sha256": "43312e59503f54c740e59625777217cbe315a066fdea8644a53d50fabe197c43"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_095.json",
+      "sha256": "1d995641cf4bb24ad8741e8c75846d35d6213458529757be572dcf136dfd35d3"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_096.json",
+      "sha256": "7283e3df92b413a8284fcc2799859d41723ac8cffd7795c75a1fa9e44d65e9dd"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_097.json",
+      "sha256": "796f25d2b565e2ddcca4949742e186ee8b0fb49b661fbcbf3bcfc06168ed888c"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_098.json",
+      "sha256": "7655665d3ccb4ce22ca5304e6e807d536b1a40e36b51ed389dfcc02bd2ab371b"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_099.json",
+      "sha256": "42ef4b60ed8513a3dc6ea213c2134bdea9bef430692d0bf36ae328037d3b13f9"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_100.json",
+      "sha256": "d6c1981119588bba43d4352398ff6559da6fe8d10f7a594c9a332c28d5fa81bb"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_101.json",
+      "sha256": "6c6161f4bf2b5a55c86c65801f0194e2f27e16662f2f9e05d6f58f4435dab047"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_102.json",
+      "sha256": "ae568aec0a77f176279c664f5153a4e5c68f1f5c8631742b8f94947f0edd3aa8"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_103.json",
+      "sha256": "3eaa7552584e844cd844b6366f0758444b7c91000e8ef40d967e942d277f5538"
+    },
+    {
+      "bytes": 1584,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_104.json",
+      "sha256": "5e3ea10cb77d8d7eef06ae72c380361be71f06fcb2302b928ca7c8c5bea09384"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_105.json",
+      "sha256": "a1eb15f3e79661b0d177e4610c8e9f4786e5005a78d922059d516b09f716e7f8"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_106.json",
+      "sha256": "f416d6c8fbfa2bddb1fe350b58c1e345a59ec7899232b31922231fc63ce7888f"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_107.json",
+      "sha256": "ad97099eafc9686914952a691207bfc1a68a0f8e594ef8538e5803e40b7d7c8b"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_108.json",
+      "sha256": "4ad1f18d74765d684111a0eea5380a4582186d4d1a171896d3192b89900cb47e"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_109.json",
+      "sha256": "d4399cb2f50a37f4be6f5ca5e3b6f5121cc7415f2b244e70734c373878a1f2f4"
+    },
+    {
+      "bytes": 1585,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_110.json",
+      "sha256": "9fac38c0d3ba19baac1a6e26967aef04a9457d9262297843bfe1e3eed077d75d"
+    },
+    {
+      "bytes": 1589,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_111.json",
+      "sha256": "f4e2cdea2d42e08145b65858f4ba9e6ce2b01540072e4b008a5345a5032c7320"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_112.json",
+      "sha256": "157c4fbea51317e494f586cd418daa3675ba6b7ac8fabc302f99845a5a1d72cf"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_113.json",
+      "sha256": "4c4e0193932bfbd59229ef6b7858514adca570536df4cca4442369b06df93d75"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_114.json",
+      "sha256": "c919130312c61651947d95b99d6d419081d3b44430065e6afea599129387e090"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_115.json",
+      "sha256": "76791a22e4bdc988b96d5f0a098a8f4d6d1d1059598c35bef070b6092d888202"
+    },
+    {
+      "bytes": 1587,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_116.json",
+      "sha256": "a54e62500d57e061f3058ff8eda4f7350ae6f1d42811fb40939fc7370dd22f8b"
+    },
+    {
+      "bytes": 1583,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_117.json",
+      "sha256": "3dfb787b6675c736c0cfaab998a56b0480321cc0f48e19c78345dfc945927908"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_118.json",
+      "sha256": "e27d8332d6e887acde0ee639440db90bdbbb2f1188d2b852b9a518fc83116d8b"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_119.json",
+      "sha256": "3c6e689da55eb3b9c76963abae019c4ad5ef5c6ea884cbac665973a51f4d306d"
+    },
+    {
+      "bytes": 1586,
+      "path": "configs/sweeps/simultaneous_budgeted/generated_configs/cfg_120.json",
+      "sha256": "2bfc04fc29306838edeeeee957501fc95ee0fd60f31aff28ae92da98df9af08a"
+    },
+    {
+      "bytes": 22800,
+      "path": "configs/sweeps/simultaneous_budgeted/sweep_manifest.csv",
+      "sha256": "8bd1b690e98fe1fe590cf07f1849cbe24a3af52613346e9e853bd578b19344a9"
+    },
+    {
+      "bytes": 731,
+      "path": "configs/sweeps/simultaneous_validation/README.md",
+      "sha256": "c874a1407f6bc053d3e83d24354fe121ca86731b433f0eb9bcb22f90844ff695"
+    },
+    {
+      "bytes": 2064,
+      "path": "configs/sweeps/simultaneous_validation/batches/block_001.csv",
+      "sha256": "ca2fc1294a27bc3b7fd4d575df751fcaa04d0b4eec4bf56643324576803a3b6c"
+    },
+    {
+      "bytes": 2064,
+      "path": "configs/sweeps/simultaneous_validation/batches/block_002.csv",
+      "sha256": "6f1476e8213b4bc94469c0eb61838de7a4d89d01106a93ea84aebbccfcd9c0f8"
+    },
+    {
+      "bytes": 2064,
+      "path": "configs/sweeps/simultaneous_validation/batches/block_003.csv",
+      "sha256": "a282d765165b72934f0e711c4e55b44f312b9ddaa9b5c90755b53b6f43e94063"
+    },
+    {
+      "bytes": 2064,
+      "path": "configs/sweeps/simultaneous_validation/batches/block_004.csv",
+      "sha256": "1448bd6c0a47b8f75265629f68445230b7721425825d2129f54cdf964aaf7c90"
+    },
+    {
+      "bytes": 2064,
+      "path": "configs/sweeps/simultaneous_validation/batches/block_005.csv",
+      "sha256": "4cee542bef33feb4eeb9d06a1685874557f3a8373ae9f82875e16a231d596460"
+    },
+    {
+      "bytes": 1863,
+      "path": "configs/sweeps/simultaneous_validation/validation_manifest.csv",
+      "sha256": "bfbec767a2d7bff366cb181636c5926b534670edd27d4d0326538ee177034b5c"
+    },
+    {
+      "bytes": 9892,
+      "path": "configs/sweeps/simultaneous_validation/validation_run_batch.csv",
+      "sha256": "34ddeda06dec03ddc4b3e126e931fdb3c38ba23bced0e3f993fcc64349dac837"
+    },
+    {
+      "bytes": 8163,
+      "path": "configs/sweeps/simultaneous_validation/validation_run_order.csv",
+      "sha256": "01c13b7191b98841bf974cb31456f2af0d04861e7304d5f202c8739f8d7c1773"
+    },
+    {
+      "bytes": 1425,
+      "path": "configs/tuning_v2/broker_profiles/B0.json",
+      "sha256": "7c30c9b531743fa9956f70737be54206467121bebdb9e58357d0f7d1645cd8d8"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/tuning_v2/broker_profiles/B1.json",
+      "sha256": "e5146dfdaf5e1603ec79380ce67b9fa694f5923f1848f4deec00e1a31cb9a7e0"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/tuning_v2/broker_profiles/B2.json",
+      "sha256": "7434e06ebf749dd2fa81a9518860786b165c01af82e2cf2d05918366df86cfff"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/tuning_v2/broker_profiles/B3.json",
+      "sha256": "d9e031b36d6e7cfa59534e2147d7ca36c280f35b61c0cfc45112e4d93ba5c6c1"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/tuning_v2/broker_profiles/B4.json",
+      "sha256": "1ac4c0d069d3e0507f16be3118fb5bd65471080538e158ea7eb845cf508fc1b4"
+    },
+    {
+      "bytes": 1428,
+      "path": "configs/tuning_v2/broker_profiles/B5.json",
+      "sha256": "3f4305d5d20f75043f6c1a52fce03676d75dbf830cca9974073405a985e0c56b"
+    },
+    {
+      "bytes": 1635,
+      "path": "configs/tuning_v2/campaign_blueprint.json",
+      "sha256": "e8a83757408ff67c5d1f37aaeda56aa532cb29bb18b67fb947214c2217371837"
+    },
+    {
+      "bytes": 1244,
+      "path": "configs/tuning_v2/campaigns/instrumentation_pilot.csv",
+      "sha256": "a8e094762a50d235771e72536fb6fef5d6a3c4ad24a0777092748f7fd61ef437"
+    },
+    {
+      "bytes": 5753,
+      "path": "configs/tuning_v2/campaigns/profile_screening.csv",
+      "sha256": "fa7f535c2b478e700e14cde9f656e2f53ba668d2d2232a14d56e274ce5b9a655"
+    },
+    {
+      "bytes": 291,
+      "path": "configs/tuning_v2/campaigns/profile_screening_metadata.json",
+      "sha256": "5397e02643587f9d95128dc76bbce2e8add0f5d4f5923f4a898660a517803003"
+    },
+    {
+      "bytes": 716,
+      "path": "configs/tuning_v2/campaigns/rate_calibration.csv",
+      "sha256": "1fad7f072ac453ccd2a0bea49f51d6624cfc8359dd6a2bc1297e9bc8bb71d428"
+    },
+    {
+      "bytes": 2228,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b01_o01_all_cfg074.json",
+      "sha256": "d569ec1eef1b0c88089c8f91abc29499cdde901822f6ad60aebe3aa52337d0a1"
+    },
+    {
+      "bytes": 2229,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b01_o02_off_cfg074.json",
+      "sha256": "acff5b59db99a83bd81dab1c40c13204b518f6e3159e6e96862c53cf1f51f1da"
+    },
+    {
+      "bytes": 2229,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b02_o01_off_cfg074.json",
+      "sha256": "3dd80734e8d4febf55f055a6fcdf673414c8126e460ef169f9f9f0c4e7b15afe"
+    },
+    {
+      "bytes": 2228,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b02_o02_all_cfg074.json",
+      "sha256": "b5b888fe1720d552b4861f474c88233ccbd5c95cac887703e42466e8816f7638"
+    },
+    {
+      "bytes": 2229,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b03_o01_off_cfg074.json",
+      "sha256": "2c4c8c37fbce16dc4cb968034fd771822b2988e0904cd010bb1fbf0130a30d30"
+    },
+    {
+      "bytes": 2228,
+      "path": "configs/tuning_v2/generated_configs/instrumentation_pilot/pilot_b03_o02_all_cfg074.json",
+      "sha256": "015686450fdcdad074d2affe32ade6196fd1598eda1808cf043f878af1a8fe14"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o01_cfg_074_B5.json",
+      "sha256": "355b7f3fee86a2d912eb7f984723bde67d645a34e5ee00966759b514f65fcc06"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o02_cfg_074_B2.json",
+      "sha256": "16c9118f5fea0a2e86ff3ed45d92fc4ed9a49737ac5632ca3e6d29429aacb9b3"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o03_cfg_074_B0.json",
+      "sha256": "537d150358dd057b7ae04d4224454cae39669cf771f7c575aba449d787ca89d7"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o04_cfg_074_B4.json",
+      "sha256": "72a23733258fe81d3791a29f5aee321ebb4989dcdc9d76c5069a4d7271190723"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o05_cfg_074_B3.json",
+      "sha256": "5da2a4af470606b5ba66630aa79459b61b9722864cfd74be20e66393addb1538"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b01_o06_cfg_074_B1.json",
+      "sha256": "878fa26d7851dec12c1b80d9d3c751e141fafd76a06fe3d272bf7d98ff60264d"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o01_cfg_115_B0.json",
+      "sha256": "82e958b19767361301cdc0ee0459ca03313fe4c046e0b364850f78e7a0f398e8"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o02_cfg_115_B1.json",
+      "sha256": "eb9718465e3d463a1e25fddb0abd3742a16fcd6024e586e867b72a49446c18c9"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o03_cfg_115_B2.json",
+      "sha256": "a1103026f3ebc9e7bbcb0ed316b3bf55a886aad568b3c77ba688b62d155a9ac0"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o04_cfg_115_B5.json",
+      "sha256": "168b5f75b4b05d7742884dd2fb813c3cdb17ae6015297485f5087725a86c76cd"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o05_cfg_115_B3.json",
+      "sha256": "34c08c741f3df844f8013b03c38aaa047c19a48f6ab83a1cb0e45d16c08b4783"
+    },
+    {
+      "bytes": 2226,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b02_o06_cfg_115_B4.json",
+      "sha256": "aa1bb3dfef761135f990fa52ebef8ccfcb0d23efcfbf3ba6f5994e2a7ca52e89"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o01_cfg_059_B2.json",
+      "sha256": "f2b9a753ece149b70cc551199eacb6618be380fdd0d6f65cd389c58146c6f897"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o02_cfg_059_B1.json",
+      "sha256": "ed706dcbd4e56b4104419fde4b05d7e2cc35f508b1f4ac04e0949286c014e433"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o03_cfg_059_B4.json",
+      "sha256": "33b84141d617c4d0c9d0bbf491609ccda10f0776cfaab9e554ae34469955eddf"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o04_cfg_059_B5.json",
+      "sha256": "eafe2d13d88e9dc06fa8525eee7f3429aa7c2a8d12fe2061076ef6856210d39e"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o05_cfg_059_B3.json",
+      "sha256": "914c3176ae45e56d978b3f8e8d17471d1df4d1dd4e48a6cec21bcb8f563cff1d"
+    },
+    {
+      "bytes": 2225,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b03_o06_cfg_059_B0.json",
+      "sha256": "eae69d696a136972589f881aad431ad0ebfaaa422ce415372aecd687f6c4193c"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o01_cfg_119_B5.json",
+      "sha256": "413f20e0168925b0322b1c30f4761925f814d412eb620fab36bc316c13250173"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o02_cfg_119_B4.json",
+      "sha256": "63a09d49e3b2c2a024706ec3bf2cb31f853955f397236e4ae1b18ebe4d2e1975"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o03_cfg_119_B3.json",
+      "sha256": "5bd16bcdffbb09dceb3c96a0f440a683b83d80f49209cbb35da6e62382a16b40"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o04_cfg_119_B0.json",
+      "sha256": "253493e100a9cf160e90426d72d3ead931d099b391323007d8a595533aa0ff21"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o05_cfg_119_B2.json",
+      "sha256": "77fae07b7ce03e0704dbc67c1a8def20fd4e23ea2c03654683ca722d37c70ae5"
+    },
+    {
+      "bytes": 2227,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b04_o06_cfg_119_B1.json",
+      "sha256": "03d295b08b05a232806e52cb9a9635b961d69b96e8d889e606d253d66cde2ee1"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o01_latency_anchor_B3.json",
+      "sha256": "7c8c2bd7eb1892acb0846fdb2082854ec96c110e66d2c1bf9d8fb4471d49e2ea"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o02_latency_anchor_B2.json",
+      "sha256": "4b06365fe79c39211a1d9bf8585ed490e8ba501123e7c40a9b04ae8d3ea14d61"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o03_latency_anchor_B1.json",
+      "sha256": "1c727b7cd1a2ec4bf22c923405331b18377a24dff7bd75f26c749793a535a5f6"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o04_latency_anchor_B5.json",
+      "sha256": "a398815197d9568034f77ef4efcd34e00fbb902dfb217d55614eb6a980f74dee"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o05_latency_anchor_B4.json",
+      "sha256": "09aa750ead1c7fe534c789e0c7f1c81abdbffe500cecfb4cf9ef18a3c97a1d98"
+    },
+    {
+      "bytes": 2259,
+      "path": "configs/tuning_v2/generated_configs/profile_screening/screen_b05_o06_latency_anchor_B0.json",
+      "sha256": "ee71f62936bd80b606eb993b2017c2973487c3046d1764909913412ae285f56e"
+    },
+    {
+      "bytes": 2232,
+      "path": "configs/tuning_v2/generated_configs/rate_calibration/rate60_b01_latency_anchor_B0.json",
+      "sha256": "e61518fc7d4f0d9be44b496067e6a13fca588ef3eff80516957f3db82ad737bb"
+    },
+    {
+      "bytes": 2232,
+      "path": "configs/tuning_v2/generated_configs/rate_calibration/rate60_b02_latency_anchor_B0.json",
+      "sha256": "0d6b17683eb56fe390cd923bedd247e7179a216d2ee7b2e3c17e50ee139914c7"
+    },
+    {
+      "bytes": 2232,
+      "path": "configs/tuning_v2/generated_configs/rate_calibration/rate60_b03_latency_anchor_B0.json",
+      "sha256": "814766b82e0b99bf67849fcc5676f057ac688d49aaf7b4d907393e0e9e377652"
+    },
+    {
+      "bytes": 324,
+      "path": "configs/workloads/simultaneous_40x40_4k.json",
+      "sha256": "bed4e101527c7a6a2483d13eb3f33526debeba6282e57370f5a336b5a6fe5df0"
+    },
+    {
+      "bytes": 357,
+      "path": "models/__init__.py",
+      "sha256": "e193a71832019dd9466ec7492af060e134159080042148b94436cdeac3d16fc3"
+    },
+    {
+      "bytes": 19357,
+      "path": "models/benchmark_config.py",
+      "sha256": "2f0afacd389c903c1cc2851db83baebbddc490d68e6ed3cfb5507cc448b5331c"
+    },
+    {
+      "bytes": 1824,
+      "path": "models/experiment_case.py",
+      "sha256": "0a15239c5fc318398f24ddb01fe045718ab5cb4e609f55924395c3fa41c29648"
+    },
+    {
+      "bytes": 3866,
+      "path": "models/metrics_model.py",
+      "sha256": "5558e2ace659782cbfa35a062026e1a15bce34c3d6eddf18d1c6a17a0a9e81e0"
+    },
+    {
+      "bytes": 2114,
+      "path": "models/report_model.py",
+      "sha256": "7eba0e4818e8d98f67745e69595b2d811c4c415d29bed1b8550001bc809a2be0"
+    },
+    {
+      "bytes": 3535,
+      "path": "monitoring/jmx_exporter_config.yml",
+      "sha256": "e438e506e60fd6ee9ea32cb9172824f1e30bdc330cd760a9f1e35d9cef32aea0"
+    },
+    {
+      "bytes": 51,
+      "path": "monitoring/prometheus.yml.template",
+      "sha256": "c3b967f6905f24290bf957399d05015c34697626b0a232ee49f85d2f02739388"
+    },
+    {
+      "bytes": 167,
+      "path": "requirements-pulsar.txt",
+      "sha256": "81752a11c6e37792d8473776dfbbee253c424c4963f0a3c3f7601e748011d122"
+    },
+    {
+      "bytes": 73,
+      "path": "requirements.txt",
+      "sha256": "121fe77f8bd1954e13452db04a7e3a082cd2b5b398946dfb0712cf0d81da9bd1"
+    },
+    {
+      "bytes": 26698,
+      "path": "run_all.sh",
+      "sha256": "2cb92dcead8db84e167c534e3011a78696003e3c22822378cc67b76390ced3ec"
+    },
+    {
+      "bytes": 3117,
+      "path": "schemas/case-v1.schema.json",
+      "sha256": "aec54b3dadc7129df7692cc63681140d8a5c60c2dfc89cc6e07ec5f19bf2f943"
+    },
+    {
+      "bytes": 1749,
+      "path": "schemas/result-v1.schema.json",
+      "sha256": "7d807e2230daa8b8981f048260c99d3790ea730e403961329cfe420fd1106aba"
+    },
+    {
+      "bytes": 15732,
+      "path": "scripts/aggregate_simultaneous_budgeted_results.py",
+      "sha256": "dfb41a2759e4d9176f901ec9c0b02569d44785367a93a27accbb2e0e9bcd8038"
+    },
+    {
+      "bytes": 10877,
+      "path": "scripts/analyze_backend_results.py",
+      "sha256": "bb8277c1f4561039253dc56df0d6bbe3f5d5aa228540ee7d7ce9545ac97906f3"
+    },
+    {
+      "bytes": 90254,
+      "path": "scripts/analyze_broker_tuning_v2.py",
+      "sha256": "9f06e8b5f53f99114e016db1897610c55fc2313d9b4536dffc99589ee7eaad96"
+    },
+    {
+      "bytes": 38864,
+      "path": "scripts/analyze_kafka_reproducible_campaign.py",
+      "sha256": "130b5ea462f83669f1fab00724174d1176c7acdbe8caaebe67450bdedd254e0e"
+    },
+    {
+      "bytes": 39972,
+      "path": "scripts/analyze_pulsar_final_validation.py",
+      "sha256": "1c331033c1fb97223a10bbeffe0f4b8a265a301149c523141f7606ed094364b1"
+    },
+    {
+      "bytes": 126113,
+      "path": "scripts/analyze_pulsar_phase1.py",
+      "sha256": "6265b599aa9be26513f442214e9020ec07498ddb9cfcf5ddd47f03bf7271f9ed"
+    },
+    {
+      "bytes": 30418,
+      "path": "scripts/analyze_pulsar_phase2_confirmation.py",
+      "sha256": "c86cf3fc6c6c6de67c5b2ba344b60bc8d5c74ea8b84e05431c682fc93f504397"
+    },
+    {
+      "bytes": 33825,
+      "path": "scripts/analyze_pulsar_phase2_screening.py",
+      "sha256": "1a195b3b7856e934f26d2c9ec32fb2bbed36a0131b1397e2d969712554cab043"
+    },
+    {
+      "bytes": 252,
+      "path": "scripts/analyze_reproducible_campaign.py",
+      "sha256": "80e05bcb26648d4a07cfc9fdbd1ec13fc013d55e3fb2d8c2ff0722971ef24ac5"
+    },
+    {
+      "bytes": 20280,
+      "path": "scripts/analyze_simultaneous_budgeted_results.py",
+      "sha256": "37acb71a34e2dd005d91b3758074e78fc8a9d62ad27ce1094df7cae4943770e5"
+    },
+    {
+      "bytes": 5037,
+      "path": "scripts/authorize_pulsar_final_validation.py",
+      "sha256": "f8fd32631a43d814f05081e510a3ee4db5027de3e33bd22dbd1e410293b2d4d0"
+    },
+    {
+      "bytes": 4422,
+      "path": "scripts/authorize_pulsar_phase2_confirmation.py",
+      "sha256": "7436a1e8ec860034dc38c5664c8ff69245ac42664c1ee2243652a1046d3dcc91"
+    },
+    {
+      "bytes": 4289,
+      "path": "scripts/authorize_pulsar_phase2_screening.py",
+      "sha256": "3ab03fad8b5ffaa6ddae66b4a86a1e26a97cab494e318fc4c0a62f60949a864b"
+    },
+    {
+      "bytes": 2762,
+      "path": "scripts/backend_lifecycle.sh",
+      "sha256": "d29928212ef51918c6e04c6af03426be4d1e4c9892ccf1bac496e4cda37b9cf0"
+    },
+    {
+      "bytes": 3164,
+      "path": "scripts/backends/pulsar/check_health.sh",
+      "sha256": "1c9b02252faf6e6b9824702cb774157df4b1b542392f5a92d54e51745190b6d6"
+    },
+    {
+      "bytes": 983,
+      "path": "scripts/backends/pulsar/common.sh",
+      "sha256": "611cf4d67d8a7253fbab0dd59f99d09f30407407a7745cd09b15a9ac29c8712f"
+    },
+    {
+      "bytes": 1665,
+      "path": "scripts/backends/pulsar/create_stream.sh",
+      "sha256": "8312184082538a268f3a600fcc821860fce5252376ff79b9353b2254d24d9c22"
+    },
+    {
+      "bytes": 3436,
+      "path": "scripts/backends/pulsar/delete_stream.sh",
+      "sha256": "064499ff6b1d117b1fb9d1336a14e8c6271d39de7721e6f6a587724f93db2932"
+    },
+    {
+      "bytes": 166,
+      "path": "scripts/backends/pulsar/metrics_noop.sh",
+      "sha256": "ab2cb2e708df13ab9e70a64e6c1c63cabc7a21149ca94a109555e48172409c49"
+    },
+    {
+      "bytes": 292,
+      "path": "scripts/backends/pulsar/prefill.sh",
+      "sha256": "0d0fe3f844a22ad4b4a3b5b8ddb29ef9f4d2621e3b88eaa4b3a8d12ddbd940b2"
+    },
+    {
+      "bytes": 2049,
+      "path": "scripts/backends/pulsar/preflight.sh",
+      "sha256": "f94bbde60b359c5372c5c44651f7d547ebbdd761cd84fcadbd3ee3a33f572228"
+    },
+    {
+      "bytes": 869,
+      "path": "scripts/backends/pulsar/set_property.py",
+      "sha256": "42783988e7aaf59294b8c759016f3dabe27715b6ed0fdd9ad0c1f3340ec2f83d"
+    },
+    {
+      "bytes": 4133,
+      "path": "scripts/backends/pulsar/start.sh",
+      "sha256": "e3ff37e0b21fae8d3be1c478e66ecb3bf3742d92f41018839bed2934bb71cba5"
+    },
+    {
+      "bytes": 1460,
+      "path": "scripts/backends/pulsar/start_process_monitor.sh",
+      "sha256": "a57095134dd1204006284c56f62b653e94d8fadc481a7520e29ab2e798c6d1ac"
+    },
+    {
+      "bytes": 1534,
+      "path": "scripts/backends/pulsar/stop.sh",
+      "sha256": "7ae2009ba44e187195935ae93c17c6efe6441f59665d63c973109cc5f2d4481f"
+    },
+    {
+      "bytes": 611,
+      "path": "scripts/backends/pulsar/stop_process_monitor.sh",
+      "sha256": "b26b1daebe524e95fbc0e9267e2a30754407fd2dcd31417d1863a9983a6f31c1"
+    },
+    {
+      "bytes": 984,
+      "path": "scripts/backends/pulsar/wait_ready.sh",
+      "sha256": "93a1ff3a37c5a675e527a8cb251041479b5a21adb30294e646871d21b54bff97"
+    },
+    {
+      "bytes": 3597,
+      "path": "scripts/check_broker_health.sh",
+      "sha256": "5543453fdc7f65ad547c57201a606974bf0f92afc7489636fedf1886385bc172"
+    },
+    {
+      "bytes": 11876,
+      "path": "scripts/check_hpc_result.sh",
+      "sha256": "4d73ba70aaf09b92f62bc7b42cfae5a54659a6efa7e880a9b3574b7d79368ab1"
+    },
+    {
+      "bytes": 3733,
+      "path": "scripts/check_pulsar_phase1_gate.py",
+      "sha256": "4a06f7d20cec4c8dec3ee8afd9c6095c5bacbd2458d6f2cf1a2cc9cf406abe6e"
+    },
+    {
+      "bytes": 24362,
+      "path": "scripts/collect_monitoring_results.sh",
+      "sha256": "2819d318cdb74d7957648f20d492e737204df01871f32c1eab6d4b6b5782e25a"
+    },
+    {
+      "bytes": 8457,
+      "path": "scripts/collect_results.sh",
+      "sha256": "543246d4cc665aa3c8f1aa0968a01d5510d61587cfb118db8cdad74d4783d91f"
+    },
+    {
+      "bytes": 13358,
+      "path": "scripts/collect_system_inventory.sh",
+      "sha256": "704994c6cdecd5d810f407833316efeed622443968e4d034255914bdf4799c93"
+    },
+    {
+      "bytes": 16790,
+      "path": "scripts/common.sh",
+      "sha256": "507d76e0741324598e789decf559873527d2f39723959b0ab5dacad75687d8c2"
+    },
+    {
+      "bytes": 709,
+      "path": "scripts/compare_cases.sh",
+      "sha256": "49422aab04d718a08b4be0ea4041fb92358781027a70d2a29e8c5e8913dcfe15"
+    },
+    {
+      "bytes": 5491,
+      "path": "scripts/create_combined_report_assets.py",
+      "sha256": "8158a58c8386b0ab2e1c749c5806c1df601a70f1f96a106ab52862c6fea306d7"
+    },
+    {
+      "bytes": 11418,
+      "path": "scripts/create_paper_report_diagrams.py",
+      "sha256": "5bf2d842932534f4ff498541ac70e5fdaf82ff1a8e4f8f7752229118b647bc3a"
+    },
+    {
+      "bytes": 7003,
+      "path": "scripts/create_topics.sh",
+      "sha256": "d4d49b771e1f24344972bd2df38b5d82af38205c5a896c094529fb79538190c6"
+    },
+    {
+      "bytes": 1828,
+      "path": "scripts/dev_check.sh",
+      "sha256": "f3f304e0f878014c35c91038093417d38eee6aa3841ed27118fd29206631a644"
+    },
+    {
+      "bytes": 16238,
+      "path": "scripts/finalize_reproducible_results.py",
+      "sha256": "1960e2d769ca964f35910485f2f40a1d391f2c71871864dc7be3a41f5113fc37"
+    },
+    {
+      "bytes": 37965,
+      "path": "scripts/generate_broker_tuning_v2.py",
+      "sha256": "d4868e3ec31a7865d3f27d2aac4fb6c8d01a50b147e81415d94ec055e87c5f77"
+    },
+    {
+      "bytes": 194065,
+      "path": "scripts/generate_complete_analysis.py",
+      "sha256": "2ca692776369c9928703092805795a5cc941d30b576fb0eebbd0eee17ff5b1e8"
+    },
+    {
+      "bytes": 20347,
+      "path": "scripts/generate_kafka_reproducible_campaigns.py",
+      "sha256": "28bb32a37c4b58e316a2e35a08a003d50900bf81839868e4be4024e5b27ddf26"
+    },
+    {
+      "bytes": 3713,
+      "path": "scripts/generate_pulsar_batch_acceptance.py",
+      "sha256": "04ff9e2e8d5f834ce280c37b7ec057614381b43794f42bd4cfc3142f78e104c4"
+    },
+    {
+      "bytes": 29836,
+      "path": "scripts/generate_pulsar_campaigns.py",
+      "sha256": "ef2549c01790c3bb65e7ecee977bb3de5b330e4f2a2ea8e0b44051019c712c58"
+    },
+    {
+      "bytes": 63615,
+      "path": "scripts/generate_pulsar_complete_report.py",
+      "sha256": "ccc3607db4b6d580f3471a3bb9ce0374fb2502278974c8f34ffe89d395c8badc"
+    },
+    {
+      "bytes": 13081,
+      "path": "scripts/generate_pulsar_final_validation.py",
+      "sha256": "8c7e9c7660bbd98bd2ebcb91dd045204e5ccfae72d78a0cb77bbbb273e1555b5"
+    },
+    {
+      "bytes": 21672,
+      "path": "scripts/generate_pulsar_phase2.py",
+      "sha256": "2e911491494a8a2f81460236cd31d2d9dc79feafef3d089fd7f2a2449281d804"
+    },
+    {
+      "bytes": 13199,
+      "path": "scripts/generate_pulsar_phase2_confirmation.py",
+      "sha256": "12c0ecb82fcc6e77bc4e11ba7e17c47d16fe82b67bf5dddf37ec8fca59b80de9"
+    },
+    {
+      "bytes": 11573,
+      "path": "scripts/generate_pulsar_reproducible_validation.py",
+      "sha256": "65309bd56ff6fb3666370016d8a5add2ce9c88d265f43c6af085f847ebeefe70"
+    },
+    {
+      "bytes": 19085,
+      "path": "scripts/generate_reproducible_report.py",
+      "sha256": "33dc3ed18b3e1f8d0013acbbe36ef492e19954a5161c13796fbdcab7dd9259f7"
+    },
+    {
+      "bytes": 16877,
+      "path": "scripts/generate_simultaneous_budgeted_sweep.py",
+      "sha256": "33cfb8ec8f850e623c5b42ab838d42db5da3582dbe5bf136eba764592567045e"
+    },
+    {
+      "bytes": 13721,
+      "path": "scripts/hpc_compute_preflight.sh",
+      "sha256": "0d403d962f7ccce3ea7f4ae9df48f9372113e0fa3196f6061a88ff605a3d930e"
+    },
+    {
+      "bytes": 3930,
+      "path": "scripts/hpc_modules.sh",
+      "sha256": "fa7935dc6852ae50cf206c7249547cc0cf441153ac474279290116bd2c369db0"
+    },
+    {
+      "bytes": 7996,
+      "path": "scripts/hpc_preflight.sh",
+      "sha256": "f20f46e907178c99722315c6e8e3cd40714dba145238c08791591efd7aaba816"
+    },
+    {
+      "bytes": 5808,
+      "path": "scripts/hpc_prepare_compute_python.sh",
+      "sha256": "777783d1d733fee1329e78cb7018d8b356c5841916dad0733a0a943319ac301a"
+    },
+    {
+      "bytes": 4990,
+      "path": "scripts/hpc_prepare_repo.sh",
+      "sha256": "0f113acc976119ae8ad8ae2313f1417356737d7f0489fde58ba304918a08dad0"
+    },
+    {
+      "bytes": 6620,
+      "path": "scripts/install_local_confluent_kafka.sh",
+      "sha256": "c92fa078c001ba949165b284d3a0d96a1e0541a451395bd5cc4b684b9350dff5"
+    },
+    {
+      "bytes": 1827,
+      "path": "scripts/install_local_jdk21.sh",
+      "sha256": "6d7e23aa10b8aa1f53e24ca640b34fae6e9df879d3968dcc575b9a01c7de5e77"
+    },
+    {
+      "bytes": 3020,
+      "path": "scripts/install_local_kafka.sh",
+      "sha256": "2879948974bc2530c8a8451e73f72652b4258e7e71d27e2a27584d9f13cf8695"
+    },
+    {
+      "bytes": 5417,
+      "path": "scripts/install_local_librdkafka.sh",
+      "sha256": "486fcd68513be6319f45e7095c34c69bd0b0ffbeb4d451264b2f70e9e8cc1022"
+    },
+    {
+      "bytes": 7058,
+      "path": "scripts/install_local_mpi4py.sh",
+      "sha256": "7bbb03af799d7a1cb058aa5686ea490c256f627422f0e9ecb8319565b99ac554"
+    },
+    {
+      "bytes": 3937,
+      "path": "scripts/install_local_optional_python_tools.sh",
+      "sha256": "8e81b1985602e187c1afcfc1902373d185caf44ae6f76b184bdc448a17d02810"
+    },
+    {
+      "bytes": 1658,
+      "path": "scripts/install_local_pulsar.sh",
+      "sha256": "b9bee595d54645a8e0814f3aa9f3a12a31d15140c3d9bb571ad2edfecddbfe6f"
+    },
+    {
+      "bytes": 2332,
+      "path": "scripts/install_local_pulsar_client.sh",
+      "sha256": "ac41afedcacd778ad5645ca0210ae9e5eb4ff96b4a332e4b3307ecd75107df10"
+    },
+    {
+      "bytes": 2576,
+      "path": "scripts/install_monitoring_tools.sh",
+      "sha256": "3770a0c0856a79a145f81441cffc84017ce51997b02c65c582663c5e37951376"
+    },
+    {
+      "bytes": 2908,
+      "path": "scripts/make_simultaneous_budgeted_batches.py",
+      "sha256": "6f6d05948a77550ec7b3e2e45644d77dcfa310b67288aff66d0bee69bc6f3555"
+    },
+    {
+      "bytes": 10447,
+      "path": "scripts/plan_backend_batch.py",
+      "sha256": "622124693a6f161dd825077ad1fee4c30b591f0743f7a438a02dee9d966621c1"
+    },
+    {
+      "bytes": 2469,
+      "path": "scripts/prefill_topic.sh",
+      "sha256": "121c2604f76840cba90a2b6341fc628da78e3ee781c2e7843c433112ce985551"
+    },
+    {
+      "bytes": 11345,
+      "path": "scripts/prepare_public_repository.py",
+      "sha256": "d4b235b9dbec8f49f669e928733a5b9991b61a4413fc52b5f304b2a8ae6eacba"
+    },
+    {
+      "bytes": 19706,
+      "path": "scripts/promote_pulsar_phase1_gate.py",
+      "sha256": "939178e198b9f25f5bb3bfe81441a5bc156d2044e9e86d123634d08adf6afb79"
+    },
+    {
+      "bytes": 14005,
+      "path": "scripts/publish_pulsar_pilots.py",
+      "sha256": "bcfc4fdd8bbcec85a861b7f68d5d9dfa2927425dff6bfe6d9d071e9a2f8da1fb"
+    },
+    {
+      "bytes": 16671,
+      "path": "scripts/publish_results.py",
+      "sha256": "95efdffefe212c7c22bf40472d1b6209a086963cd24ddb8a3c1548fb37d5008c"
+    },
+    {
+      "bytes": 3088,
+      "path": "scripts/python_env_common.sh",
+      "sha256": "f252f9c2b559de72d4d4769b4a84d7072d6cbbf5374169a28ddbdef95371225e"
+    },
+    {
+      "bytes": 2560,
+      "path": "scripts/python_pip_common.sh",
+      "sha256": "acee0bacf7db06c34d1902b395bda6519993a245743eda28f640f2eac8066d54"
+    },
+    {
+      "bytes": 1438,
+      "path": "scripts/render_broker_profile_env.py",
+      "sha256": "d38ec58dcb9ee1578bf364574ce86672d6fcd7ddd19c09d0f16a26b85ad458bd"
+    },
+    {
+      "bytes": 949,
+      "path": "scripts/render_reproducible_report.sh",
+      "sha256": "a038a71aa09ff7afb42598eab148ca41012bc9dc8202538340fdf6512354e251"
+    },
+    {
+      "bytes": 8153,
+      "path": "scripts/reproducible_benchmark_workflow.py",
+      "sha256": "f992008e7267bec1f61ef4909c664bdb2ea23c8c5d98aee5cb47d2665e07ee5a"
+    },
+    {
+      "bytes": 22286,
+      "path": "scripts/run_backend_batch.sh",
+      "sha256": "8bf4a04e3b9f2b7bff425b5b6228eb67d0d17bf96a0481f801a8ef86b1e0f081"
+    },
+    {
+      "bytes": 21063,
+      "path": "scripts/run_case.sh",
+      "sha256": "375c56dbf69470b5d8b7c17d84b8b29f3c3ec57a9b37800b0e56a25005430b98"
+    },
+    {
+      "bytes": 6363,
+      "path": "scripts/run_iteration.sh",
+      "sha256": "8b6917b3c3a5fde394900c2c027e52862befb4028c00b2fb3fa5b2c3b71d93e0"
+    },
+    {
+      "bytes": 3941,
+      "path": "scripts/run_reproducible_benchmark.sh",
+      "sha256": "bc03f0b91ba28bf64783d3a5ebc7cd7f694b7419ec0c20a9e29384e6ff5d3d04"
+    },
+    {
+      "bytes": 41799,
+      "path": "scripts/run_simultaneous_budgeted_batch.sh",
+      "sha256": "3022d1de335b95def8309fcc9ac0f7948d27f032c51ce6e4c6f34ac1e0d43052"
+    },
+    {
+      "bytes": 10905,
+      "path": "scripts/select_slurm_partition.py",
+      "sha256": "f7ab435969483957143a03fca4bde99acea1b8c6334654e57e607246ff1841bb"
+    },
+    {
+      "bytes": 1878,
+      "path": "scripts/start_broker_process_monitor.sh",
+      "sha256": "9cf1c5bf5cdcfa14295b3398c1be050b7d2c3161d3be525d32da261de6ee52c3"
+    },
+    {
+      "bytes": 17065,
+      "path": "scripts/start_brokers.sh",
+      "sha256": "e079f92ccded6e12df599a3f3c84e43c081105382aba6c90c43747da9859c2a3"
+    },
+    {
+      "bytes": 3318,
+      "path": "scripts/start_kafka_exporter.sh",
+      "sha256": "81bf187c619fc71faf420c4c422d150b4c3bcdb607d1d4627e000abdc491de96"
+    },
+    {
+      "bytes": 8594,
+      "path": "scripts/start_monitoring.sh",
+      "sha256": "e3fdf69dafb5373dccabd46cdd9025ba38a3b24e8a5f4b52d4b8cff09edf7b9a"
+    },
+    {
+      "bytes": 2470,
+      "path": "scripts/start_node_exporter.sh",
+      "sha256": "6421b6fc4d00a71708146d10e6196fa435f53c0a6afd621634019cb558ce09e4"
+    },
+    {
+      "bytes": 885,
+      "path": "scripts/stop_broker_process_monitor.sh",
+      "sha256": "92447c7211e6bed4f92ce2d2b7d6f97f50de72664a54ee4efbcd37243e9eb434"
+    },
+    {
+      "bytes": 5905,
+      "path": "scripts/stop_brokers.sh",
+      "sha256": "27218f7731ec15d2fbf62858de282d5c959828aee99522985e868af0d3edfefa"
+    },
+    {
+      "bytes": 2542,
+      "path": "scripts/stop_kafka_exporter.sh",
+      "sha256": "df2292a93bcc7ae819dc515862a6e832415415bd3d79b29ed056bdbfe31d2e38"
+    },
+    {
+      "bytes": 3159,
+      "path": "scripts/stop_monitoring.sh",
+      "sha256": "c6ed9afb8a5d0cd258862854afeba0ca82108128f492bcb032268a0bbc641c89"
+    },
+    {
+      "bytes": 2816,
+      "path": "scripts/stop_node_exporter.sh",
+      "sha256": "c987b12a061626e2750435bdfb61ea853b2aed6ce71bbdaedb6e3b67365a2c71"
+    },
+    {
+      "bytes": 9063,
+      "path": "scripts/submit_backend_batch.sh",
+      "sha256": "46d24fa8c261111f396e03f841034d04673b94df9def25fc9463d9b61bfb89cf"
+    },
+    {
+      "bytes": 7603,
+      "path": "scripts/submit_broker_tuning_v2_campaign.sh",
+      "sha256": "d96c0dc6eaa88d55773d586b85335adf74717aca3ebc8c665837380c6184d646"
+    },
+    {
+      "bytes": 4906,
+      "path": "scripts/submit_campaign.sh",
+      "sha256": "78187caf0290efd206d97779558510e8421ef9f6d446af7774b935e22a3e05a6"
+    },
+    {
+      "bytes": 13425,
+      "path": "scripts/submit_hpc_case.sh",
+      "sha256": "d0f5daa6be96947593674d9802b84765c7817fdbeabad9a5ae4b0bf6e4bd10e2"
+    },
+    {
+      "bytes": 9863,
+      "path": "scripts/submit_iteration.sh",
+      "sha256": "9898a9b3e0f45eeeb7ef3b0563f7c2182fb2387442a49324c628253020992d59"
+    },
+    {
+      "bytes": 8446,
+      "path": "scripts/submit_kafka_reproducible_campaign.sh",
+      "sha256": "ac7fdc3f734f5e323021ef40ac43105a9f1235b0796773c53ac2d7098cdfcb17"
+    },
+    {
+      "bytes": 14676,
+      "path": "scripts/submit_simultaneous_budgeted_batch.sh",
+      "sha256": "40598db949608d2e9e8559467c84ef09f2c6d243895088a35b67e229ee789a2d"
+    },
+    {
+      "bytes": 18570,
+      "path": "scripts/validate_backend_batch.py",
+      "sha256": "74d03c3aac6ece88ea1111ced635116faace0379199a060248365d3495c7a37e"
+    },
+    {
+      "bytes": 12093,
+      "path": "scripts/validate_pulsar_final_validation_inputs.py",
+      "sha256": "02e7f14b3bad8c8c112434146c352bfa883275237503b007dca76e5c0ae78a8b"
+    },
+    {
+      "bytes": 8532,
+      "path": "scripts/validate_pulsar_phase1_inputs.py",
+      "sha256": "6d4f5f64702ce9a872c746bd72ef3a1e6bd7abe7b75f884a7349936cd4e34d7c"
+    },
+    {
+      "bytes": 10509,
+      "path": "scripts/validate_pulsar_phase2_confirmation_inputs.py",
+      "sha256": "7bd3d8e8b65f0980563cad0759fd332329305ea025037c92d870c1b54894003e"
+    },
+    {
+      "bytes": 12556,
+      "path": "scripts/validate_pulsar_phase2_inputs.py",
+      "sha256": "5515272791fd8435ee8a40b1f232f81ec77dc66f1f1181fa63ab7f64c5ab7a49"
+    },
+    {
+      "bytes": 15777,
+      "path": "scripts/validate_pulsar_pilots.py",
+      "sha256": "04e04bd418aea508c6ada332a1a9cafa36f47438798ee430264705877f346c8a"
+    },
+    {
+      "bytes": 6139,
+      "path": "scripts/verify_broker_runtime_profile.py",
+      "sha256": "433f9ced194a50469af44ca31e7f02f06306ffa1a30c32d4aa69b8c1faa2af7d"
+    },
+    {
+      "bytes": 2367,
+      "path": "scripts/verify_pulsar_profile.py",
+      "sha256": "785101a0b3b0f4fbead28acc11afe7467bdbe41e2abb4712aacbc76c096d0b53"
+    },
+    {
+      "bytes": 6291,
+      "path": "scripts/verify_pulsar_runtime_profile.py",
+      "sha256": "d75f1a4ed255b5f3be45f31d6eb24aae41bd6e8b5571cf67ea1d9825770484c4"
+    },
+    {
+      "bytes": 1985,
+      "path": "scripts/wait_for_brokers.sh",
+      "sha256": "050f66693175993a273515e6d860a07ab5d820ffbf3b37f3497a2fa593fc954f"
+    },
+    {
+      "bytes": 1896,
+      "path": "scripts/write_backend_health.py",
+      "sha256": "d4dbf04fb433d6d587083d4f6e47c07977b6ae4148c1ec37685ad77061c83c85"
+    },
+    {
+      "bytes": 2024,
+      "path": "sitecustomize.py",
+      "sha256": "964bf681e41e334c8c34414ad4bd4f862f665fe91909a48c10a4d57d61bc8611"
+    },
+    {
+      "bytes": 74,
+      "path": "src/benchmark/__init__.py",
+      "sha256": "a5bd1174966098fde29db62f11e9cb73c2fa37c147e3b968e01d930a8ed03d46"
+    },
+    {
+      "bytes": 4487,
+      "path": "src/benchmark/backend_health.py",
+      "sha256": "361281eb7939609df442152cc51b5763e9c28732e1b842afdb5bcaaab961cb25"
+    },
+    {
+      "bytes": 309,
+      "path": "src/benchmark/backends/__init__.py",
+      "sha256": "cfd2cb7fa7b97add8021f72a8e67be03c86df53f9fe081f741f8f8b611667fb0"
+    },
+    {
+      "bytes": 9937,
+      "path": "src/benchmark/backends/base.py",
+      "sha256": "d1587215f183f9c1105e661257c30badc0fdedc786cbc3b252a101e8a1f07253"
+    },
+    {
+      "bytes": 134,
+      "path": "src/benchmark/backends/kafka/__init__.py",
+      "sha256": "10e00cf1af120487a8aeb2a1af59e92b514524dda5167ea926b48a56434b2478"
+    },
+    {
+      "bytes": 15761,
+      "path": "src/benchmark/backends/kafka/adapter.py",
+      "sha256": "10e68fc0d0c26817b07355c0c68c50e09efb2530a0d8983b5bd4996250822a6d"
+    },
+    {
+      "bytes": 239,
+      "path": "src/benchmark/backends/kafka/workers.py",
+      "sha256": "fdeea11f9fe062d5d11edfa3e4cc565fc42aec3e6ec585a42df63afb87e463aa"
+    },
+    {
+      "bytes": 47484,
+      "path": "src/benchmark/backends/kafka/workflow.py",
+      "sha256": "9329bb02fe1c18c7ab8a53c3ec67e116527a15596c903baa60d08cdfe5bc8c8c"
+    },
+    {
+      "bytes": 3942,
+      "path": "src/benchmark/backends/lifecycle_cli.py",
+      "sha256": "c553be7cd5181b739d108f79f2a065c10eb0b43d4b46591a39dc92864fd9fbb3"
+    },
+    {
+      "bytes": 145,
+      "path": "src/benchmark/backends/pulsar/__init__.py",
+      "sha256": "5a763b904a6170baaa6437757f6a055602a54e78c149c9726956cf334f8b9828"
+    },
+    {
+      "bytes": 19739,
+      "path": "src/benchmark/backends/pulsar/adapter.py",
+      "sha256": "43ed5ccf7254757aca6d816806647da3593a76c3be74d0639ad2ec5db486cee4"
+    },
+    {
+      "bytes": 32470,
+      "path": "src/benchmark/backends/pulsar/workers.py",
+      "sha256": "c1fd8336e1fd73cbffdeb841dd8787cac92a1416325c8b3822ec21a931d1512b"
+    },
+    {
+      "bytes": 47022,
+      "path": "src/benchmark/backends/pulsar/workflow.py",
+      "sha256": "aff89fb4342f516f2b32e80b113521e0e6b703015dd2a1f7303a5fd463191c2e"
+    },
+    {
+      "bytes": 1391,
+      "path": "src/benchmark/backends/registry.py",
+      "sha256": "94cd58a2819da361a4a55a479b5e1324869f5b4e388f9aa5c584da732c592cbe"
+    },
+    {
+      "bytes": 27238,
+      "path": "src/benchmark/benchmark_controller.py",
+      "sha256": "3718fdfee856abff1c42ae252b816d1d34cb21b3b05d49eb90e4ec1c98af2680"
+    },
+    {
+      "bytes": 7164,
+      "path": "src/benchmark/broker_process_monitor.py",
+      "sha256": "b2a0867f33834aa3e47ecd42a1bc092de7a504f4fac074472fce500db01fc975"
+    },
+    {
+      "bytes": 5546,
+      "path": "src/benchmark/broker_profile.py",
+      "sha256": "35e8dddc30bac4ba63e0484dacc9ff08d67ea1dc0c6c234d73728e33504663f6"
+    },
+    {
+      "bytes": 19406,
+      "path": "src/benchmark/case_compare.py",
+      "sha256": "1e6b894c77ee3b6778d5264fa13fc88c42cd79d3e8c8571590b71d94b68d7e7d"
+    },
+    {
+      "bytes": 1657,
+      "path": "src/benchmark/case_factory.py",
+      "sha256": "a750539e7ed1bab1dfa3b593d2b777c65223e3712bc150723503a488b2ea2c22"
+    },
+    {
+      "bytes": 10181,
+      "path": "src/benchmark/client_stats.py",
+      "sha256": "099add37f164296042272d0e61588082d6de82e9332b74e2d4bcfc601f54216a"
+    },
+    {
+      "bytes": 4823,
+      "path": "src/benchmark/clock_calibration.py",
+      "sha256": "0e77216c3c123e7f7ab8ac2442f250ab2e5b9160017f80e447346b07e807f213"
+    },
+    {
+      "bytes": 3042,
+      "path": "src/benchmark/config_loader.py",
+      "sha256": "97385336fab854347508c2b9021ec23dd6345c5aebfb03e963e30d059e5e0bb1"
+    },
+    {
+      "bytes": 25841,
+      "path": "src/benchmark/consumer_worker.py",
+      "sha256": "2708f34ea968df5073cb623913f1cf3296fd489e8a57f9ba8e16254effcdcf9d"
+    },
+    {
+      "bytes": 2137,
+      "path": "src/benchmark/coordinated_drain.py",
+      "sha256": "d66550b545d298f5f04532752a0d95be0823b3fce07983595c20c01ee9e31bcf"
+    },
+    {
+      "bytes": 276,
+      "path": "src/benchmark/core/__init__.py",
+      "sha256": "8ac0c41d373074d00eecee62ba2b4895f9645696ada772df22a4b084ce0b1dd8"
+    },
+    {
+      "bytes": 7307,
+      "path": "src/benchmark/core/config_schema.py",
+      "sha256": "295f80843300a3a4e0bc5d832a9994d08d5b8088a04e5a46f393b84d31aa494c"
+    },
+    {
+      "bytes": 23109,
+      "path": "src/benchmark/core/result_schema.py",
+      "sha256": "e97bbe54243c8a9f53967c2951ea74ae3d9b3f971269c9812961553f24ea9157"
+    },
+    {
+      "bytes": 5757,
+      "path": "src/benchmark/egress_validation.py",
+      "sha256": "7364dd9430e80a48aa4aecf80b51a8321d206e13b21dbce578dd75fc6e5a3f61"
+    },
+    {
+      "bytes": 110501,
+      "path": "src/benchmark/html_report.py",
+      "sha256": "84f57513cded66fcf88d921f26e0d791ea4af2a3b4f3afcd6c05a90a4ee6b7d3"
+    },
+    {
+      "bytes": 9394,
+      "path": "src/benchmark/kafka_client.py",
+      "sha256": "25e0389dd57bbf48167a1182e84a1574b0463b04e621eb6b50562ffe9198633c"
+    },
+    {
+      "bytes": 2580,
+      "path": "src/benchmark/local_deps.py",
+      "sha256": "23898bf0654e740349eed3fe45b6da0b7a76c34a048bf874e7a0b4b96a11d5b3"
+    },
+    {
+      "bytes": 5817,
+      "path": "src/benchmark/main.py",
+      "sha256": "4b1c60473c89a5702551e413ac257fe637b7a73db76cfb31bbd0b93bc19080ef"
+    },
+    {
+      "bytes": 29816,
+      "path": "src/benchmark/metrics.py",
+      "sha256": "aebd1eab14f0ae85483b8a6c74df7edfefae2a737f4bb61b0292446e80af6f7f"
+    },
+    {
+      "bytes": 60995,
+      "path": "src/benchmark/monitoring_client.py",
+      "sha256": "35529e8b9af61b1e6442b843eeb2bc8d98042f925e862f08cd9d231943f7668d"
+    },
+    {
+      "bytes": 48781,
+      "path": "src/benchmark/monitoring_summary.py",
+      "sha256": "3ee97e442d3f81e5711ecff5ec68fb0fd627f5e46e9e2ff7e250bde5dd013b85"
+    },
+    {
+      "bytes": 11259,
+      "path": "src/benchmark/payload_generator.py",
+      "sha256": "a4eb2129180600bab9467a7af76bfc65e6b4eb3a9e842594f412173d6e9c9443"
+    },
+    {
+      "bytes": 24592,
+      "path": "src/benchmark/producer_worker.py",
+      "sha256": "e2174d7d8a2f89522e2dc649fde5bef6c86f109aa88cbed6fa5f817f2d62e33f"
+    },
+    {
+      "bytes": 4556,
+      "path": "src/benchmark/qualification.py",
+      "sha256": "e03e7a3634fdd7ec2ac0bc0d5ea1180d55265acb816d89f79a0e9f3b406332b6"
+    },
+    {
+      "bytes": 9760,
+      "path": "src/benchmark/record_envelope.py",
+      "sha256": "c5d22a3fa9a938ef4453bacf09be17ef495ae1ee962748482ba363bb1e7e626e"
+    },
+    {
+      "bytes": 45174,
+      "path": "src/benchmark/report_builder.py",
+      "sha256": "67d402ecd403a83b9ac61913c2ede1d1e356299465c0e05babfbab7bc34d9370"
+    },
+    {
+      "bytes": 2479,
+      "path": "src/benchmark/roles.py",
+      "sha256": "9cf13c67a23f9df6b31abf2b1fbbcfdbdec09a1d43b2964caba6551aa9c7c30c"
+    },
+    {
+      "bytes": 6252,
+      "path": "src/benchmark/send_patterns.py",
+      "sha256": "5bd60cf986dd031d135c85b91c04b3dc5d35a01a485e0a82ca50d0f830609caf"
+    },
+    {
+      "bytes": 24771,
+      "path": "src/benchmark/system_inventory.py",
+      "sha256": "c0f631f58fd6637bc55bb440b3c68af8e2bd9d53487ad29de816847d88a60eb6"
+    },
+    {
+      "bytes": 6853,
+      "path": "src/benchmark/topic_admin.py",
+      "sha256": "30ff3084846a3d2fed95b6c2d5d2b6db1461dabbcc566fa55ed8f3a1dc388f25"
+    },
+    {
+      "bytes": 7573,
+      "path": "src/benchmark/topic_prefill.py",
+      "sha256": "76b00c434ff031541128f8ede8cc82459ffa2aa4bd612447616a7dfde562a85a"
+    },
+    {
+      "bytes": 2144,
+      "path": "src/benchmark/utils.py",
+      "sha256": "e262821bf2bb9c06385613c862aefe5c589859f5e3db2c02b022c081ba2a5bf7"
+    },
+    {
+      "bytes": 477,
+      "path": "src/benchmark/workflow/__init__.py",
+      "sha256": "94534f84575efdb0042b6652729890dadd506a4169e0d722abfeaa3f42b4f544"
+    },
+    {
+      "bytes": 7715,
+      "path": "src/benchmark/workflow/base.py",
+      "sha256": "d9710bceef84827c2170497f8e5851940fd9810a6814ba9b5f0459417c99df10"
+    },
+    {
+      "bytes": 82497,
+      "path": "src/benchmark/workflow/engine.py",
+      "sha256": "61b37936e8ec7eadd02c52fddb83eff74b312f8164213fb224036256c46580c7"
+    },
+    {
+      "bytes": 6892,
+      "path": "src/benchmark/workflow/recovery.py",
+      "sha256": "3f8abf7ab5541effc57b5e3a7a4a0dff303f93b947f0666765d47c8ad61af69d"
+    },
+    {
+      "bytes": 1422,
+      "path": "src/benchmark/workflow/registry.py",
+      "sha256": "844cd033abe885601b49c67c66db0fb17712e10f87e324a0c20a201d91e5882d"
+    },
+    {
+      "bytes": 7642,
+      "path": "src/benchmark/workflow/validation.py",
+      "sha256": "63b0611810519f7ef169a4541d1d094f7f2a360a5643e5cfc7ddf50898079d1b"
+    },
+    {
+      "bytes": 3062,
+      "path": "tests/fake_backend.py",
+      "sha256": "371c94dc526935652521eba67442b5fa7daa890cb8e9ff2364462a8ccd3676a0"
+    },
+    {
+      "bytes": 74,
+      "path": "tests/fake_backend_lifecycle.sh",
+      "sha256": "9858476ef964410718897896b882084a3bf821af31dfe8459e738641fbe04ec7"
+    },
+    {
+      "bytes": 236139,
+      "path": "tests/smoke_test.py",
+      "sha256": "4c7af2b0fe4fbf3c01702eedf0d0cf05cc87e843b7fb169a708e88278a94f76f"
+    },
+    {
+      "bytes": 71673,
+      "path": "tests/test_reproducible_workflow.py",
+      "sha256": "49121853b92c5fd5b345df8a58b9e2e7cb8ae38ef60ed368f2e60256e4617766"
+    },
+    {
+      "bytes": 1769,
+      "path": "tools/README.md",
+      "sha256": "062fc3c123fbc77144cdba571933ce51703a7c8fc89fd0c682fe31c522f354c0"
+    },
+    {
+      "bytes": 729,
+      "path": "tools/archives/pulsar-checksums.txt",
+      "sha256": "f120a2ae7f57830b129bf52feb7e01b8e6935583c3a8f1dc3bb08de3508698d5"
+    },
+    {
+      "bytes": 254,
+      "path": "tools/archives/temurin-jdk21-checksums.txt",
+      "sha256": "8d03ef3b923e2c920d0ac8d6485b34dd31b0c14a7b1251fa5aabb8278c9dfb4d"
+    },
+    {
+      "bytes": 4461,
+      "path": "tools/stream_probe.c",
+      "sha256": "5a2806b282a1e2d400ad01e6135a4cc9ad14ad8d1a0aeb074022ade4b155cd6f"
+    }
+  ],
+  "policy": "source-only; no Git history, results, reports, credentials, or runtime binaries",
+  "schema_version": "messaging-benchmark.source-release.v1"
+}

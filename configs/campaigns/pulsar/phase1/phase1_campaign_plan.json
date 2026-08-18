@@ -1,0 +1,40 @@
+{
+  "batch_count": 4,
+  "batch_size_limit": 30,
+  "batch_sizes": [
+    30,
+    30,
+    30,
+    30
+  ],
+  "configuration_count": 120,
+  "design_counts": {
+    "baseline": 1,
+    "one_factor": 43,
+    "rank_pair": 9,
+    "seeded_mixed": 67
+  },
+  "execution_order_seed": 20260807,
+  "format": "messaging-benchmark.pulsar-phase1-plan.v1",
+  "latency_sample_every": 10,
+  "note": "The 30-second measurement window matches the Kafka V1 screening window. Pulsar adds an excluded warm-up and bounded coordinated drain for correctness and latency validation. Submit batches sequentially and validate each completed batch before the next.",
+  "profile_id": "BASELINE_H16_D32",
+  "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+  "ready_for_submission": true,
+  "runtime_provenance": {
+    "java_major": 21,
+    "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+    "pulsar_product_version": "5.0.0-M1",
+    "pulsar_python_client_version": "3.13.0",
+    "service_mode": "standalone",
+    "storage": "ram-backed"
+  },
+  "seed": 20260806,
+  "submission_gate": "results/published/pulsar/phase1-gate/acceptance_report.json",
+  "submission_gate_status": "accepted",
+  "timing_sec": {
+    "drain": 60,
+    "measurement": 30,
+    "warmup": 15
+  }
+}

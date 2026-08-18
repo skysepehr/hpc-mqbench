@@ -1,0 +1,87 @@
+{
+  "schema_version": "messaging-benchmark.case.v1",
+  "backend_id": "pulsar",
+  "workload": {
+    "scenario": "simultaneous",
+    "target_records_per_sec": null,
+    "payload_size_bytes": 8192,
+    "total_simulated_devices": 400000,
+    "latency_clock_max_uncertainty_us": 250.0,
+    "payload_mode": "fixed_size",
+    "consumer_ranks": 16,
+    "drain_timeout_sec": 60,
+    "latency_enabled": true,
+    "latency_clock_samples": 100,
+    "producer_ranks": 40,
+    "virtual_devices_per_rank": 10000,
+    "mode": "single",
+    "warmup_sec": 15,
+    "latency_sample_every": 10,
+    "latency_clock_max_drift_us": 250.0,
+    "send_pattern": "steady",
+    "duration_sec": 30
+  },
+  "backend": {
+    "pulsar": {
+      "service_count": 1,
+      "service_mode": "standalone",
+      "topic_name": "persistent://public/default/pulsar-p2c-b03-cfg120-h32-d48",
+      "partitions": 120,
+      "subscription_name": "messaging-benchmark-pulsar-p2c-b03-cfg120-h32-d48",
+      "subscription_type": "shared",
+      "profile_id": "PHASE2_HEAP32_DIRECT48",
+      "profile_sha256": "09fac56a3d36e12418625aaaaa774f0c5265c51a7361a8fc33f924733ef92724",
+      "producer": {
+        "send_timeout_ms": 120000,
+        "compression_type": "none",
+        "batching_enabled": true,
+        "batching_max_messages": 2000,
+        "batching_max_bytes": 1048576,
+        "batching_max_publish_delay_ms": 5,
+        "max_pending_messages": 2000,
+        "max_pending_messages_across_partitions": 10000,
+        "block_if_queue_full": true
+      },
+      "consumer": {
+        "receiver_queue_size": 500,
+        "max_total_receiver_queue_size_across_partitions": 60000,
+        "negative_ack_redelivery_delay_ms": 60000
+      },
+      "managed_ledger": {
+        "ack_quorum": 1,
+        "ensemble_size": 1,
+        "write_quorum": 1
+      },
+      "standalone_properties": {
+        "allowAutoTopicCreation": false,
+        "exposeConsumerLevelMetricsInPrometheus": false,
+        "exposeTopicLevelMetricsInPrometheus": false,
+        "includeStandardPrometheusMetrics": true
+      },
+      "runtime": {
+        "functions_worker_enabled": false,
+        "java_major": 21,
+        "jvm_memory": "-Xms32g -Xmx32g -XX:MaxDirectMemorySize=48g",
+        "product_version": "5.0.0-M1",
+        "storage": "ram-backed",
+        "stream_storage_enabled": false
+      }
+    }
+  },
+  "campaign": {
+    "case_id": "pulsar-p2c-b03-cfg120-h32-d48",
+    "campaign_id": "pulsar-phase2-memory-confirmation",
+    "metadata": {
+      "stage": "phase2-memory-confirmation",
+      "anchor_config_id": "cfg_120",
+      "anchor_purpose": "qualified byte-throughput leader",
+      "phase1_selection_categories": "qualified throughput leader; raw throughput upper bound; primary-rank coverage",
+      "profile_id": "PHASE2_HEAP32_DIRECT48",
+      "seed": 20260811,
+      "screening_only": false,
+      "confirmation_block": 3,
+      "screening_selection_sha256": "ecd59cfb944057694094d8fd0afdab0d1df38e71a94f81cafae41db63cf34a0a"
+    }
+  },
+  "qualification_policy_id": "qualification.pulsar.v1"
+}

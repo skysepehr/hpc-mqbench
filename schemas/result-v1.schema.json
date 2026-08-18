@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/messaging-benchmark/result-v1.schema.json",
+  "title": "Distributed Messaging Benchmark Result v1",
+  "type": "object",
+  "required": [
+    "result_schema_version",
+    "system_under_test",
+    "common_metrics",
+    "backend_metrics"
+  ],
+  "properties": {
+    "result_schema_version": {
+      "const": "messaging-benchmark.result.v1"
+    },
+    "system_under_test": {
+      "type": "object",
+      "required": ["backend_id", "adapter_version"],
+      "properties": {
+        "backend_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adapter_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "product_version": {
+          "type": "string"
+        },
+        "profile_id": {
+          "type": ["string", "null"]
+        },
+        "profile_sha256": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "common_metrics": {
+      "type": "object",
+      "required": [
+        "records",
+        "throughput",
+        "latency_end_to_end",
+        "timing",
+        "resources",
+        "qualification"
+      ],
+      "properties": {
+        "records": {
+          "type": "object"
+        },
+        "throughput": {
+          "type": "object"
+        },
+        "latency_end_to_end": {
+          "type": "object"
+        },
+        "timing": {
+          "type": "object"
+        },
+        "resources": {
+          "type": "object"
+        },
+        "qualification": {
+          "type": "object"
+        }
+      }
+    },
+    "backend_metrics": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object"
+      }
+    }
+  }
+}

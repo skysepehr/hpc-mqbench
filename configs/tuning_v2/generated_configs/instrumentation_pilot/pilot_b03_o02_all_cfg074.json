@@ -1,0 +1,70 @@
+{
+  "acks": "1",
+  "batch_size": 262144,
+  "broker_count": 1,
+  "broker_profile_id": "B0",
+  "broker_profile_sha256": "d082de4f4d19f320ebcd87ccbeccf71121251cce04eeae0bc2e939b92dacee3d",
+  "campaign_id": "focused_broker_tuning_latency_v2",
+  "case_id": "pilot_b03_o02_all_cfg074",
+  "compression_type": "none",
+  "consumer_ranks": 64,
+  "drain_timeout_sec": 60,
+  "duration_sec": 180,
+  "extra": {
+    "broker_process_monitor_interval_sec": 1,
+    "broker_profile_path": "configs/tuning_v2/broker_profiles/B0.json",
+    "kafka_common_client_config": {
+      "socket.keepalive.enable": true,
+      "socket.receive.buffer.bytes": 1048576,
+      "socket.send.buffer.bytes": 1048576
+    },
+    "kafka_consumer_config": {
+      "fetch.message.max.bytes": 8388608,
+      "fetch.min.bytes": 4194304,
+      "fetch.wait.max.ms": 25,
+      "queued.max.messages.kbytes": 1048576,
+      "queued.min.messages": 100000,
+      "receive.message.max.bytes": 100000000
+    },
+    "kafka_producer_config": {
+      "message.timeout.ms": 120000,
+      "queue.buffering.max.kbytes": 2097152,
+      "queue.buffering.max.messages": 1000000,
+      "request.timeout.ms": 30000
+    },
+    "measured_phase": "simultaneous",
+    "measured_roles": [
+      "producer",
+      "consumer"
+    ],
+    "monitoring_range_step_sec": 1,
+    "prometheus_scrape_interval_sec": 1,
+    "purpose": "focused Kafka broker-tuning and latency validation V2",
+    "sweep_config_id": "cfg_074",
+    "sweep_id": "simultaneous_budgeted",
+    "v2_anchor_id": "cfg_074",
+    "v2_block": 3,
+    "v2_case_id": "pilot_b03_o02_all_cfg074",
+    "v2_order": 2,
+    "v2_stage": "instrumentation_pilot"
+  },
+  "latency_clock_max_drift_us": 250.0,
+  "latency_clock_max_uncertainty_us": 250.0,
+  "latency_clock_samples": 100,
+  "latency_enabled": true,
+  "latency_sample_every": 1,
+  "linger_ms": 40,
+  "mode": "single",
+  "partitions": 120,
+  "payload_mode": "fixed_size",
+  "payload_size_bytes": 2048,
+  "producer_ranks": 16,
+  "replication_factor": 1,
+  "scenario": "simultaneous",
+  "send_pattern": "steady",
+  "target_records_per_sec": null,
+  "topic_name": "kbtv2-pilot-b03-o02-all-cfg074",
+  "total_simulated_devices": 3200000,
+  "virtual_devices_per_rank": 50000,
+  "warmup_sec": 30
+}

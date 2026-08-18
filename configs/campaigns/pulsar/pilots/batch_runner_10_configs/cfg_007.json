@@ -1,0 +1,85 @@
+{
+  "backend": {
+    "pulsar": {
+      "consumer": {
+        "max_total_receiver_queue_size_across_partitions": 120000,
+        "negative_ack_redelivery_delay_ms": 60000,
+        "receiver_queue_size": 1000
+      },
+      "managed_ledger": {
+        "ack_quorum": 1,
+        "ensemble_size": 1,
+        "write_quorum": 1
+      },
+      "partitions": 120,
+      "producer": {
+        "batching_enabled": true,
+        "batching_max_bytes": 1048576,
+        "batching_max_messages": 1000,
+        "batching_max_publish_delay_ms": 20,
+        "block_if_queue_full": true,
+        "compression_type": "none",
+        "max_pending_messages": 1000,
+        "max_pending_messages_across_partitions": 20000,
+        "send_timeout_ms": 120000
+      },
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+      "runtime": {
+        "functions_worker_enabled": false,
+        "java_major": 21,
+        "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+        "product_version": "5.0.0-M1",
+        "storage": "ram-backed",
+        "stream_storage_enabled": false
+      },
+      "service_count": 1,
+      "service_mode": "standalone",
+      "standalone_properties": {
+        "allowAutoTopicCreation": false,
+        "exposeConsumerLevelMetricsInPrometheus": false,
+        "exposeTopicLevelMetricsInPrometheus": false,
+        "includeStandardPrometheusMetrics": true
+      },
+      "subscription_name": "messaging-benchmark-pulsar-batch10-cfg-007",
+      "subscription_type": "shared",
+      "topic_name": "persistent://public/default/pulsar-batch10-cfg-007"
+    }
+  },
+  "backend_id": "pulsar",
+  "campaign": {
+    "campaign_id": "pulsar-batch-runner-acceptance",
+    "case_id": "pulsar-batch10-cfg-007",
+    "metadata": {
+      "config_id": "cfg_007",
+      "purpose": "producer-rank upper-level OFAT",
+      "seed": 20260820,
+      "source_campaign": "pulsar-phase1-screening",
+      "source_config": "phase1/generated_configs/cfg_007.json",
+      "stage": "batch-runner-acceptance",
+      "timing_scope": "short runner acceptance; not Phase 1 evidence"
+    }
+  },
+  "qualification_policy_id": "qualification.pulsar.v1",
+  "schema_version": "messaging-benchmark.case.v1",
+  "workload": {
+    "consumer_ranks": 40,
+    "drain_timeout_sec": 60,
+    "duration_sec": 30,
+    "latency_clock_max_drift_us": 250.0,
+    "latency_clock_max_uncertainty_us": 250.0,
+    "latency_clock_samples": 100,
+    "latency_enabled": true,
+    "latency_sample_every": 10,
+    "mode": "single",
+    "payload_mode": "fixed_size",
+    "payload_size_bytes": 4096,
+    "producer_ranks": 64,
+    "scenario": "simultaneous",
+    "send_pattern": "steady",
+    "target_records_per_sec": null,
+    "total_simulated_devices": 640000,
+    "virtual_devices_per_rank": 10000,
+    "warmup_sec": 15
+  }
+}

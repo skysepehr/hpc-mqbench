@@ -1,0 +1,51 @@
+{
+  "mode": "single",
+  "scenario": "simultaneous",
+  "broker_count": 1,
+  "partitions": 192,
+  "replication_factor": 1,
+  "topic_name": "benchmark-topic-mpi-high-throughput",
+  "acks": "1",
+  "compression_type": "none",
+  "batch_size": 1048576,
+  "linger_ms": 10,
+  "payload_size_bytes": 8192,
+  "payload_mode": "fixed_size",
+  "send_pattern": "steady",
+  "producer_ranks": 64,
+  "consumer_ranks": 64,
+  "virtual_devices_per_rank": 50000,
+  "duration_sec": 120,
+  "extra": {
+    "purpose": "one-broker MPI simultaneous high-throughput test aiming to approach measured network path capability",
+    "target_throughput_mb_s": 1500,
+    "target_basis": "Measured iperf3 paths are around 2000 MB/s, so this case uses 1500 MB/s as the first aggressive Kafka target.",
+    "kafka_heap_opts": "-Xms16g -Xmx16g",
+    "kafka_num_network_threads": 16,
+    "kafka_num_io_threads": 32,
+    "kafka_socket_send_buffer_bytes": 4194304,
+    "kafka_socket_receive_buffer_bytes": 4194304,
+    "kafka_queued_max_requests": 4000,
+    "kafka_common_client_config": {
+      "socket.send.buffer.bytes": 4194304,
+      "socket.receive.buffer.bytes": 4194304,
+      "socket.keepalive.enable": true,
+      "socket.nagle.disable": true
+    },
+    "kafka_producer_config": {
+      "queue.buffering.max.messages": 1000000,
+      "queue.buffering.max.kbytes": 1048576,
+      "message.timeout.ms": 180000,
+      "request.timeout.ms": 60000,
+      "message.send.max.retries": 3
+    },
+    "kafka_consumer_config": {
+      "fetch.min.bytes": 4194304,
+      "fetch.wait.max.ms": 25,
+      "fetch.message.max.bytes": 16777216,
+      "queued.min.messages": 200000,
+      "queued.max.messages.kbytes": 2097151,
+      "receive.message.max.bytes": 100000000
+    }
+  }
+}

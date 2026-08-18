@@ -1,0 +1,80 @@
+{
+  "broker_profile": {
+    "path": "configs/campaigns/kafka/v1_reproducible/broker_profiles/V1_FIXED_B0.json",
+    "profile_id": "V1_FIXED_B0",
+    "profile_sha256": "0db75402321b5c96c5fc2def4fe5cf950325084c71b94766f8d5d954cd7e6963",
+    "settings": {
+      "heap_opts": "-Xms8g -Xmx8g",
+      "log_segment_bytes": 1073741824,
+      "num_io_threads": 16,
+      "num_network_threads": 8,
+      "queued_max_requests": 1000,
+      "socket_receive_buffer_bytes": 1048576,
+      "socket_request_max_bytes": 104857600,
+      "socket_send_buffer_bytes": 1048576
+    }
+  },
+  "case_isolation": {
+    "clean_ram_backed_broker_storage_between_cases": true,
+    "restart_kafka_between_cases": true
+  },
+  "execution_plan": {
+    "kafka_restart_model": "fresh Kafka process and RAM storage per case",
+    "phase1_jobs": 4,
+    "planned_validation_jobs": 2,
+    "submission_model": "four independent Phase 1 allocations with up to 30 sequential cases per exclusive four-node Slurm job",
+    "submit_script": "scripts/submit_kafka_reproducible_campaign.sh",
+    "wall_time": "02:00:00"
+  },
+  "format": "kafka_reproducible_v1_campaign.v1",
+  "instrumentation": {
+    "clock_drift_limit_us": 250.0,
+    "clock_samples_before_and_after": 100,
+    "clock_uncertainty_limit_us": 250.0,
+    "correctness_identity_scope": "every record",
+    "deterministic_sampling_rule": "sequence_number modulo 10 equals zero",
+    "exact_correctness_accounting": true,
+    "latency_timestamp_sample_every": 10,
+    "record_envelope_on_every_record": true,
+    "record_identity": "producer rank plus sequence number"
+  },
+  "measurement_contract_id": "measurement.messaging.reproducible.v1",
+  "phase1": {
+    "batch_size": 30,
+    "case_count": 120,
+    "job_count": 4,
+    "seed": 42
+  },
+  "qualification": {
+    "backlog_denominator": "measurement-period send attempts",
+    "backlog_event": "pending producer delivery callbacks at flush start",
+    "backlog_percent_max": 5.0,
+    "eligibility_is_separate": true,
+    "failed_send_percent_max": 0.1,
+    "flush_duration_sec_max": 10.0
+  },
+  "qualification_policy_id": "qualification.application.v1",
+  "timing": {
+    "drain_timeout_sec": 60,
+    "measurement_sec": 30,
+    "pending_callbacks_snapshotted_before_flush": true,
+    "producer_flush_before_consumer_drain": true,
+    "producer_stop_at_measurement_end": true,
+    "warmup_sec": 15
+  },
+  "validation": {
+    "batch_size": 30,
+    "blocks": 5,
+    "case_count": 0,
+    "job_count": 0,
+    "planned_case_count": 50,
+    "planned_job_count": 2,
+    "seed": 20260728,
+    "selection_basis": "new reproducible 120-case Phase 1 results only",
+    "selection_source": null,
+    "status": "awaiting_new_phase1_results",
+    "submission_gate": "blocked until all 120 new Phase 1 cases are analyzed",
+    "workload_ids": [],
+    "workloads_per_block": 10
+  }
+}

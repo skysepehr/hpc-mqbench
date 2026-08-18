@@ -1,0 +1,4 @@
+case_id,config_id,stage,block,order,anchor_id,broker_profile_id,latency_enabled,latency_sample_every,target_records_per_sec,config_path
+rate60_b01_latency_anchor_B0,rate60_b01_latency_anchor_B0,rate_calibration,1,1,latency_anchor,B0,true,1,,configs/tuning_v2/generated_configs/rate_calibration/rate60_b01_latency_anchor_B0.json
+rate60_b02_latency_anchor_B0,rate60_b02_latency_anchor_B0,rate_calibration,2,1,latency_anchor,B0,true,1,,configs/tuning_v2/generated_configs/rate_calibration/rate60_b02_latency_anchor_B0.json
+rate60_b03_latency_anchor_B0,rate60_b03_latency_anchor_B0,rate_calibration,3,1,latency_anchor,B0,true,1,,configs/tuning_v2/generated_configs/rate_calibration/rate60_b03_latency_anchor_B0.json

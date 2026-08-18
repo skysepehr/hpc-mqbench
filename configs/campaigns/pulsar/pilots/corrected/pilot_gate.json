@@ -1,0 +1,24 @@
+{
+  "acceptance": {
+    "all_cases_complete": true,
+    "backend_health_valid": true,
+    "duplicate_records": 0,
+    "failed_send_percent_max": 0.1,
+    "flush_duration_sec_max": 10.0,
+    "instrumentation_median_throughput_overhead_percent_max": 3.0,
+    "invalid_envelopes": 0,
+    "latency_validation_valid_when_enabled": true,
+    "missing_after_drain_records": 0,
+    "negative_latency_samples": 0
+  },
+  "authoritative_for_phase1_submission": false,
+  "format": "messaging-benchmark.pulsar-pilot-design.v1",
+  "note": "These deterministic pilot inputs are retained for reproducibility. The memory comparison was not executed and is optional; Phase 1 authorization comes only from the published gate, which combines the completed instrumentation A/B and accepted 10-case batch run.",
+  "originally_planned_sequence": [
+    "instrumentation_overhead_manifest.csv",
+    "memory_acceptance_manifest.csv"
+  ],
+  "published_phase1_gate": "results/published/pulsar/phase1-gate/acceptance_report.json",
+  "seed": 20260806,
+  "status": "superseded_by_published_phase1_gate"
+}

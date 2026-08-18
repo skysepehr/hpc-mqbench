@@ -1,0 +1,18 @@
+{
+  "broker_count": 1,
+  "partitions": 120,
+  "replication_factor": 1,
+  "topic_name": "benchmark-topic-mpi-simultaneous",
+  "acks": "1",
+  "compression_type": "none",
+  "batch_size": 1048576,
+  "linger_ms": 20,
+  "extra": {
+    "kafka_heap_opts": "-Xms8g -Xmx8g",
+    "kafka_num_network_threads": 8,
+    "kafka_num_io_threads": 16,
+    "kafka_socket_send_buffer_bytes": 1048576,
+    "kafka_socket_receive_buffer_bytes": 1048576,
+    "kafka_queued_max_requests": 1000
+  }
+}

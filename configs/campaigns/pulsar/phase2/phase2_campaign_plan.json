@@ -1,0 +1,217 @@
+{
+  "anchor_count": 5,
+  "anchors": [
+    {
+      "config_id": "cfg_120",
+      "phase1_balanced_mib_per_sec": 1253.0856770833334,
+      "phase1_balanced_records_per_sec": 160394.96666666667,
+      "phase1_latency_p99_us": 1890000.0,
+      "phase1_qualified": true,
+      "purpose": "qualified byte-throughput leader"
+    },
+    {
+      "config_id": "cfg_101",
+      "phase1_balanced_mib_per_sec": 413.44781901041665,
+      "phase1_balanced_records_per_sec": 423370.56666666665,
+      "phase1_latency_p99_us": 1120000.0,
+      "phase1_qualified": true,
+      "purpose": "qualified record-rate leader"
+    },
+    {
+      "config_id": "cfg_093",
+      "phase1_balanced_mib_per_sec": 493.83678385416664,
+      "phase1_balanced_records_per_sec": 252844.43333333332,
+      "phase1_latency_p99_us": 1110000.0,
+      "phase1_qualified": true,
+      "purpose": "qualified p99-latency leader"
+    },
+    {
+      "config_id": "cfg_089",
+      "phase1_balanced_mib_per_sec": 793.6145833333334,
+      "phase1_balanced_records_per_sec": 101582.66666666667,
+      "phase1_latency_p99_us": 14800000.0,
+      "phase1_qualified": false,
+      "purpose": "qualification-boundary reference"
+    },
+    {
+      "config_id": "cfg_001",
+      "phase1_balanced_mib_per_sec": 771.1490885416666,
+      "phase1_balanced_records_per_sec": 197414.16666666666,
+      "phase1_latency_p99_us": 3060000.0,
+      "phase1_qualified": true,
+      "purpose": "manifest baseline"
+    }
+  ],
+  "authorization": {
+    "authorized_on": "2026-08-09",
+    "generated_config_sha256": {
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h16-d32.json": "380faf85e2283cedf6da4fa6de13d6495f18fac281d6ba34b3753484abc76ae5",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h16-d48.json": "8f5b697bf6d5fdf90a9ef91bdbd6b31e782235a9adf8d1d547508c1edf1eb860",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h24-d32.json": "1cfbe0cfd9a4f54da4da1165072197f353339bd1c2986ff84fcec81b790ea267",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h24-d48.json": "0a206ced067d5612d3a081b98c477ad85d56c11d5f5142f114d0ba0e44c6c7e3",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h32-d32.json": "366bb1c56506b507dd8800ecabf876dad2a5f1897e5eb2a979a59f2ddb339db9",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg001-h32-d48.json": "69af850beea1d3e02645cd0b29e96eedc473b4027fec0fab6cd20f926ed3fd05",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h16-d32.json": "5eece3bbecbee4307e741be5c1470a65945ed87cc20c50448e6d06394ad68396",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h16-d48.json": "adfb3a3b3b74c382ae068b6d877f051f0c5872870daff598d938089ed78e52fe",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h24-d32.json": "a680ffe17fe43afd925c296a2600f74e3b83bdcfb6f72f210b191dd518316e51",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h24-d48.json": "53e715e65b4ed61aee7fd859da63b93b763d86e0d336869b053cb0ae52d71c4a",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h32-d32.json": "5e1efc0705b0877c0358f5ae26c0a0b8c9599ff78cee8e6bebc0e7067223dde2",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg089-h32-d48.json": "94d5226b1b8cbc28d63695581315f842d4418d14010917b58b667345e4c027b9",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h16-d32.json": "4aa8f6633a52a108502555ca2c10a1e0956ac263125068f0b845f31a793205a4",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h16-d48.json": "62f3f4d96bdf91f17c3b6253edc5f235cc6512dfad21c3dd2fc5857cb538235e",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h24-d32.json": "8235a93eb1b9d1ebf3d6766b0cde6d5c41ff8de772a0c52855119308df0e29f3",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h24-d48.json": "64e9581d399be63477e4419a9337a439acb7890efadd4cbcb35f5ea5822611c6",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h32-d32.json": "ce81f8d088a28722ff3e3949e8c84953c1160f06aa9815fdad1c624147400754",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg093-h32-d48.json": "225476e259671b8300f22f2014a8dc047fc7d272706066140bf6a57b08adaa50",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h16-d32.json": "0ef975f94bfab67d4b09ee655f31369b5e404c9c78223f0230631efcd46388d8",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h16-d48.json": "6f6c7e9c1644daa32685d47c8b5c2a24246441d9b7de78cc537d615f6f6bca3d",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h24-d32.json": "4423ed587211109241c82dda16b4688ba4b022d8d4a2453b7a0af797ccb499e5",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h24-d48.json": "08f4314818c134240bb7dfbec1c57684ccd01e90520308960d3d9e91ed3663b7",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h32-d32.json": "c84f1b88c8314fbecf30609a9e84c02d1fb3a5c5b6e5945d9117b88e996d0eaa",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg101-h32-d48.json": "7658c0745ae1715aafbbbc893ac749fdcd10a5f7ef2d2dd09af2ae30aa307a9a",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h16-d32.json": "f0665fcc4595e98eef8e85cf486cabde50e29f9f985cff5bc01cc0e84854a204",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h16-d48.json": "9e9806ada2934bb260630409d62688308b2765f11e6547dc63507aa98e37799d",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h24-d32.json": "b01487e4da83ef060d05738f661ac00a0eeff103b58d0699f57058f9d4cccce4",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h24-d48.json": "eb1cc48904493e9df3fef6126056e5d1b62f45e4df7f63f35907acb96a23a632",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h32-d32.json": "5343faf1042384b944041a5d241448118a6c86b294d88829eb21eac453a5c146",
+      "configs/campaigns/pulsar/phase2/generated_configs/pulsar-p2m-cfg120-h32-d48.json": "6030d13041a067ab9eb0f82c9826034c2f056aba9c6264fd2bcb0148d8352227"
+    },
+    "manifest_sha256": "d6668ceb859dd1ff052d679c2a8f4da094df98f262338abaa37afdb1bb3398a5",
+    "profile_sha256": {
+      "configs/backends/pulsar/profiles/BASELINE_H16_D32.json": "4f3c7b53d89a17406d859381288a0cbd8f5537f56f1fab3bc218e39c5d876262",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP16_DIRECT48.json": "3bf5498d2938f181e9a73e92ae921d925a75a30697a7bc7eac6f78c65bab2d47",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP24_DIRECT32.json": "4d0c0f6309dcf1c05ce6f9f887dc2c0171501d30e292fc6ef0dec5c9aa74285b",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP24_DIRECT48.json": "638c141634a6a5234b9bc8d1a15592fc84f76dcc93c5a9554e6ef2a6b315e727",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP32_DIRECT32.json": "92e399e71c2c6edf919dd7b31be1d7574f0ac324886156f7e0fd7921bd6cac91",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP32_DIRECT48.json": "b189e1b39f69fb8519a345390ddc621154416a3de166963de8e87737f8084005"
+    },
+    "scope": "one 30-case Phase 2 memory-screening Slurm job",
+    "validation": {
+      "anchor_count": 5,
+      "case_count": 30,
+      "conservative_required_time_sec": 6030,
+      "failures": [],
+      "format": "messaging-benchmark.pulsar-phase2-input-validation.v1",
+      "profile_anchor_cell_count": 30,
+      "profile_changes_require_explicit_opt_in": true,
+      "profile_count": 6,
+      "remaining_margin_sec": 1170,
+      "submission_authorized": false,
+      "valid": true,
+      "wall_time_sec": 7200
+    }
+  },
+  "campaign_id": "pulsar-phase2-memory-screening",
+  "candidate_order": [
+    "required reports, backend health, latency, and record accounting valid",
+    "eligible-case count",
+    "qualified count across cfg_120, cfg_101, cfg_093, and cfg_001",
+    "geometric mean balanced-MiB/s ratio to BASELINE_H16_D32 on those anchors",
+    "p99-latency ratio to BASELINE_H16_D32",
+    "flush time, failed sends, GC, RSS, and tmpfs headroom",
+    "qualification-boundary behavior on cfg_089 as supporting evidence"
+  ],
+  "configuration_count": 30,
+  "design": "3 heap sizes x 2 direct-memory limits x 5 fixed workloads",
+  "fixed_during_screening": [
+    "the complete Phase 1 workload and client settings within each anchor",
+    "Pulsar 5.0.0-M1 and Pulsar Python client 3.13.0",
+    "Java 21 and the default Pulsar garbage collector",
+    "one standalone Pulsar service with one embedded BookKeeper bookie",
+    "managed-ledger ensemble/write/ack quorum 1/1/1",
+    "RAM-backed per-case storage and exclusive four-node placement",
+    "qualification, correctness, latency, and eligibility rules",
+    "15-second warm-up, 30-second measurement, and 60-second drain"
+  ],
+  "format": "messaging-benchmark.pulsar-phase2-plan.v2",
+  "manifest": "configs/campaigns/pulsar/phase2/memory_screening_manifest.csv",
+  "next_gate": {
+    "confirmation_design": "baseline plus two candidates, five anchors, two additional randomized blocks: at most 30 cases in one job",
+    "later_broker_tuning": "Thread and cache settings remain fixed in this memory screen. They may be varied around the confirmed memory region only when the screening evidence identifies a relevant bottleneck.",
+    "status": "blocked_pending_memory_screening_results",
+    "winner_rule": "No profile is frozen until each confirmed profile has three observations per anchor and passes correctness, qualification, throughput, latency, memory, GC, and tmpfs checks."
+  },
+  "note": "The deterministic inputs passed local and GWDG validation and the user authorized exactly one screening job. This authorization does not extend to confirmation or later tuning jobs.",
+  "observations_per_profile_anchor_cell": 1,
+  "phase1_evidence": {
+    "completed_cases": 120,
+    "direct_memory_observation": "Total Pulsar direct-memory usage was unavailable in Phase 1; the earlier 8-GiB pilot exhausted direct memory, while all 120 Phase 1 cases completed with a 32-GiB limit.",
+    "eligible_cases": 120,
+    "maximum_observed_gc_time_rate_seconds_per_second": 0.2775944533333334,
+    "maximum_observed_heap_gib": 14.560546875,
+    "maximum_observed_process_rss_gib": 34.742698669433594,
+    "qualified_cases": 118,
+    "shortlist": "results/published/pulsar/phase1/pulsar_phase1_shortlist.json",
+    "shortlist_sha256": "e7ffcf21ae8809e9ef70224de2445b51ee9868104274ff50ae33ace5a0c1a9fc",
+    "summary": "results/published/pulsar/phase1/pulsar_phase1_summary.json",
+    "summary_sha256": "e0391c6f05495fc4bc5399104a35b73d3c4c7cdc212c8e28762d72dfa8efa660"
+  },
+  "profile_count": 6,
+  "profiles": [
+    {
+      "control": true,
+      "direct_memory_gib": 32,
+      "heap_gib": 16,
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c"
+    },
+    {
+      "control": false,
+      "direct_memory_gib": 32,
+      "heap_gib": 24,
+      "profile_id": "PHASE2_HEAP24_DIRECT32",
+      "profile_sha256": "544cf58c4200a21c7d0c6dc1534b6c84fe5f880af6fdae880b59c14164afa521"
+    },
+    {
+      "control": false,
+      "direct_memory_gib": 32,
+      "heap_gib": 32,
+      "profile_id": "PHASE2_HEAP32_DIRECT32",
+      "profile_sha256": "5f047c0a268b2b905fdce39489bc54c0a4e3dea2c34f334ebb00a371548cf594"
+    },
+    {
+      "control": false,
+      "direct_memory_gib": 48,
+      "heap_gib": 16,
+      "profile_id": "PHASE2_HEAP16_DIRECT48",
+      "profile_sha256": "4b23cb85d8e3d95a8864f8e53a3af4be9c1b5c75a063a8c1f4abb2aa950381e1"
+    },
+    {
+      "control": false,
+      "direct_memory_gib": 48,
+      "heap_gib": 24,
+      "profile_id": "PHASE2_HEAP24_DIRECT48",
+      "profile_sha256": "961448be4e4997fa51fc427d03695fe84b078f1d5e491b5547cce5dd5ac4b56c"
+    },
+    {
+      "control": false,
+      "direct_memory_gib": 48,
+      "heap_gib": 32,
+      "profile_id": "PHASE2_HEAP32_DIRECT48",
+      "profile_sha256": "09fac56a3d36e12418625aaaaa774f0c5265c51a7361a8fc33f924733ef92724"
+    }
+  ],
+  "ready_for_submission": true,
+  "screening_interpretation": "Each profile/anchor cell has one observation. This stage can reject invalid profiles and nominate candidates, but it cannot freeze a winner.",
+  "seed": 20260810,
+  "slurm": {
+    "allow_profile_changes_between_cases": true,
+    "case_budget_sec": 105,
+    "conservative_required_time_sec": 6030,
+    "exclusive_nodes": 4,
+    "fresh_service_and_storage_per_case": true,
+    "job_count": 1,
+    "per_case_overhead_sec": 60,
+    "startup_overhead_sec": 180,
+    "stop_margin_sec": 900,
+    "wall_time_sec": 7200
+  },
+  "stage": "memory-profile-screening",
+  "status": "authorized_for_submission",
+  "submission_authorized": true,
+  "submission_command": "BACKEND_BATCH_ALLOW_PROFILE_CHANGES=1 BACKEND_BATCH_RUN_ID=pulsar_phase2_memory_screening_$(date +%Y%m%d_%H%M%S) ./scripts/submit_backend_batch.sh pulsar configs/campaigns/pulsar/phase2/memory_screening_manifest.csv",
+  "varied_during_screening": [
+    "JVM initial and maximum heap: 16, 24, or 32 GiB",
+    "JVM maximum direct memory: 32 or 48 GiB"
+  ]
+}

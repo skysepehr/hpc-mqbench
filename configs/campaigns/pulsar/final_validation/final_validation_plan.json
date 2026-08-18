@@ -1,0 +1,160 @@
+{
+  "authorization": {
+    "authorized_on": "2026-08-09",
+    "batch_manifest_sha256": {
+      "configs/campaigns/pulsar/final_validation/batches/batch_01.csv": "35fce4d48eefc34f2bcaa6ad8bc00cf87eac71fb6350f6a9d937dd8c576b3d5e",
+      "configs/campaigns/pulsar/final_validation/batches/batch_02.csv": "ac569f6082ff12622e045cc208433d54885f2e0a84bd6ff04f1fe47d770b81f6"
+    },
+    "canonical_manifest_sha256": "5c988d26f989027f72bd67e98357cea8616a7b38b548ae841c46b90e290231c1",
+    "generated_config_sha256": {
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg001.json": "95fc5c4263ccfebcb451c6b382511ed1477cb4c4d6d563b8b90aea74bdadbdc8",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg007.json": "6d73accd8a768557d72542dec737c8d4b55376bea0ff4545a65a7ac4a48e36a8",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg049.json": "76422f4948e766f249a1b5a66d465ebb41627b66a7b8e2fbce5ee5f33b73fd98",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg055.json": "e46bc2c5971fb88635b1f7d09ca7bfee197001b278b8a18a2d5f322768e96133",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg063.json": "c89ae80dbaf5a505f20f7fd00337c1de22f1f6fc134a46c02fd36ba9ac2c1048",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg080.json": "5e5b82e00cfc04cf7409e09c36e9d7358afea0ab4b4e96ff4455211057260e2e",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg089.json": "a49f149ef18e66ca7f1f29bd8767474afa6fc2b8015a9174fcd2c486a44acd62",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg093.json": "7250e28a76b66fca1f6282c0a5a3cc40388b57bad17e572496b1eba80369d8cc",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg101.json": "5fca2f6d03bb88fdabb667a881b5cd115ed9e4663f0799e39164ac87f24b9496",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b01-cfg120.json": "040b0b90004964aa0dc82a88116deffd83ef9cbd9b566f707de0278b6bdff47f",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg001.json": "07f9d3d3c4588c4d57bc19c8b08a596457848ba37f9cfeaa5f7f8cd36371f8dd",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg007.json": "0b8d93d0425f390d2750274ad12f01300c15352a90489aabe85ce852edff78fa",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg049.json": "92bf0760f789063ffe60e07ac0e365a9c806c178cb105f8b02106b990bbdfc4a",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg055.json": "a3af29dc14a4cb8c7a6ceaf96a8c5cc9e273339ab9dcea5336d61e898faa8a24",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg063.json": "14864601ed16e8b56acf96576804d16772d24c4464d6b25a1936bc1784d2bdd3",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg080.json": "fae7047da842ba740dafd95272ac3ccd351b9d8a7916875333d45097b970554f",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg089.json": "b53735ea5d69c7cb41cea5248a38352f43e6f76e7e1e0683cc06564f04579f19",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg093.json": "e2ee0dc92c16900eee15fa8c4c3a97d9456c3c52936203ca79ca4c5c88f4dd3a",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg101.json": "4e79aec73d6be2849c3412ccb8ad9375ce5863d81805d82d4d609864535bc96b",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b02-cfg120.json": "9d8f4c29cd058676316fea12dd8e331d7ffa93c9b90aa2e4f203fa7dd4e649cb",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg001.json": "322ed888d4d5174dedddee9285ae7ca53cad47291cf694b44106415520ecccd9",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg007.json": "99daa3eb937dd217ed1fcc3dcbdcfccba58231d9c3d6db9a39205621695806ce",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg049.json": "4d309b99fb8d9d2daa609b481c850738c911b2510c69f188fb050db53f8b0f31",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg055.json": "d6daa87e55a98925969520c15ad52ed1258f806a43b254587e9ac64f3504ce6e",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg063.json": "886c35d90951faf0f7fce64ac7a5ad2979014f4be2cba3dc3ee2f6d4627e3c23",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg080.json": "1101fc88b072a26157ee32d139048860df46fc8646064c094c29ffb6d84cd655",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg089.json": "32a1134031ddec5fdeeb5fdc5fb7d764aa17302351ab4d703e8db4709326dbb9",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg093.json": "fc97a2902732f0a28519dda2e39a3f83973d19741617271e61d63b7e9474383e",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg101.json": "59bf62dfd0b8d805740ed72282b7fdfe39e41be1ec96cfe2a3d98d2092c7d297",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b03-cfg120.json": "143d02aec0f2455e07fbb4e8c3a8b94fb288e6db874e7a6901a895ca5e773e3e",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg001.json": "49378873bfff4e705aab2cebbdfec793b34f0f19030751b0e67c9c56ca2645d6",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg007.json": "acd13f427da5c0c8a2a9e473acd83f87a9eec4068776dc7e0cde5a4762150111",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg049.json": "ff227f95486b29318df08e4aca39374617e822ef264109c539785767dd38e16d",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg055.json": "3df7acc09e6e3670ec5b3a415334c7b9579a4094a9a1d69df13b19b1d1783801",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg063.json": "00a43799d0c5c8ce6a7b3f32545341f3be6e8dc283da89490e5a2d0e55d6ae3c",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg080.json": "078a2c8c2f5334c1e441afa1ce26e4812648629d707f1303f1cd5d5f92d7829a",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg089.json": "0aca10d5244b7a3cad6288670b83e6b02a03052f000622ed91bf8a59602e6616",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg093.json": "06ccaded01cea600219bc4b151a43aafdc53fa47c71031a7de8f0edbb912f4e4",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg101.json": "cd4c80ea56166606bf5039bafa49d9e247f66302374a0ccc5e7000ed63f168b3",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b04-cfg120.json": "f37e954981ac5daa7272f7e17d7997451dad8aa6f86934c752ede5b177553ea0",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg001.json": "d31e8865df2454ab8be0653d177c182f02d16363919a8af335a6b78d7a5b1402",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg007.json": "722926bd30a73e2e73054d9f51283e028cf0c99c37775a4bf996866deb3f0dd1",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg049.json": "812c454bada7cf813784a475d12111663407ef77debd96da021a8134ac291a8f",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg055.json": "55f5e0894f684469f3f1c5216a44926739b9ce066c176acefcf313fd4cc996dd",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg063.json": "711f53f222237de16145a108dbbc010e10b091c82c2dd8c171aef81dc1136887",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg080.json": "c215824c35242e2f893f13df5d241f0af87d200cea8d7b62ec582cacc453601d",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg089.json": "c5548342da9ecf7f029db76705072b4635966b2ab5857ac0b382e6cfe7ef06b6",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg093.json": "46daaabe054704dfca422374ea94748524996e85d9203cf34518ffd2798bdc2e",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg101.json": "450e653e062d1788e915a6a04ff08906b61a0030b733798fcd01fef30d1006b9",
+      "configs/campaigns/pulsar/final_validation/generated_configs/pulsar-pv-b05-cfg120.json": "d8664b1e0c081a06c89da991cd4b87a842241e25b47def3d4139eaf3d544342e"
+    },
+    "scope": "two sequential Pulsar final-validation Slurm jobs containing 30 and 20 cases",
+    "validation": {
+      "batch_case_counts": [
+        30,
+        20
+      ],
+      "block_count": 5,
+      "case_count": 50,
+      "configuration_count": 10,
+      "failures": [],
+      "format": "messaging-benchmark.pulsar-final-validation-input-validation.v1",
+      "profile_id": "BASELINE_H16_D32",
+      "submission_authorized": false,
+      "valid": true
+    }
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "blocks": [
+        1,
+        2,
+        3
+      ],
+      "case_count": 30,
+      "conservative_required_time_sec": 6030,
+      "manifest": "configs/campaigns/pulsar/final_validation/batches/batch_01.csv",
+      "manifest_sha256": "35fce4d48eefc34f2bcaa6ad8bc00cf87eac71fb6350f6a9d937dd8c576b3d5e",
+      "remaining_wall_time_sec": 1170
+    },
+    {
+      "batch": 2,
+      "blocks": [
+        4,
+        5
+      ],
+      "case_count": 20,
+      "conservative_required_time_sec": 4380,
+      "manifest": "configs/campaigns/pulsar/final_validation/batches/batch_02.csv",
+      "manifest_sha256": "ac569f6082ff12622e045cc208433d54885f2e0a84bd6ff04f1fe47d770b81f6",
+      "remaining_wall_time_sec": 2820
+    }
+  ],
+  "block_count": 5,
+  "campaign_id": "pulsar-final-workload-validation",
+  "case_count": 50,
+  "configuration_count": 10,
+  "configuration_ids": [
+    "cfg_120",
+    "cfg_055",
+    "cfg_080",
+    "cfg_101",
+    "cfg_093",
+    "cfg_089",
+    "cfg_001",
+    "cfg_007",
+    "cfg_049",
+    "cfg_063"
+  ],
+  "eligibility_rule": "completed healthy report, valid latency and clock calibration, balanced record accounting, and zero missing, duplicate, or out-of-order records",
+  "format": "messaging-benchmark.pulsar-final-validation-plan.v1",
+  "manifest": "configs/campaigns/pulsar/final_validation/final_validation_manifest.csv",
+  "manifest_sha256": "5c988d26f989027f72bd67e98357cea8616a7b38b548ae841c46b90e290231c1",
+  "note": "The deterministic five-block inputs passed validation. Authorization is limited to the listed 30-case and 20-case batch manifests.",
+  "observations_per_configuration": 5,
+  "profile_id": "BASELINE_H16_D32",
+  "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+  "qualification_rule": "eligible and failed sends <= 0.1%, missing after drain <= 5%, and maximum producer flush <= 10 seconds",
+  "ranking_rule": [
+    "eligible repeat count descending",
+    "qualified repeat count descending",
+    "median balanced MiB/s descending",
+    "median valid p99 latency ascending",
+    "balanced-throughput IQR ascending",
+    "median missing-after-drain percentage ascending",
+    "median flush duration ascending",
+    "maximum failed-send percentage ascending",
+    "configuration ID ascending"
+  ],
+  "seed": 20260812,
+  "slurm": {
+    "case_budget_sec": 105,
+    "exclusive_nodes_per_job": 4,
+    "fresh_service_and_storage_per_case": true,
+    "job_count": 2,
+    "per_case_overhead_sec": 60,
+    "single_frozen_profile": true,
+    "startup_overhead_sec": 180,
+    "stop_margin_sec": 900,
+    "wall_time_sec": 7200
+  },
+  "source_evidence": {
+    "phase1_shortlist": "results/published/pulsar/phase1/pulsar_phase1_shortlist.json",
+    "phase1_shortlist_sha256": "e7ffcf21ae8809e9ef70224de2445b51ee9868104274ff50ae33ace5a0c1a9fc",
+    "phase2_final_selection": "results/published/pulsar/complete/data/phase2-confirmation/pulsar_phase2_final_selection.json",
+    "phase2_final_selection_sha256": "ad7c49a994de1bb18109fcb3fa9822dc07b91a1fed64b963a23bcbedcaea9c14"
+  },
+  "status": "authorized_for_submission",
+  "submission_authorized": true
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "messaging-benchmark.case.v1",
+  "backend_id": "pulsar",
+  "workload": {
+    "scenario": "simultaneous",
+    "latency_sample_every": 10,
+    "warmup_sec": 15,
+    "latency_enabled": true,
+    "latency_clock_samples": 100,
+    "latency_clock_max_drift_us": 250.0,
+    "virtual_devices_per_rank": 10000,
+    "consumer_ranks": 40,
+    "payload_mode": "fixed_size",
+    "producer_ranks": 40,
+    "latency_clock_max_uncertainty_us": 250.0,
+    "drain_timeout_sec": 60,
+    "mode": "single",
+    "payload_size_bytes": 4096,
+    "duration_sec": 30,
+    "total_simulated_devices": 400000,
+    "target_records_per_sec": null,
+    "send_pattern": "steady"
+  },
+  "backend": {
+    "pulsar": {
+      "service_count": 1,
+      "service_mode": "standalone",
+      "topic_name": "persistent://public/default/pulsar-cfg-044",
+      "partitions": 120,
+      "subscription_name": "messaging-benchmark-pulsar-cfg-044",
+      "subscription_type": "shared",
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c",
+      "producer": {
+        "send_timeout_ms": 120000,
+        "compression_type": "none",
+        "batching_enabled": true,
+        "batching_max_messages": 1000,
+        "batching_max_bytes": 1048576,
+        "batching_max_publish_delay_ms": 20,
+        "max_pending_messages": 1000,
+        "max_pending_messages_across_partitions": 20000,
+        "block_if_queue_full": true
+      },
+      "consumer": {
+        "receiver_queue_size": 1000,
+        "max_total_receiver_queue_size_across_partitions": 240000,
+        "negative_ack_redelivery_delay_ms": 60000
+      },
+      "managed_ledger": {
+        "ensemble_size": 1,
+        "write_quorum": 1,
+        "ack_quorum": 1
+      },
+      "standalone_properties": {
+        "allowAutoTopicCreation": false,
+        "includeStandardPrometheusMetrics": true,
+        "exposeTopicLevelMetricsInPrometheus": false,
+        "exposeConsumerLevelMetricsInPrometheus": false
+      },
+      "runtime": {
+        "product_version": "5.0.0-M1",
+        "java_major": 21,
+        "jvm_memory": "-Xms16g -Xmx16g -XX:MaxDirectMemorySize=32g",
+        "functions_worker_enabled": false,
+        "stream_storage_enabled": false,
+        "storage": "ram-backed"
+      }
+    }
+  },
+  "campaign": {
+    "case_id": "pulsar-cfg-044",
+    "campaign_id": "pulsar-phase1-screening",
+    "metadata": {
+      "stage": "phase1-screening",
+      "config_id": "cfg_044",
+      "design_note": "one-factor:max_total_receiver_queue_size_across_partitions=240000",
+      "seed": 20260806
+    }
+  },
+  "qualification_policy_id": "qualification.pulsar.v1"
+}

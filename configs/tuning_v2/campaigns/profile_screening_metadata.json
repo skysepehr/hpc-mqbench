@@ -1,0 +1,11 @@
+{
+  "calibration_balanced_records_per_sec": [
+    322390.7824810674,
+    323963.06666666665,
+    322997.65
+  ],
+  "fixed_offered_rate_fraction": 0.8,
+  "fixed_target_records_per_sec": 258398.12000000002,
+  "latency_sample_every": 1,
+  "median_max_load_balanced_records_per_sec": 322997.65
+}

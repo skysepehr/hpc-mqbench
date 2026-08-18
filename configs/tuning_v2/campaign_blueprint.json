@@ -1,0 +1,70 @@
+{
+  "case_budget": {
+    "final_validation": 50,
+    "instrumentation_pilot": 6,
+    "maximum_total": 119,
+    "maximum_total_with_fallback": 115,
+    "optional_fallback_pilot": 6,
+    "profile_confirmation_with_fallback": 20,
+    "profile_confirmation_without_fallback": "20 or 30",
+    "profile_screening": 30,
+    "rate_calibration": 3
+  },
+  "clock": {
+    "max_drift_us": 250.0,
+    "max_uncertainty_us": 250.0,
+    "samples_before_and_after": 100
+  },
+  "final_shortlist": [
+    "cfg_092",
+    "cfg_074",
+    "cfg_115",
+    "cfg_119",
+    "cfg_055",
+    "cfg_037",
+    "cfg_091",
+    "cfg_106",
+    "cfg_076",
+    "cfg_001"
+  ],
+  "format": "kafka_broker_tuning_campaign.v2",
+  "latency_anchor": "latency_anchor",
+  "maximum_load_anchors": [
+    "cfg_074",
+    "cfg_115",
+    "cfg_059",
+    "cfg_119"
+  ],
+  "profile_selection_rules": {
+    "failed_send_or_drain_regression_allowed": false,
+    "maximum_latency_anchor_p99_ratio_to_B0": 1.1,
+    "maximum_tmpfs_used_percent": 75.0,
+    "minimum_geometric_mean_throughput_ratio_to_B0": 1.03,
+    "required_measurements_and_correctness_valid": true,
+    "sustainable_anchor_qualification_not_below_B0": true
+  },
+  "profiles": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ],
+  "qualification": {
+    "failed_send_percent_max": 0.1,
+    "flush_sec_max": 10.0,
+    "pending_backlog_percent_max": 5.0
+  },
+  "seed": 20260728,
+  "timing": {
+    "drain_timeout_sec": 60,
+    "measurement_sec": 180,
+    "rate_calibration_measurement_sec": 60,
+    "profile_measurement_overrides_sec": {
+      "cfg_119": 20,
+      "latency_anchor": 60
+    },
+    "warmup_sec": 30
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "additional_blocks": [
+    2,
+    3
+  ],
+  "additional_observations_per_profile_anchor": 2,
+  "anchor_count": 5,
+  "anchors": [
+    "cfg_120",
+    "cfg_101",
+    "cfg_093",
+    "cfg_089",
+    "cfg_001"
+  ],
+  "authorization": {
+    "authorized_on": "2026-08-09",
+    "generated_config_sha256": {
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h16-d32.json": "a26abae66435e21e105973549c96fb4deb0bc9b08f9642d6d56746afb755b71b",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h16-d48.json": "c8f29171e1417b18fa6622ce4e6b233ea320f0205909388b75ee296ffb692d78",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg001-h32-d48.json": "6cb4311edf4cfe413be7bf28dc46b53a8590db0f962c505058386948cea0032a",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h16-d32.json": "4ac9ce0a520730668807957979cf98f6dbaa77f1e08c624c9ea5e645df336af5",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h16-d48.json": "5a3520006c95fc473f70c5aeec7b474082fcc8de83e50b30e630ee59c7b99949",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg089-h32-d48.json": "63ba61704b14e8cf14d3bdd54d699cbd2a967ead0f8fd8bbc0f3031cc45bc090",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h16-d32.json": "710047e6de33afc8646e849bb8f5871b1237ac2ee81b63206d2d055b3528b2d6",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h16-d48.json": "24cba06fdd714f9ddcca523d4bed86bfde1a0e92fc4b1f76fa329ade96e65068",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg093-h32-d48.json": "c1c62bd4f45aa8bc0e77438db0f3a7c158087d38f2c878b90dfe82fbd29d927b",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h16-d32.json": "646cd87891ca74191daa97a14566d0f0b824d2ad6f0c2d3e87442e0e69eb36ab",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h16-d48.json": "1c7e220e17be72382881662c6d55b945df837b8efe9f8c6fda088023c5875c09",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg101-h32-d48.json": "b8fdf16b289e23b1c2dfd74318daec91de48462433f35feba0280872dbf55b94",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h16-d32.json": "32808ef8164d2dc702f7df22b848d1eaf1dbd40ed8c5a9527b2327268e42c6f1",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h16-d48.json": "127579f4c9fdbb0b9939aa89ab7ae6a7e94617c22064f872afb85b1c0153f432",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b02-cfg120-h32-d48.json": "51404e7af094c03d3319cb3c1a7bcab4fbe3b59e7fd137e62533f4f6a77da0c0",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h16-d32.json": "ecdcf2056b2de357a848d1005d96cc1aacbeb91e06e738c50a69c449f9005914",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h16-d48.json": "103541c97fd5f5579abeced66b1ab4d1aa6f39ae1450e0966fb50f91461c022a",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg001-h32-d48.json": "e1375b343404fe755eff15d7268d5f12fdb34eb576b8b82f3f79b8b4abbc267b",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h16-d32.json": "fd5b9c7c779dabafc33e37a3364410afab3aa02f078c63c73f78bf11bed5726c",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h16-d48.json": "15a12d5ebc7e34e611d87732f048cc4c7d019107419d27895e7fb6d3930f94e9",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg089-h32-d48.json": "e6a8e8e1b1e618887e3b3b0ae71ec653c712bb088813a5f0caf11a796378c02e",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h16-d32.json": "1b4e41f41e616ad7ff5b6e7c17819fbe383cef7f189e5f7701922e6a8dfc2428",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h16-d48.json": "73dbd74f443f9b873f06d968298a04a3c876796e0b126af2661c95b273e68061",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg093-h32-d48.json": "0a1cb2f395df9710560ae0707fffec2ebf3ba113414b254c2382ad38767fc165",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h16-d32.json": "caf2d193861138ddf85abe7f1e8e166524a31d6b0e8c0128b7c85f38f0b06d85",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h16-d48.json": "981ea96fedae2c7f66a9a4b527f08a6bcff6b9f1878631147a9eea5a921bc51f",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg101-h32-d48.json": "3aaef9a3d0d0ea0ac8994376c046374fa7a12c11b970fd521119a41994132d67",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h16-d32.json": "8ac3eede308bea4213e40f587daa29da659285fb361e9af4f185067ffb5e2f23",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h16-d48.json": "db0e1276b2832a910f8a53f341f171ece6116ff482d26a00c84a74c03e57b5a4",
+      "configs/campaigns/pulsar/phase2/confirmation/generated_configs/pulsar-p2c-b03-cfg120-h32-d48.json": "ad2a42271cb9551b2809c7d13d34557ba0e635c1d19af96fe46c8032b712b1cb"
+    },
+    "manifest_sha256": "7c0e8bb0f0811e313251d009f13a2ebaa562595d216001249f6ccab1c43e86a2",
+    "profile_sha256": {
+      "configs/backends/pulsar/profiles/BASELINE_H16_D32.json": "4f3c7b53d89a17406d859381288a0cbd8f5537f56f1fab3bc218e39c5d876262",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP16_DIRECT48.json": "3bf5498d2938f181e9a73e92ae921d925a75a30697a7bc7eac6f78c65bab2d47",
+      "configs/backends/pulsar/profiles/PHASE2_HEAP32_DIRECT48.json": "b189e1b39f69fb8519a345390ddc621154416a3de166963de8e87737f8084005"
+    },
+    "scope": "one 30-case Phase 2 memory-confirmation Slurm job",
+    "screening_selection_sha256": "ecd59cfb944057694094d8fd0afdab0d1df38e71a94f81cafae41db63cf34a0a",
+    "validation": {
+      "anchor_count": 5,
+      "block_count": 2,
+      "case_count": 30,
+      "conservative_required_time_sec": 6030,
+      "failures": [],
+      "format": "messaging-benchmark.pulsar-phase2-confirmation-input-validation.v1",
+      "profile_count": 3,
+      "remaining_margin_sec": 1170,
+      "submission_authorized": false,
+      "valid": true
+    }
+  },
+  "campaign_id": "pulsar-phase2-memory-confirmation",
+  "configuration_count": 30,
+  "final_freeze_rule": [
+    "all 15 profile observations are complete, healthy, eligible, latency-valid, and correctness-valid",
+    "sustainable-anchor qualified-repeat count is at least the baseline count",
+    "geometric mean of median balanced-throughput ratios across cfg_120, cfg_101, cfg_093, and cfg_001 is at least 1.03",
+    "geometric mean of median p99-latency ratios across the same anchors is at most 1.10",
+    "no failed-send, incomplete-drain, duplicate, or out-of-order regression",
+    "maximum observed tmpfs use is below 75 percent and no unresolved memory or GC exhaustion is present",
+    "retain BASELINE_H16_D32 when no candidate passes every rule"
+  ],
+  "format": "messaging-benchmark.pulsar-phase2-confirmation-plan.v1",
+  "manifest": "configs/campaigns/pulsar/phase2/confirmation/memory_confirmation_manifest.csv",
+  "note": "The complete screening evidence selected these candidates and the deterministic inputs passed validation. Authorization is limited to one confirmation job.",
+  "profile_count": 3,
+  "profiles": [
+    {
+      "baseline": true,
+      "direct_memory_gib": 32,
+      "heap_gib": 16,
+      "profile_id": "BASELINE_H16_D32",
+      "profile_sha256": "7b85a5388524a2e598f181330a4c2e585823d9bc40dab66e11603ee484d6068c"
+    },
+    {
+      "baseline": false,
+      "direct_memory_gib": 48,
+      "heap_gib": 32,
+      "profile_id": "PHASE2_HEAP32_DIRECT48",
+      "profile_sha256": "09fac56a3d36e12418625aaaaa774f0c5265c51a7361a8fc33f924733ef92724"
+    },
+    {
+      "baseline": false,
+      "direct_memory_gib": 48,
+      "heap_gib": 16,
+      "profile_id": "PHASE2_HEAP16_DIRECT48",
+      "profile_sha256": "4b23cb85d8e3d95a8864f8e53a3af4be9c1b5c75a063a8c1f4abb2aa950381e1"
+    }
+  ],
+  "screening_selection": {
+    "path": "results/rebuilt/pulsar/phase2-screening/pulsar_phase2_candidate_selection.json",
+    "sha256": "ecd59cfb944057694094d8fd0afdab0d1df38e71a94f81cafae41db63cf34a0a",
+    "source_evidence": {
+      "campaign_plan_sha256": "1dac9863fc76bddd247f20f886e5689e7992ddd824beaef280025514f9b3ffe8",
+      "manifest_sha256": "d6668ceb859dd1ff052d679c2a8f4da094df98f262338abaa37afdb1bb3398a5",
+      "screening_results_root": "pulsar_phase2_memory_screening_20260809_160557",
+      "validation_sha256": "889446cb5206b5a4bbbc548ef3291093007dcaddbd242084e53ea70bfb8844a7"
+    }
+  },
+  "seed": 20260811,
+  "slurm": {
+    "allow_profile_changes_between_cases": true,
+    "case_budget_sec": 105,
+    "conservative_required_time_sec": 6030,
+    "exclusive_nodes": 4,
+    "fresh_service_and_storage_per_case": true,
+    "job_count": 1,
+    "per_case_overhead_sec": 60,
+    "startup_overhead_sec": 180,
+    "stop_margin_sec": 900,
+    "wall_time_sec": 7200
+  },
+  "status": "authorized_for_submission",
+  "submission_authorized": true,
+  "total_observations_per_profile_anchor_after_confirmation": 3
+}

@@ -1,0 +1,2 @@
+block,order,case_id,config_path
+1,1,pulsar-example-simultaneous,configs/campaigns/pulsar/examples/example_simultaneous_case.json

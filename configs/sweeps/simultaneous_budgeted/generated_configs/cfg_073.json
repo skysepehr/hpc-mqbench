@@ -1,0 +1,54 @@
+{
+  "mode": "single",
+  "scenario": "simultaneous",
+  "broker_count": 1,
+  "partitions": 240,
+  "replication_factor": 1,
+  "topic_name": "sweep-sim-cfg-073",
+  "acks": "1",
+  "compression_type": "none",
+  "batch_size": 524288,
+  "linger_ms": 40,
+  "payload_size_bytes": 2048,
+  "payload_mode": "fixed_size",
+  "send_pattern": "steady",
+  "producer_ranks": 16,
+  "consumer_ranks": 48,
+  "virtual_devices_per_rank": 50000,
+  "duration_sec": 30,
+  "extra": {
+    "purpose": "budgeted simultaneous-only screening sweep",
+    "measured_phase": "simultaneous",
+    "measured_roles": [
+      "producer",
+      "consumer"
+    ],
+    "kafka_heap_opts": "-Xms8g -Xmx8g",
+    "kafka_num_network_threads": 8,
+    "kafka_num_io_threads": 16,
+    "kafka_socket_send_buffer_bytes": 1048576,
+    "kafka_socket_receive_buffer_bytes": 1048576,
+    "kafka_queued_max_requests": 1000,
+    "kafka_common_client_config": {
+      "socket.send.buffer.bytes": 1048576,
+      "socket.receive.buffer.bytes": 1048576,
+      "socket.keepalive.enable": true
+    },
+    "kafka_producer_config": {
+      "queue.buffering.max.messages": 500000,
+      "queue.buffering.max.kbytes": 524288,
+      "message.timeout.ms": 120000,
+      "request.timeout.ms": 30000
+    },
+    "kafka_consumer_config": {
+      "fetch.min.bytes": 262144,
+      "fetch.wait.max.ms": 25,
+      "fetch.message.max.bytes": 4194304,
+      "queued.min.messages": 100000,
+      "queued.max.messages.kbytes": 1048576,
+      "receive.message.max.bytes": 100000000
+    },
+    "sweep_id": "simultaneous_budgeted",
+    "sweep_config_id": "cfg_073"
+  }
+}
