@@ -23,7 +23,7 @@ def parse_args() -> argparse.Namespace:
     for each generated case.
     """
     parser = argparse.ArgumentParser(
-        description="Distributed messaging HPC benchmark entrypoint"
+        description="HPC-MQBench distributed messaging benchmark entrypoint"
     )
     parser.add_argument(
         "--config",

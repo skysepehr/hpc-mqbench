@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/messaging-benchmark/result-v1.schema.json",
-  "title": "Distributed Messaging Benchmark Result v1",
+  "title": "HPC-MQBench Result v1",
   "type": "object",
   "required": [
     "result_schema_version",

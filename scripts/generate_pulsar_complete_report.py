@@ -308,7 +308,7 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def _introduction_text(final_validation_available: bool) -> str:
-    opening = r"""This report presents the Apache Pulsar campaign of the distributed messaging benchmark suite. Phase 1 screened 120 simultaneous producer/consumer workload configurations under one fixed service profile. Phase 2 then held five representative workloads constant while changing only explicit, checksum-backed JVM heap and direct-memory profiles. Screening nominated candidates; two additional randomized blocks supplied three observations per confirmed profile/workload cell before a profile was frozen."""
+    opening = r"""This report presents the Apache Pulsar campaign of HPC-MQBench, a reproducible, Slurm-orchestrated, qualification-first benchmark suite for distributed messaging systems. Phase 1 screened 120 simultaneous producer/consumer workload configurations under one fixed service profile. Phase 2 then held five representative workloads constant while changing only explicit, checksum-backed JVM heap and direct-memory profiles. Screening nominated candidates; two additional randomized blocks supplied three observations per confirmed profile/workload cell before a profile was frozen."""
     if final_validation_available:
         opening += r""" The final stage reran ten historically selected configurations in five randomized blocks under that frozen profile, producing 50 repeated workload observations for the final recommendation. Because the qualification rule was corrected after execution, that immutable workload set differs from the retrospectively corrected Phase 1 shortlist; newly shortlisted configurations were not validated."""
     return opening + r"""

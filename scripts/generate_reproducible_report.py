@@ -289,7 +289,7 @@ def _latex(
 \usepackage[margin=1in]{{geometry}}
 \usepackage{{booktabs,graphicx,hyperref,longtable}}
 \title{{Reproducible {_tex(backend.title())} {_tex(campaign_label)} Benchmark}}
-\author{{Distributed Messaging Benchmark Suite}}
+\author{{HPC-MQBench}}
 \date{{}}
 \begin{{document}}
 \maketitle

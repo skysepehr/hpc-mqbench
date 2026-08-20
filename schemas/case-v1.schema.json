@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/messaging-benchmark/case-v1.schema.json",
-  "title": "Distributed Messaging Benchmark Case v1",
+  "title": "HPC-MQBench Case v1",
   "type": "object",
   "additionalProperties": false,
   "required": [

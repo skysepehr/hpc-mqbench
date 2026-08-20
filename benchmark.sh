@@ -24,7 +24,9 @@ prepare_backend_shell() {
 
 usage() {
     cat <<'EOF'
-Distributed messaging benchmark suite
+HPC-MQBench
+A reproducible, Slurm-orchestrated, qualification-first benchmark suite
+for distributed messaging systems
 
 Usage:
   ./benchmark.sh reproducible BACKEND
