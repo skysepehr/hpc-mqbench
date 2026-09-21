@@ -17,17 +17,28 @@ The common application-level contract reports:
 
 - producer, consumer, and balanced throughput in MiB/s and records/s;
 - producer backlog at flush start, flush duration, and failed-send percentage;
-- end-to-end p50, p95, and p99 latency;
-- missing, duplicate, out-of-order, and surplus records;
+- sampled submission-to-consumer p50, p95, and p99 latency;
+- envelope validity, repeated/regressing consumer offsets, and aggregate
+  missing/surplus record counts;
 - backend health, configuration snapshots, checksums, and provenance.
 
-Each reproducible case uses a 15-second warm-up, 30-second measurement window,
-and up to 60 seconds of consumer drain. Record identity is tracked for every
-record; latency timestamps are sampled deterministically once every ten
-records. The backend is restarted and its case-local storage is cleaned between
-cases.
+Generated reproducible Kafka campaign cases use a 15-second warm-up, a
+30-second measurement window, and up to 60 seconds of consumer drain. Other
+case configurations can use different timing and disable latency measurement.
+Every record carries a producer/sequence envelope; its checksum protects the
+envelope metadata, not the full payload. Offset checks are local to each
+consumer, and aggregate delivery counts are not a reconciliation of every
+record identity. Latency is sampled every tenth measurement record and retained
+as a histogram and summaries, not an individual-message trace.
 
-An eligible run is **Qualified** when:
+Producer rates include flush time; consumer rates count measurement-tagged
+arrivals by the consumer measurement deadline. Balanced throughput is the lower
+endpoint rate. Under `qualification.application.v1`, backlog is pending producer
+delivery callbacks at flush start divided by measurement-period send attempts.
+It is not consumer-group offset lag or broker queue depth. The legacy
+`qualification.kafka.v1` policy uses an enqueued-record denominator.
+
+Under the application policy, an eligible run is **Qualified** when:
 
 ```text
 producer backlog <= 5%
@@ -63,23 +74,23 @@ execution additionally requires Slurm, OpenMPI, `mpi4py`, Java, backend runtime
 distributions, and the configured monitoring tools. Runtime archives are not
 stored in this source repository; see [`tools/README.md`](tools/README.md).
 
-## Quick Start
+## Local checks and planning
 
 ```bash
-git clone git@github.com:skysepehr/distributed-messaging-benchmark-suite.git hpc-mqbench
+git clone git@github.com:skysepehr/hpc-mqbench.git
 cd hpc-mqbench
 
 ./benchmark.sh backend list
 ./benchmark.sh check
-./benchmark.sh prepare-hpc kafka
-./benchmark.sh prepare-hpc pulsar
 ```
 
-Validate one case without submitting a job:
+Cloning over SSH requires GitHub access and a configured SSH key. Local checks
+do not require a running broker or Slurm. They run the smoke/workflow tests,
+shell and Python checks, and config validation; pytest runs only if installed.
+
+Preview one case's submission without submitting a job:
 
 ```bash
-./benchmark.sh preflight kafka \
-  configs/campaigns/kafka/example_simultaneous_case.json
 ./benchmark.sh dry-run kafka \
   configs/campaigns/kafka/example_simultaneous_case.json
 ```
@@ -87,24 +98,55 @@ Validate one case without submitting a job:
 Preview a complete reproducible campaign:
 
 ```bash
-./scripts/run_reproducible_benchmark.sh kafka --dry-run --phase all
-./scripts/run_reproducible_benchmark.sh pulsar --dry-run --phase all
+./benchmark.sh reproducible kafka --dry-run --phase all --run-id kafka-preview-001
 ```
 
-Run or resume a campaign:
+Dry-run generates plans and local artifacts; it does not test cluster runtime
+availability or submit jobs. The example single case above runs for 120 seconds,
+with no warm-up, drain, or latency sampling; it is not the reproducible campaign
+measurement contract. Use the generated campaign for the qualification study.
+
+## Prepare and run on a cluster
+
+Stage the runtime archives described in [Runtime Assets](tools/README.md) first.
+The preparation helper is offline; a fresh source clone does not contain those
+archives. It defaults to GWDG module names. On another cluster, set
+`HPC_MODULES` to your site's modules, or use `HPC_MODULES=''` if the required
+compiler, Python, Java, and MPI environment is already active.
 
 ```bash
-./scripts/run_reproducible_benchmark.sh kafka \
-  --run --phase all --run-id kafka-example-001
+./benchmark.sh prepare-hpc kafka
+./benchmark.sh preflight kafka configs/campaigns/kafka/example_simultaneous_case.json
+```
 
-./scripts/run_reproducible_benchmark.sh kafka \
+Preflight checks installed runtimes, monitoring tools, and Slurm commands. It is
+expected to fail on a source-only workstation; it does not submit a benchmark
+job. Validate the Python/MPI ABI on the intended compute nodes as described in
+the runtime guide. The Kafka scripts default to the `ib0` fabric interface;
+set `KAFKA_HPC_NETWORK_INTERFACE` for your deployment. Account, partition, QoS,
+wall time, placement, and storage settings also need to match the cluster.
+
+Run or resume a campaign after preparation (replace the account and partition):
+
+```bash
+./benchmark.sh reproducible kafka \
+  --run --phase all --run-id kafka-example-001 \
+  --slurm-account YOUR_ACCOUNT --partition YOUR_PARTITION
+
+./benchmark.sh reproducible kafka \
   --resume --phase all --run-id kafka-example-001
 ```
 
-Use `--phase phase1`, `--phase validation`, `--phase v1`, or `--phase v2` to
-restrict execution. Site-specific account, partition, QoS, module, network,
-and storage settings are supplied through command options or environment
-variables rather than committed configuration files.
+Omitting `--dry-run` executes the workflow, even when `--run` is omitted.
+Use a new run ID for execution rather than reusing a preview. Resume retains
+the original scheduler settings and validates recorded inputs and completed
+artifacts. Phase choices include `phase1`, `validation`, `v1`, and `v2`; later
+phases still need their prerequisites. Use `./benchmark.sh reproducible kafka
+--help` for all options. The `auto` partition selector has site-specific
+defaults; use an explicit partition or configure its candidates and requirements.
+
+The other implemented adapter has its own setup requirements; see
+[Runtime Assets](tools/README.md) before using `prepare-hpc pulsar`.
 
 ## Workflow And Results
 
@@ -114,16 +156,35 @@ validation, and advances through backend-specific V2 tuning gates. Completed
 stages are checksum-validated and skipped during resume. Repair runs use new
 directories and never overwrite historical evidence.
 
-Machine-readable results are stored under:
+The workflow's state, analysis, and final comparison bundles are stored under:
 
 ```text
 results/workflows/<backend>/<run-id>/
 ```
 
-JSON is the detailed source of truth; CSV is the convenient comparison format.
-The benchmark finishes after producing validated reports, summaries, manifests,
-provenance, checksums, Slurm job IDs, and workflow state. Figures, LaTeX, and PDF
-reports are an optional downstream pipeline and are not required for success.
+For Kafka, per-case evidence is stored separately under
+`results/sweeps/kafka_v1_reproducible/<run-id>-v1/` and
+`results/tuning_v2/<run-id>-v2/`. Preserve those directories as well as the
+workflow directory when archiving a run.
+
+| Output | What it provides |
+| --- | --- |
+| Per-case `final_report.json` | Rates, counters, latency histograms, validity/qualification, available monitoring and diagnostic indicators. |
+| Screening CSV/JSON | Validity checks, ranked cases, shortlist and selection reasons. |
+| Repeated-validation CSV/JSON | Individual repeats; qualified counts, throughput medians/variability, backlog, flush, failure and latency summaries. |
+| Profile/resource CSV/JSON | Broker resource summaries, instrumentation checks and profile-selection decisions. |
+| Final bundles and provenance | Recommendation, manifests, source-report paths/hashes, job IDs, workflow state and checksums. |
+
+These analyses run automatically. Repeated-run summaries include eligible
+overdriven runs; ranking prioritizes the number of qualified repeats.
+The full workflow uses machine mode and does not generate a manuscript, LaTeX,
+or PDF. Standalone cases default to full presentation mode, which can also write
+Markdown, HTML and plots. Optional downstream scripts create additional
+analyses and presentation artifacts. See [Kafka workflow outputs](docs/outputs.md)
+for filenames, report modes, traceability and known diagnostic limitations.
+
+Generated bottleneck messages are inspection aids, not established causes.
+Missing measurements must not be treated as zero or evidence of spare capacity.
 
 ## Repository Layout
 
