@@ -1,0 +1,26 @@
+{
+  "backend_id": "kafka",
+  "backlog_denominator": "measurement-period send attempts",
+  "backlog_event": "pending producer delivery callbacks at flush start",
+  "completed_case_count": 120,
+  "eligible_case_count": 113,
+  "expected_case_count": 120,
+  "failure_reasons": [],
+  "format": "messaging-benchmark.reproducible-analysis.v1.validation",
+  "ineligible_case_count": 7,
+  "ineligible_case_ids": [
+    "cfg_108",
+    "cfg_100",
+    "cfg_103",
+    "cfg_109",
+    "cfg_039",
+    "cfg_051",
+    "cfg_069"
+  ],
+  "measurement_contract_id": "measurement.messaging.reproducible.v1",
+  "observed_case_count": 120,
+  "qualification_policy_id": "qualification.application.v1",
+  "qualified_case_count": 99,
+  "stage": "phase1",
+  "valid": true
+}

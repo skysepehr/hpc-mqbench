@@ -1,0 +1,8 @@
+{
+  "instrumentation": null,
+  "measurement_limitations": {
+    "kafka_network_processor_idle_ratio": "Kafka 4.2 did not expose the legacy NetworkProcessorAvgIdlePercent MBean on the tested broker; the value is left unavailable and is not estimated."
+  },
+  "profile_selection": null,
+  "screening_selection": null
+}

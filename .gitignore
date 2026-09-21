@@ -65,3 +65,9 @@ tools/*.zip
 # Editor and OS noise
 .DS_Store
 *.swp
+
+# Explicitly published paper evidence; other reports remain local.
+!Report/
+Report/*
+!Report/HPC_MQBench_Kafka_Evidence/
+Report/HPC_MQBench_Kafka_Evidence/build/

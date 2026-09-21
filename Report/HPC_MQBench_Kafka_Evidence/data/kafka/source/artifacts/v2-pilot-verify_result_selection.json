@@ -1,0 +1,86 @@
+{
+  "backend_id": "kafka",
+  "created_at": "2026-08-16T02:35:31+00:00",
+  "format": "messaging-benchmark.result-selection.v1",
+  "ineligible_case_ids": [],
+  "ineligible_reasons": {},
+  "manifest": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v2/campaigns/instrumentation_pilot.csv",
+  "missing_case_ids": [],
+  "repair_events": [],
+  "selected_reports": [
+    {
+      "case_id": "pilot_b01_o01_sample10_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b01_o01_sample10_cfg074/final_report.json",
+      "source_report_sha256": "398e3802f437d4971be042e5928db2162ad544b18a596c39714e3bbab3e2a6a2",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "pilot_b01_o02_off_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b01_o02_off_cfg074/final_report.json",
+      "source_report_sha256": "ea7a455b96290cf51224ad2d2af1b047536aef5445b9cbd7cd9dab5ee43e1242",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "pilot_b02_o01_off_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b02_o01_off_cfg074/final_report.json",
+      "source_report_sha256": "90791b810ad225028d4b59df3468fa7eb9ee9c5f1e4c40b3a57c62a564ef8391",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "pilot_b02_o02_sample10_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b02_o02_sample10_cfg074/final_report.json",
+      "source_report_sha256": "110865b7903f9c15e68f9c9531ec7934b6a09b19adf317d10af90f4468272143",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "pilot_b03_o01_off_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b03_o01_off_cfg074/final_report.json",
+      "source_report_sha256": "e9ad0839d2dc36f24d1f21156630e9c8e67b7f7607cd2bbddfb98ff080944c87",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "pilot_b03_o02_sample10_cfg074",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/instrumentation_pilot/batch_001/cases/pilot_b03_o02_sample10_cfg074/final_report.json",
+      "source_report_sha256": "1e09b44e08a7a13802687447b10c7706d00895ccdd9f05c726932b35ab73e029",
+      "strict_failures": [],
+      "structural_failures": []
+    }
+  ],
+  "selected_results_group": "v2",
+  "valid": true
+}

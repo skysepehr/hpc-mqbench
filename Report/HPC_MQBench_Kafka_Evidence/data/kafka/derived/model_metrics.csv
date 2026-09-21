@@ -1,0 +1,6 @@
+mae,median_absolute_error,rmse,r_squared,backend_id,task,target,target_transform,n_rows,cv_scheme,median_selected_alpha,balanced_accuracy,precision,recall,specificity,f1,pr_auc,positive_rows,negative_rows
+200.81987108400324,144.90686776568418,291.0055491806987,0.8413473469677486,kafka,regression,balanced_mib_per_sec,identity,113,5 repeats x 5 folds; nested alpha selection,1.0,,,,,,,,
+52631.86182234977,31363.779731161776,78998.17108786396,0.8610242412587696,kafka,regression,balanced_records_per_sec,identity,113,5 repeats x 5 folds; nested alpha selection,1.0,,,,,,,,
+2008.9384214864995,167.20265031076997,4907.973610701075,0.44832397491366593,kafka,regression,latency_p99_ms,log1p,113,5 repeats x 5 folds; nested alpha selection,10.0,,,,,,,,
+4.074396710951553,2.0599280170163308,7.281722055719084,0.3295156270053483,kafka,regression,backlog_percent,identity,113,5 repeats x 5 folds; nested alpha selection,100.0,,,,,,,,
+,,,,kafka,classification,qualified,identity,113,5 repeats x 5 folds; nested alpha selection,1.0,0.9114718614718615,0.98125,0.9515151515151515,0.8714285714285714,0.9661538461538461,0.9932033035687223,99,14

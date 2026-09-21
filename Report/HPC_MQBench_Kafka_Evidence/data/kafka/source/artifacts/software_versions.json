@@ -1,0 +1,9 @@
+{
+  "adapter_version": "1",
+  "backend_id": "kafka",
+  "git": "git version 2.43.7",
+  "java": "openjdk version \"17.0.11\" 2024-04-16",
+  "mpirun": "mpirun (Open MPI) 5.0.6",
+  "python": "3.11.9 (main, Mar 14 2025, 02:19:31) [GCC 14.2.0]",
+  "sbatch": "slurm 26.05.1"
+}

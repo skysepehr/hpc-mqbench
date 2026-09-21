@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "artifact_name": "HPC-MQBench Kafka companion evidence",
+  "prepared_date": "2026-09-22",
+  "repository_url": "https://github.com/skysepehr/hpc-mqbench",
+  "artifact_folder": "Report/HPC_MQBench_Kafka_Evidence",
+  "evidence_tag": "kafka-paper-evidence-v1",
+  "inspected_repository_commit": "145d847120975ba347410969a0bf2a6ba3a5d25b",
+  "earlier_reviewed_source_commit": "bca9a4d18892f5ebff80d474da6ba57a0da749d2",
+  "campaign_source_commit": null,
+  "campaign_source_identity_verified": false,
+  "inspected_files": [
+    {
+      "path": "src/benchmark/producer_worker.py",
+      "sha256": "e2174d7d8a2f89522e2dc649fde5bef6c86f109aa88cbed6fa5f817f2d62e33f"
+    },
+    {
+      "path": "src/benchmark/consumer_worker.py",
+      "sha256": "2708f34ea968df5073cb623913f1cf3296fd489e8a57f9ba8e16254effcdcf9d"
+    },
+    {
+      "path": "src/benchmark/metrics.py",
+      "sha256": "aebd1eab14f0ae85483b8a6c74df7edfefae2a737f4bb61b0292446e80af6f7f"
+    },
+    {
+      "path": "src/benchmark/qualification.py",
+      "sha256": "e03e7a3634fdd7ec2ac0bc0d5ea1180d55265acb816d89f79a0e9f3b406332b6"
+    },
+    {
+      "path": "src/benchmark/record_envelope.py",
+      "sha256": "c5d22a3fa9a938ef4453bacf09be17ef495ae1ee962748482ba363bb1e7e626e"
+    },
+    {
+      "path": "src/benchmark/clock_calibration.py",
+      "sha256": "0e77216c3c123e7f7ab8ac2442f250ab2e5b9160017f80e447346b07e807f213"
+    },
+    {
+      "path": "src/benchmark/benchmark_controller.py",
+      "sha256": "3718fdfee856abff1c42ae252b816d1d34cb21b3b05d49eb90e4ec1c98af2680"
+    },
+    {
+      "path": "src/benchmark/payload_generator.py",
+      "sha256": "a4eb2129180600bab9467a7af76bfc65e6b4eb3a9e842594f412173d6e9c9443"
+    },
+    {
+      "path": "src/benchmark/kafka_client.py",
+      "sha256": "25e0389dd57bbf48167a1182e84a1574b0463b04e621eb6b50562ffe9198633c"
+    },
+    {
+      "path": "src/benchmark/core/result_schema.py",
+      "sha256": "e97bbe54243c8a9f53967c2951ea74ae3d9b3f971269c9812961553f24ea9157"
+    },
+    {
+      "path": "src/benchmark/broker_process_monitor.py",
+      "sha256": "b2a0867f33834aa3e47ecd42a1bc092de7a504f4fac074472fce500db01fc975"
+    },
+    {
+      "path": "src/benchmark/report_builder.py",
+      "sha256": "67d402ecd403a83b9ac61913c2ede1d1e356299465c0e05babfbab7bc34d9370"
+    },
+    {
+      "path": "src/benchmark/html_report.py",
+      "sha256": "84f57513cded66fcf88d921f26e0d791ea4af2a3b4f3afcd6c05a90a4ee6b7d3"
+    },
+    {
+      "path": "src/benchmark/workflow/engine.py",
+      "sha256": "61b37936e8ec7eadd02c52fddb83eff74b312f8164213fb224036256c46580c7"
+    },
+    {
+      "path": "scripts/analyze_kafka_reproducible_campaign.py",
+      "sha256": "130b5ea462f83669f1fab00724174d1176c7acdbe8caaebe67450bdedd254e0e"
+    },
+    {
+      "path": "scripts/analyze_broker_tuning_v2.py",
+      "sha256": "9f06e8b5f53f99114e016db1897610c55fc2313d9b4536dffc99589ee7eaad96"
+    },
+    {
+      "path": "scripts/generate_broker_tuning_v2.py",
+      "sha256": "d4868e3ec31a7865d3f27d2aac4fb6c8d01a50b147e81415d94ec055e87c5f77"
+    },
+    {
+      "path": "scripts/finalize_reproducible_results.py",
+      "sha256": "1960e2d769ca964f35910485f2f40a1d391f2c71871864dc7be3a41f5113fc37"
+    },
+    {
+      "path": "tests/smoke_test.py",
+      "sha256": "4c7af2b0fe4fbf3c01702eedf0d0cf05cc87e843b7fb169a708e88278a94f76f"
+    },
+    {
+      "path": "tests/test_reproducible_workflow.py",
+      "sha256": "49121853b92c5fd5b345df8a58b9e2e7cb8ae38ef60ed368f2e60256e4617766"
+    }
+  ],
+  "counts": {
+    "selected_screening": 120,
+    "v1_validation": 50,
+    "v2_validation": 50,
+    "instrumentation_pilot": 6,
+    "rate_calibration": 3,
+    "profile_screening": 30,
+    "profile_confirmation": 30,
+    "documented_executions_including_two_screening_repairs": 291
+  },
+  "count_note": "The complete-profile table includes the same 50 V2 final-validation observations; duplicate CSV/JSON representations are not extra runs.",
+  "access": {
+    "anonymous_access_verified": false,
+    "anonymous_repository_http_status": 404,
+    "checked_date": "2026-09-22",
+    "git_ssh_access_verified": true,
+    "github_immutable_release_created": false,
+    "note": "An ordinary Git tag identifies a snapshot but is not protected by GitHub release immutability. Public access and an immutable release remain to be established."
+  },
+  "missing_evidence": [
+    "campaign-time source commit",
+    "exact campaign-time Kafka and client-library versions",
+    "raw per-rank rate timings",
+    "raw latency histograms and clock exchanges",
+    "raw process and JMX traces",
+    "raw iperf3 JSON and historical probe options",
+    "complete campaign-time per-node hardware inventory",
+    "explicit V2 batch-to-numeric-job association"
+  ],
+  "historical_paths": "Paths and nested manifests retained in data/ describe original source locations; they are not portable inventories of this package. MANIFEST.json and root SHA256SUMS inventory this package."
+}

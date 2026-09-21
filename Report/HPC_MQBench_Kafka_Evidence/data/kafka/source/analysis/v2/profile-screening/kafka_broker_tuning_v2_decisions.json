@@ -1,0 +1,63 @@
+{
+  "instrumentation": null,
+  "measurement_limitations": {
+    "kafka_network_processor_idle_ratio": "Kafka 4.2 did not expose the legacy NetworkProcessorAvgIdlePercent MBean on the tested broker; the value is left unavailable and is not estimated."
+  },
+  "profile_selection": null,
+  "screening_selection": {
+    "confirmation_profiles": [
+      "B0",
+      "B3",
+      "B5"
+    ],
+    "maximum_load_anchors": [
+      "cfg_107",
+      "cfg_061",
+      "cfg_094",
+      "cfg_101"
+    ],
+    "profiles": [
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0379995712785184,
+        "profile_id": "B5",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0348770797969387,
+        "profile_id": "B2",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0,
+        "profile_id": "B0",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0375646720313203,
+        "profile_id": "B4",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.040926790131593,
+        "profile_id": "B3",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0371893092088063,
+        "profile_id": "B1",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      }
+    ],
+    "selection_rule": "valid-run count, sustainable-anchor qualification, then geometric mean throughput ratio to B0",
+    "sustainable_anchors": [
+      "cfg_107",
+      "cfg_061"
+    ]
+  }
+}

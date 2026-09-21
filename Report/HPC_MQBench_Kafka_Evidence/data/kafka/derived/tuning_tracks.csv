@@ -1,0 +1,4 @@
+track,observed_config_id,balanced_mib_per_sec,balanced_records_per_sec,latency_p99_ms,backlog_percent,status
+sustainable_byte_throughput,cfg_107,3001.52918917343,384195.73621419905,5890.0,2.7763840432461704,single-run Phase 1 observation; repeated winner remains authoritative
+maximum_record_rate,cfg_094,999.76787109375,1023762.3,712.0,1.2294492479942103,single-run qualified Phase 1 observation
+lowest_qualified_p99,cfg_090,938.3270833333333,120105.86666666667,19.5,0.015702297751075858,single-run qualified Phase 1 observation

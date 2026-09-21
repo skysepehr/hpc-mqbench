@@ -1,0 +1,59 @@
+{
+  "backend_id": "kafka",
+  "campaign_phase": "v2",
+  "comparison_format": "CSV",
+  "detailed_source_of_truth": "per-case final_report.json files",
+  "format": "messaging-benchmark.reproducible-results.v1",
+  "generated_at": "2026-08-16T19:59:02+00:00",
+  "measurement_contract_id": "measurement.messaging.reproducible.v1",
+  "phase1": {
+    "case_count": 120,
+    "eligible_count": 113,
+    "overdriven_count": 14,
+    "qualified_count": 99
+  },
+  "presentation_artifacts_required": false,
+  "qualification_policy_id": "qualification.application.v1",
+  "ranking_rule": [
+    "qualified-repeat count descending",
+    "median balanced MiB/s descending",
+    "balanced-throughput IQR ascending",
+    "producer backlog ascending",
+    "flush duration ascending",
+    "failed-send percentage ascending",
+    "configuration ID ascending"
+  ],
+  "recommendation": {
+    "config_id": "cfg_007",
+    "eligible_repeats": 5,
+    "median_balanced_mib_per_sec": 2927.109822981875,
+    "median_balanced_records_per_sec": 749340.11468336,
+    "median_latency_p99_us": 2560000.0,
+    "qualified_repeats": 5
+  },
+  "repeated_validation": {
+    "case_count": 50,
+    "configuration_count": 10,
+    "repeats_per_configuration": 5
+  },
+  "source_case_index": {
+    "csv": "source_case_index.csv",
+    "json": "source_case_index.json",
+    "row_count": 170
+  },
+  "source_sha256": {
+    "phase1_cases.csv": "3ea1d9ddadce602f0a551d5091b4320b78be39565b2772eee3ffeea56110fc14",
+    "phase1_cases.json": "80f0e26fe180f91f810b65f562f9dc6ba7627676ebf680fea9de3d59e2be4360",
+    "phase1_manifest.csv": "1b8434d594ca1402a203e9c82b01ef206e4708f3f8fa6c2851ee3cbb906e976a",
+    "phase1_validation.json": "71c599db94c71f291eb96f80d288922a6132f3998979270e5d1ed9d5b3f1ad72",
+    "validation_manifest.csv": "36c78f89ecc3ba3bf257f694333dfe3ce396b6df4231c56fb73d229238e2f73e",
+    "validation_repeats.csv": "68caa9156b65ae423619262813da8f50e279ced59f6a3235486d64aff4eed032",
+    "validation_repeats.json": "de9052f33bccb61f1d1ec9a33a0085a5d0f1f910eaed4225b4b27783dfdd8658",
+    "validation_shortlist.csv": "f74e5afe4f4334388900588a1ae8b878d61ef79bdc14dc69ab671bff956018b4",
+    "validation_shortlist.json": "dc90884862631e45806d3a6c91c68aa451d262759be25881ddb3482ff62c57ba",
+    "validation_summary.csv": "492f06c3194e8d6a6db594516f763ebf73202e608a137f6bf8239df862c2057b",
+    "validation_summary.json": "b7231528320fc8a897f8eab2981b9110bef03e47560eee978e9bf6ade4e0f6c7",
+    "validation_validation.json": "24d7d5542ab30b608c399ee54c669ad9196b329943f9c7b070e9a75fe405fa99"
+  },
+  "status": "complete"
+}

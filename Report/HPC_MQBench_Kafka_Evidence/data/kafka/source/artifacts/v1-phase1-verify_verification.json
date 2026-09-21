@@ -1,0 +1,145 @@
+{
+  "backend_id": "kafka",
+  "eligible_case_count": 113,
+  "eligible_repeats_by_workload": {},
+  "expected_case_count": 120,
+  "extra_case_ids": [],
+  "format": "messaging-benchmark.workflow-result-verification.v1",
+  "ineligible_case_count": 7,
+  "ineligible_case_ids": [
+    "cfg_039",
+    "cfg_051",
+    "cfg_069",
+    "cfg_100",
+    "cfg_103",
+    "cfg_108",
+    "cfg_109"
+  ],
+  "ineligible_reasons": {
+    "cfg_039": [
+      "latency validation failed",
+      "case is ineligible"
+    ],
+    "cfg_051": [
+      "latency validation failed",
+      "case is ineligible"
+    ],
+    "cfg_069": [
+      "latency validation failed",
+      "case is ineligible"
+    ],
+    "cfg_100": [
+      "latency validation failed",
+      "case is ineligible"
+    ],
+    "cfg_103": [
+      "latency validation failed",
+      "case is ineligible",
+      "correctness counter surplus is not zero"
+    ],
+    "cfg_108": [
+      "latency validation failed",
+      "case is ineligible"
+    ],
+    "cfg_109": [
+      "latency validation failed",
+      "case is ineligible"
+    ]
+  },
+  "manifest": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/sweep_manifest.csv",
+  "manifest_sha256": "1b8434d594ca1402a203e9c82b01ef206e4708f3f8fa6c2851ee3cbb906e976a",
+  "max_clock_invalid_cases": 6,
+  "max_ineligible_cases": 7,
+  "min_eligible_repeats_per_workload": null,
+  "repair_clock_invalid_cases": false,
+  "repair_events": [
+    {
+      "attempt": 1,
+      "case_ids": [
+        "cfg_039",
+        "cfg_051",
+        "cfg_069",
+        "cfg_100",
+        "cfg_103",
+        "cfg_108",
+        "cfg_109"
+      ],
+      "finished_at": "2026-08-15T16:01:31Z",
+      "format": "messaging-benchmark.case-repair-attempt.v1",
+      "job_ids": [
+        "15299758",
+        "15299759",
+        "15299760"
+      ],
+      "reason": "Aborted before execution after audit found tolerated clock-only Phase 1 cases were incorrectly included with cfg_103.",
+      "status": "cancelled_before_start",
+      "submission_stage": "v1-phase1-submit",
+      "terminal_states": {
+        "15299758": "CANCELLED",
+        "15299759": "CANCELLED",
+        "15299760": "CANCELLED"
+      }
+    },
+    {
+      "artifacts": [
+        "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/slurm/v1-phase1-submit_repair_02.tsv"
+      ],
+      "attempt": 2,
+      "case_ids": [
+        "cfg_103"
+      ],
+      "finished_at": "2026-08-15T17:00:22+00:00",
+      "format": "messaging-benchmark.case-repair-attempt.v1",
+      "input_files": [
+        "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/recovery/v1-phase1-submit/attempt_02/batches/batch_001.csv"
+      ],
+      "job_ids": [
+        "15300023"
+      ],
+      "status": "completed",
+      "submission_stage": "v1-phase1-submit",
+      "submitted_at": "2026-08-15T16:02:35+00:00",
+      "terminal_states": {
+        "15300023": "COMPLETED"
+      },
+      "wait_started_at": "2026-08-15T16:02:35+00:00"
+    },
+    {
+      "artifacts": [
+        "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/slurm/v1-phase1-submit_repair_03.tsv"
+      ],
+      "attempt": 3,
+      "case_ids": [
+        "cfg_103"
+      ],
+      "finished_at": "2026-08-15T17:06:54+00:00",
+      "format": "messaging-benchmark.case-repair-attempt.v1",
+      "input_files": [
+        "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/recovery/v1-phase1-submit/attempt_03/batches/batch_001.csv"
+      ],
+      "job_ids": [
+        "15300870"
+      ],
+      "status": "completed",
+      "submission_stage": "v1-phase1-submit",
+      "submitted_at": "2026-08-15T17:00:53+00:00",
+      "terminal_states": {
+        "15300870": "COMPLETED"
+      },
+      "wait_started_at": "2026-08-15T17:00:53+00:00"
+    }
+  ],
+  "result_selection": "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/artifacts/v1-phase1-verify_result_selection.json",
+  "selected_results_root": "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/selected-results/v1",
+  "tolerated_clock_invalid_case_ids": [
+    "cfg_039",
+    "cfg_051",
+    "cfg_069",
+    "cfg_100",
+    "cfg_108",
+    "cfg_109"
+  ],
+  "valid": true,
+  "verified_at": "2026-08-15T19:14:32+00:00",
+  "verified_case_count": 120
+}

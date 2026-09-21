@@ -1,0 +1,235 @@
+{
+  "backend_id": "kafka",
+  "common_measurement_contract": {
+    "case_isolation": {
+      "clean_ram_backed_storage_between_cases": true,
+      "restart_backend_between_cases": true
+    },
+    "consumer_drain": {
+      "poll_during_producer_flush": true,
+      "start_after_all_producer_flushes": true,
+      "stop_condition": "target consumed or drain timeout",
+      "target": "callback-confirmed measurement-period deliveries"
+    },
+    "contract_id": "measurement.messaging.reproducible.v1",
+    "correctness": {
+      "duplicate": 0,
+      "eligibility_is_separate_from_qualification": true,
+      "invalid_envelope": 0,
+      "missing_after_drain": 0,
+      "out_of_order": 0,
+      "unexplained_surplus": 0
+    },
+    "latency": {
+      "clock_drift_limit_us": 250.0,
+      "clock_samples_before_and_after": 100,
+      "clock_uncertainty_limit_us": 250.0,
+      "deterministic_sample_every": 10,
+      "record_identity_on_every_record": true
+    },
+    "producer_delivery": {
+      "backlog_denominator": "measurement-period send attempts",
+      "backlog_event": "pending producer delivery callbacks at flush start"
+    },
+    "qualification_policy_id": "qualification.application.v1",
+    "qualification_thresholds": {
+      "backlog_percent_max": 5.0,
+      "failed_send_percent_max": 0.1,
+      "flush_duration_sec_max": 10.0
+    },
+    "timing": {
+      "drain_timeout_sec": 60,
+      "measurement_sec": 30,
+      "warmup_sec": 15
+    }
+  },
+  "completed_stages": [
+    "preflight",
+    "v1-generate",
+    "v1-phase1-submit",
+    "v1-phase1-wait",
+    "v1-phase1-verify",
+    "v1-phase1-analyze",
+    "v1-validation-generate",
+    "v1-validation-submit",
+    "v1-validation-wait",
+    "v1-validation-verify",
+    "v1-validation-analyze",
+    "v1-finalize",
+    "v2-initialize",
+    "v2-pilot-submit",
+    "v2-pilot-wait",
+    "v2-pilot-verify",
+    "v2-pilot-analyze",
+    "v2-calibration-submit",
+    "v2-calibration-wait",
+    "v2-calibration-verify",
+    "v2-calibration-analyze",
+    "v2-screening-generate",
+    "v2-screening-submit",
+    "v2-screening-wait",
+    "v2-screening-verify",
+    "v2-screening-analyze",
+    "v2-confirmation-generate",
+    "v2-confirmation-submit",
+    "v2-confirmation-wait",
+    "v2-confirmation-verify",
+    "v2-confirmation-analyze",
+    "v2-final-generate",
+    "v2-final-submit",
+    "v2-final-wait",
+    "v2-final-verify",
+    "v2-final-analyze"
+  ],
+  "execution_settings": {
+    "exclusive_allocation": true,
+    "format": "messaging-benchmark.workflow-execution-settings.v1",
+    "slurm": {
+      "account": "nhr_ni_starter_27971",
+      "constraint": null,
+      "partition": "standard96s",
+      "qos": "2h",
+      "time": "02:00:00"
+    }
+  },
+  "failures": [
+    {
+      "message": "result contract validation failed: cfg_103: latency validation failed; cfg_103: case is ineligible; cfg_103: correctness counter surplus is not zero",
+      "stage": "v1-phase1-verify",
+      "timestamp": "2026-08-15T00:32:45+00:00",
+      "type": "WorkflowError"
+    },
+    {
+      "message": "result contract validation failed: 7 ineligible case(s) exceed the stage limit of 6: cfg_039, cfg_051, cfg_069, cfg_100, cfg_103, cfg_108, cfg_109",
+      "stage": "v1-phase1-verify",
+      "timestamp": "2026-08-15T17:07:11+00:00",
+      "type": "WorkflowError"
+    },
+    {
+      "message": "immutable workflow input drift: checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_001.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_002.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_003.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_004.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_005.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_006.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_007.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_008.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_009.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_010.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_011.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_012.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_013.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_014.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_015.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_016.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_017.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_018.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_019.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_020.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_021.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_022.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_023.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_024.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_025.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_026.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_027.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_028.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_029.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_030.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_031.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_032.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_033.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_034.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_035.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_036.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_037.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_038.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_039.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_040.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_041.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_042.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_043.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_044.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_045.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_046.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_047.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_048.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_049.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_050.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_051.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_052.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_053.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_054.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_055.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_056.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_057.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_058.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_059.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_060.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_061.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_062.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_063.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_064.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_065.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_066.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_067.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_068.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_069.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_070.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_071.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_072.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_073.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_074.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_075.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_076.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_077.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_078.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_079.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_080.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_081.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_082.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_083.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_084.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_085.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_086.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_087.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_088.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_089.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_090.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_091.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_092.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_093.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_094.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_095.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_096.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_097.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_098.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_099.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_100.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_101.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_102.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_103.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_104.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_105.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_106.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_107.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_108.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_109.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_110.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_111.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_112.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_113.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_114.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_115.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_116.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_117.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_118.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_119.json, checksum drift results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v1/phase1/generated_configs/cfg_120.json",
+      "stage": null,
+      "timestamp": "2026-08-15T19:14:43+00:00",
+      "type": "WorkflowError"
+    },
+    {
+      "message": "required command(s) are unavailable: mpirun",
+      "stage": null,
+      "timestamp": "2026-08-15T19:33:56+00:00",
+      "type": "WorkflowError"
+    }
+  ],
+  "format": "messaging-benchmark.workflow-result.v2",
+  "generated_at": "2026-08-16T19:59:02+00:00",
+  "job_ids": [
+    "15280714",
+    "15280715",
+    "15280716",
+    "15280717",
+    "15303484",
+    "15303485",
+    "15307132",
+    "15310124",
+    "15321888",
+    "15323389",
+    "15324660",
+    "15324661"
+  ],
+  "machine_output_contract": {
+    "csv_primary_comparison_format": true,
+    "json_source_of_truth": true,
+    "presentation_pipeline": {
+      "artifact_types": [
+        "figures",
+        "tables",
+        "Markdown",
+        "HTML",
+        "LaTeX",
+        "PDF"
+      ],
+      "executed_by_workflow": false,
+      "required_for_success": false
+    },
+    "required_outputs": [
+      "per-case final_report.json",
+      "campaign/stage CSV files",
+      "validation summary CSV",
+      "provenance",
+      "manifests",
+      "checksums",
+      "workflow state"
+    ]
+  },
+  "mode": "run",
+  "provenance": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/artifacts/provenance.json",
+  "reporting": {
+    "executed_by_workflow": false,
+    "required_for_success": false,
+    "status": "not_requested"
+  },
+  "requested_phase": "all",
+  "result_paths": [
+    "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/sweeps/kafka_v1_reproducible/kafka_reproducible_standard96s_20260814T163308Z-v1",
+    "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/selected-results/v1",
+    "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2",
+    "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/selected-results/v2"
+  ],
+  "selected_configs": [
+    "cfg_107",
+    "cfg_061",
+    "cfg_113",
+    "cfg_101",
+    "cfg_094",
+    "cfg_001",
+    "cfg_007",
+    "cfg_062",
+    "cfg_049",
+    "cfg_096"
+  ],
+  "selected_profiles": [
+    "B0",
+    "B3",
+    "B5"
+  ],
+  "software_versions": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/artifacts/software_versions.json",
+  "stage_status": {
+    "preflight": "completed",
+    "v1-finalize": "completed",
+    "v1-generate": "completed",
+    "v1-phase1-analyze": "completed",
+    "v1-phase1-submit": "completed",
+    "v1-phase1-verify": "completed",
+    "v1-phase1-wait": "completed",
+    "v1-validation-analyze": "completed",
+    "v1-validation-generate": "completed",
+    "v1-validation-submit": "completed",
+    "v1-validation-verify": "completed",
+    "v1-validation-wait": "completed",
+    "v2-calibration-analyze": "completed",
+    "v2-calibration-submit": "completed",
+    "v2-calibration-verify": "completed",
+    "v2-calibration-wait": "completed",
+    "v2-confirmation-analyze": "completed",
+    "v2-confirmation-generate": "completed",
+    "v2-confirmation-submit": "completed",
+    "v2-confirmation-verify": "completed",
+    "v2-confirmation-wait": "completed",
+    "v2-final-analyze": "completed",
+    "v2-final-generate": "completed",
+    "v2-final-submit": "completed",
+    "v2-final-verify": "completed",
+    "v2-final-wait": "completed",
+    "v2-initialize": "completed",
+    "v2-pilot-analyze": "completed",
+    "v2-pilot-submit": "completed",
+    "v2-pilot-verify": "completed",
+    "v2-pilot-wait": "completed",
+    "v2-screening-analyze": "completed",
+    "v2-screening-generate": "completed",
+    "v2-screening-submit": "completed",
+    "v2-screening-verify": "completed",
+    "v2-screening-wait": "completed"
+  },
+  "status": "completed",
+  "workflow_id": "kafka_reproducible_standard96s_20260814T163308Z",
+  "workflow_state": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/workflow_state.json"
+}

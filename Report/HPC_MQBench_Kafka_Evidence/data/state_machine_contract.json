@@ -1,0 +1,25 @@
+{
+  "final_report_format": "messaging-benchmark.workflow-result.v2",
+  "resume_guards": [
+    "workflow identity and backend match",
+    "execution settings are unchanged",
+    "recorded input checksums still match",
+    "completed stage artifacts still exist and match",
+    "durable submission ledgers are reused"
+  ],
+  "stage_statuses": [
+    "running",
+    "completed",
+    "dry_run_completed",
+    "deferred",
+    "failed"
+  ],
+  "state_format": "messaging-benchmark.workflow-state.v2",
+  "workflow_statuses": [
+    "initialized",
+    "running",
+    "completed",
+    "dry_run_validated",
+    "failed"
+  ]
+}

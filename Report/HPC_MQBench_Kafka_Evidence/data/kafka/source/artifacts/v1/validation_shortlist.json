@@ -1,0 +1,219 @@
+{
+  "format": "messaging-benchmark.kafka-phase1-selection.v1",
+  "selection_policy": "qualification-first leaders plus boundary, overload, record-rate, baseline, and controlled one-factor evidence",
+  "shortlist": [
+    {
+      "balanced_mib_per_sec": 3001.52918917343,
+      "balanced_records_per_sec": 384195.73621419905,
+      "config_id": "cfg_107",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.105923268944025,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 8192,
+      "pending_backlog_percent": 2.7763840432461704,
+      "primary_rank": 1,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 4,
+      "selection_categories": [
+        "qualified_leader",
+        "qualification_rank_fill"
+      ],
+      "selection_order": 1
+    },
+    {
+      "balanced_mib_per_sec": 2998.191423418827,
+      "balanced_records_per_sec": 383768.50219760987,
+      "config_id": "cfg_061",
+      "failed_send_percent": 0.0,
+      "flush_sec": 1.9380622759927064,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 8192,
+      "pending_backlog_percent": 3.0257633267821618,
+      "primary_rank": 2,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 5,
+      "selection_categories": [
+        "qualified_leader",
+        "qualification_rank_fill"
+      ],
+      "selection_order": 2
+    },
+    {
+      "balanced_mib_per_sec": 2961.4496509002006,
+      "balanced_records_per_sec": 379065.5553152257,
+      "config_id": "cfg_113",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.0406379669439048,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 8192,
+      "pending_backlog_percent": 3.9414258923652645,
+      "primary_rank": 3,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 7,
+      "selection_categories": [
+        "qualified_leader",
+        "qualification_rank_fill"
+      ],
+      "selection_order": 3
+    },
+    {
+      "balanced_mib_per_sec": 3079.9830166212396,
+      "balanced_records_per_sec": 197118.91306375933,
+      "config_id": "cfg_101",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.8363780381623656,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 16384,
+      "pending_backlog_percent": 5.599367805836672,
+      "primary_rank": 100,
+      "qualification_status": "overdriven",
+      "raw_throughput_rank": 1,
+      "selection_categories": [
+        "closest_backlog_boundary",
+        "high_throughput_transition",
+        "raw_throughput_upper_bound"
+      ],
+      "selection_order": 4
+    },
+    {
+      "balanced_mib_per_sec": 999.76787109375,
+      "balanced_records_per_sec": 1023762.3,
+      "config_id": "cfg_094",
+      "failed_send_percent": 0.0,
+      "flush_sec": 0.3541236559394747,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 1024,
+      "pending_backlog_percent": 1.2294492479942103,
+      "primary_rank": 79,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 100,
+      "selection_categories": [
+        "record_rate_pressure"
+      ],
+      "selection_order": 5
+    },
+    {
+      "balanced_mib_per_sec": 1767.094921875,
+      "balanced_records_per_sec": 452376.3,
+      "config_id": "cfg_001",
+      "failed_send_percent": 0.0,
+      "flush_sec": 0.08520233095623553,
+      "manifest_note": "baseline",
+      "payload_size_bytes": 4096,
+      "pending_backlog_percent": 0.29551039022132725,
+      "primary_rank": 30,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 48,
+      "selection_categories": [
+        "manifest_baseline"
+      ],
+      "selection_order": 6
+    },
+    {
+      "balanced_mib_per_sec": 2698.7427476017588,
+      "balanced_records_per_sec": 690878.1433860502,
+      "config_id": "cfg_007",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.9293800918385386,
+      "manifest_note": "one-factor:producer_ranks=64",
+      "payload_size_bytes": 4096,
+      "pending_backlog_percent": 4.571074643732795,
+      "primary_rank": 6,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 16,
+      "selection_categories": [
+        "controlled_one_factor",
+        "qualification_rank_fill"
+      ],
+      "selection_order": 7
+    },
+    {
+      "balanced_mib_per_sec": 2783.412155708857,
+      "balanced_records_per_sec": 712553.5118614674,
+      "config_id": "cfg_062",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.1689673189539462,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 4096,
+      "pending_backlog_percent": 2.460949953852444,
+      "primary_rank": 4,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 13,
+      "selection_categories": [
+        "qualification_rank_fill"
+      ],
+      "selection_order": 8
+    },
+    {
+      "balanced_mib_per_sec": 2719.617285970418,
+      "balanced_records_per_sec": 696222.025208427,
+      "config_id": "cfg_049",
+      "failed_send_percent": 0.0,
+      "flush_sec": 2.6951714637689292,
+      "manifest_note": "rank-pair:64x64",
+      "payload_size_bytes": 4096,
+      "pending_backlog_percent": 3.013436851542263,
+      "primary_rank": 5,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 15,
+      "selection_categories": [
+        "qualification_rank_fill"
+      ],
+      "selection_order": 9
+    },
+    {
+      "balanced_mib_per_sec": 2624.757291666667,
+      "balanced_records_per_sec": 167984.46666666667,
+      "config_id": "cfg_096",
+      "failed_send_percent": 0.0,
+      "flush_sec": 0.07107047503814101,
+      "manifest_note": "seeded-mixed",
+      "payload_size_bytes": 16384,
+      "pending_backlog_percent": 0.1947098615504163,
+      "primary_rank": 7,
+      "qualification_status": "qualified",
+      "raw_throughput_rank": 19,
+      "selection_categories": [
+        "qualification_rank_fill"
+      ],
+      "selection_order": 10
+    }
+  ],
+  "source_case_count": 120,
+  "source_stage": "phase1",
+  "v2_profile_anchors": [
+    {
+      "balanced_mib_per_sec": 3001.52918917343,
+      "balanced_records_per_sec": 384195.73621419905,
+      "config_id": "cfg_107",
+      "primary_rank": 1,
+      "qualification_status": "qualified",
+      "role": "qualified_sustainable_leader"
+    },
+    {
+      "balanced_mib_per_sec": 2998.191423418827,
+      "balanced_records_per_sec": 383768.50219760987,
+      "config_id": "cfg_061",
+      "primary_rank": 2,
+      "qualification_status": "qualified",
+      "role": "qualified_sustainable_secondary"
+    },
+    {
+      "balanced_mib_per_sec": 999.76787109375,
+      "balanced_records_per_sec": 1023762.3,
+      "config_id": "cfg_094",
+      "primary_rank": 79,
+      "qualification_status": "qualified",
+      "role": "high_record_rate_pressure"
+    },
+    {
+      "balanced_mib_per_sec": 3079.9830166212396,
+      "balanced_records_per_sec": 197118.91306375933,
+      "config_id": "cfg_101",
+      "primary_rank": 100,
+      "qualification_status": "overdriven",
+      "role": "raw_throughput_upper_bound"
+    }
+  ],
+  "v2_profile_anchors_ready": true
+}

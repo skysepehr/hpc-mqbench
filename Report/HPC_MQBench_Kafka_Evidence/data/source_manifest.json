@@ -1,0 +1,190 @@
+{
+  "sources": [
+    {
+      "bytes": 1312,
+      "sha256": "f6a42ad57522f4f799d881f4c14ef2a4c6620001a5fbc40acb91f21839381aae",
+      "snapshot": "data/common_measurement_contract.json",
+      "source": "Report/BenchmarkSystem/data/common_measurement_contract.json"
+    },
+    {
+      "bytes": 500,
+      "sha256": "24ba26bdae774288178424bfa9b021760c5dc9acdda188f4f5ad256c48c61e14",
+      "snapshot": "data/machine_output_contract.json",
+      "source": "Report/BenchmarkSystem/data/machine_output_contract.json"
+    },
+    {
+      "bytes": 613,
+      "sha256": "50b2ce40b67e66fad15be0faded637cc6c80a9d0d094c20d5b085f7bda3c9f55",
+      "snapshot": "data/state_machine_contract.json",
+      "source": "Report/BenchmarkSystem/data/state_machine_contract.json"
+    },
+    {
+      "bytes": 102155,
+      "sha256": "3ea1d9ddadce602f0a551d5091b4320b78be39565b2772eee3ffeea56110fc14",
+      "snapshot": "data/audit/phase1_cases.csv",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/v1/phase1_cases.csv"
+    },
+    {
+      "bytes": 43137,
+      "sha256": "53116fab0d69440c249b6799bb007df7942954cddb3a1634556184305916bf5f",
+      "snapshot": "data/audit/v1_validation_repeats.csv",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/v1/validation_repeats.csv"
+    },
+    {
+      "bytes": 43147,
+      "sha256": "68caa9156b65ae423619262813da8f50e279ced59f6a3235486d64aff4eed032",
+      "snapshot": "data/audit/v2_validation_repeats.csv",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/v2/validation_repeats.csv"
+    },
+    {
+      "bytes": 270,
+      "sha256": "e05f190a3ef13dc66e260c55880b5a5b8e1a4b3269840b7f06de33ba5e9b527b",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/software_versions.json",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 69376,
+      "sha256": "808eb5665c867bc274e9f4b8912a71acebb9aac7b156433587aaa49e557c8403",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/provenance.json",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 923,
+      "sha256": "88f96b03747758c926b9669061d783f337bd35b5c3ee3605f1dae3cbaaa87935",
+      "source": "Report/Kafka/Kafka.zip!/data/source/artifacts/slurm_job_ids.csv",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 2836,
+      "sha256": "43432e01ca6b9a1522d566a3ab8a3c2101c8709ef3796f849f130c10803297ea",
+      "source": "configs/campaigns/kafka/v1_reproducible/campaign_plan.json",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 1901,
+      "sha256": "e39158bffa91d5378712f3f401cc831c0b4082c5c557ad7f074729e720184d87",
+      "source": "configs/campaigns/kafka/v1_reproducible/baseline_snapshot.json",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 1461,
+      "sha256": "d56c26d891f727b880e3045e8a286138a4e6c0f40321669df1e5e6c179f153f9",
+      "source": "configs/campaigns/kafka/v1_reproducible/broker_profiles/V1_FIXED_B0.json",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 9937,
+      "sha256": "d1587215f183f9c1105e661257c30badc0fdedc786cbc3b252a101e8a1f07253",
+      "source": "src/benchmark/backends/base.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 1391,
+      "sha256": "94cd58a2819da361a4a55a479b5e1324869f5b4e388f9aa5c584da732c592cbe",
+      "source": "src/benchmark/backends/registry.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 15761,
+      "sha256": "10e68fc0d0c26817b07355c0c68c50e09efb2530a0d8983b5bd4996250822a6d",
+      "source": "src/benchmark/backends/kafka/adapter.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 9394,
+      "sha256": "25e0389dd57bbf48167a1182e84a1574b0463b04e621eb6b50562ffe9198633c",
+      "source": "src/benchmark/kafka_client.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 19357,
+      "sha256": "2f0afacd389c903c1cc2851db83baebbddc490d68e6ed3cfb5507cc448b5331c",
+      "source": "models/benchmark_config.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 27238,
+      "sha256": "3718fdfee856abff1c42ae252b816d1d34cb21b3b05d49eb90e4ec1c98af2680",
+      "source": "src/benchmark/benchmark_controller.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 2479,
+      "sha256": "9cf13c67a23f9df6b31abf2b1fbbcfdbdec09a1d43b2964caba6551aa9c7c30c",
+      "source": "src/benchmark/roles.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 11259,
+      "sha256": "a4eb2129180600bab9467a7af76bfc65e6b4eb3a9e842594f412173d6e9c9443",
+      "source": "src/benchmark/payload_generator.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 24592,
+      "sha256": "e2174d7d8a2f89522e2dc649fde5bef6c86f109aa88cbed6fa5f817f2d62e33f",
+      "source": "src/benchmark/producer_worker.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 25841,
+      "sha256": "2708f34ea968df5073cb623913f1cf3296fd489e8a57f9ba8e16254effcdcf9d",
+      "source": "src/benchmark/consumer_worker.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 6252,
+      "sha256": "5bd60cf986dd031d135c85b91c04b3dc5d35a01a485e0a82ca50d0f830609caf",
+      "source": "src/benchmark/send_patterns.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 9760,
+      "sha256": "c5d22a3fa9a938ef4453bacf09be17ef495ae1ee962748482ba363bb1e7e626e",
+      "source": "src/benchmark/record_envelope.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 4823,
+      "sha256": "0e77216c3c123e7f7ab8ac2442f250ab2e5b9160017f80e447346b07e807f213",
+      "source": "src/benchmark/clock_calibration.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 4556,
+      "sha256": "e03e7a3634fdd7ec2ac0bc0d5ea1180d55265acb816d89f79a0e9f3b406332b6",
+      "source": "src/benchmark/qualification.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 82497,
+      "sha256": "61b37936e8ec7eadd02c52fddb83eff74b312f8164213fb224036256c46580c7",
+      "source": "src/benchmark/workflow/engine.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 17065,
+      "sha256": "e079f92ccded6e12df599a3f3c84e43c081105382aba6c90c43747da9859c2a3",
+      "source": "scripts/start_brokers.sh",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 22286,
+      "sha256": "8bf4a04e3b9f2b7bff425b5b6228eb67d0d17bf96a0481f801a8ef86b1e0f081",
+      "source": "scripts/run_backend_batch.sh",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 236139,
+      "sha256": "4c7af2b0fe4fbf3c01702eedf0d0cf05cc87e843b7fb169a708e88278a94f76f",
+      "source": "tests/smoke_test.py",
+      "used_for": "data/evidence_summary.json"
+    },
+    {
+      "bytes": 71673,
+      "sha256": "49121853b92c5fd5b345df8a58b9e2e7cb8ae38ef60ed368f2e60256e4617766",
+      "source": "tests/test_reproducible_workflow.py",
+      "used_for": "data/evidence_summary.json"
+    }
+  ]
+}

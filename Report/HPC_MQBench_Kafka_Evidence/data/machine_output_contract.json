@@ -1,0 +1,25 @@
+{
+  "csv_primary_comparison_format": true,
+  "json_source_of_truth": true,
+  "presentation_pipeline": {
+    "artifact_types": [
+      "figures",
+      "tables",
+      "Markdown",
+      "HTML",
+      "LaTeX",
+      "PDF"
+    ],
+    "executed_by_workflow": false,
+    "required_for_success": false
+  },
+  "required_outputs": [
+    "per-case final_report.json",
+    "campaign/stage CSV files",
+    "validation summary CSV",
+    "provenance",
+    "manifests",
+    "checksums",
+    "workflow state"
+  ]
+}

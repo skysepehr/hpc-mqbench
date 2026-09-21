@@ -1,0 +1,50 @@
+{
+  "backend_id": "kafka",
+  "created_at": "2026-08-16T14:53:32+00:00",
+  "format": "messaging-benchmark.result-selection.v1",
+  "ineligible_case_ids": [],
+  "ineligible_reasons": {},
+  "manifest": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v2/campaigns/rate_calibration.csv",
+  "missing_case_ids": [],
+  "repair_events": [],
+  "selected_reports": [
+    {
+      "case_id": "rate30_b01_latency_anchor_B0",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/rate_calibration/batch_001/cases/rate30_b01_latency_anchor_B0/final_report.json",
+      "source_report_sha256": "aeeb030b79e24b666c3c034ef4ffd786c316fb76a9b6386e38ac17cdb0a9d68f",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "rate30_b02_latency_anchor_B0",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/rate_calibration/batch_001/cases/rate30_b02_latency_anchor_B0/final_report.json",
+      "source_report_sha256": "df475c706811fed41a88881ac4d71e44be90c963c03f67f6953f6caa2b5700b6",
+      "strict_failures": [],
+      "structural_failures": []
+    },
+    {
+      "case_id": "rate30_b03_latency_anchor_B0",
+      "clock_only_invalid": false,
+      "eligible": true,
+      "requires_repair": false,
+      "selected_from_candidate_count": 2,
+      "selected_repair_attempt": 0,
+      "source_report": "results/tuning_v2/kafka_reproducible_standard96s_20260814T163308Z-v2/rate_calibration/batch_001/cases/rate30_b03_latency_anchor_B0/final_report.json",
+      "source_report_sha256": "ddf0c50748742c501ca7e2e7aa76de3516a3b18aa711420a70bcf04fe70311e6",
+      "strict_failures": [],
+      "structural_failures": []
+    }
+  ],
+  "selected_results_group": "v2",
+  "valid": true
+}

@@ -1,0 +1,43 @@
+{
+  "case_isolation": {
+    "clean_ram_backed_storage_between_cases": true,
+    "restart_backend_between_cases": true
+  },
+  "consumer_drain": {
+    "poll_during_producer_flush": true,
+    "start_after_all_producer_flushes": true,
+    "stop_condition": "target consumed or drain timeout",
+    "target": "callback-confirmed measurement-period deliveries"
+  },
+  "contract_id": "measurement.messaging.reproducible.v1",
+  "correctness": {
+    "duplicate": 0,
+    "eligibility_is_separate_from_qualification": true,
+    "invalid_envelope": 0,
+    "missing_after_drain": 0,
+    "out_of_order": 0,
+    "unexplained_surplus": 0
+  },
+  "latency": {
+    "clock_drift_limit_us": 250.0,
+    "clock_samples_before_and_after": 100,
+    "clock_uncertainty_limit_us": 250.0,
+    "deterministic_sample_every": 10,
+    "record_identity_on_every_record": true
+  },
+  "producer_delivery": {
+    "backlog_denominator": "measurement-period send attempts",
+    "backlog_event": "pending producer delivery callbacks at flush start"
+  },
+  "qualification_policy_id": "qualification.application.v1",
+  "qualification_thresholds": {
+    "backlog_percent_max": 5.0,
+    "failed_send_percent_max": 0.1,
+    "flush_duration_sec_max": 10.0
+  },
+  "timing": {
+    "drain_timeout_sec": 60,
+    "measurement_sec": 30,
+    "warmup_sec": 15
+  }
+}

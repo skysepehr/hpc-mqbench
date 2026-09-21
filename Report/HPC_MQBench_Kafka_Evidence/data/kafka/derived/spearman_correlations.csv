@@ -1,0 +1,45 @@
+backend_id,factor,factor_label,target,target_label,n,spearman_rho,permutation_p_value,permutations,bh_q_value,direction,interpretation
+kafka,producer_ranks,Producer MPI ranks,backlog_percent,Producer backlog (%),113,0.7563140576274924,0.002,499,0.008799999999999999,positive,strong positive monotonic association
+kafka,consumer_ranks,Consumer MPI ranks,backlog_percent,Producer backlog (%),113,0.35160036493302244,0.002,499,0.008799999999999999,positive,weak positive monotonic association
+kafka,linger_ms,Producer linger,backlog_percent,Producer backlog (%),113,-0.33965518569261627,0.004,499,0.016,negative,weak negative monotonic association
+kafka,payload_size_bytes,Payload size,backlog_percent,Producer backlog (%),113,0.19315382660717248,0.058,499,0.15011764705882352,positive,very weak positive monotonic association
+kafka,producer_queue_messages,Producer queue messages,backlog_percent,Producer backlog (%),113,-0.18757394058892787,0.054,499,0.1485,negative,very weak negative monotonic association
+kafka,consumer_fetch_message_max_bytes,Consumer fetch maximum,backlog_percent,Producer backlog (%),113,0.15140623098594078,0.108,499,0.2501052631578947,positive,very weak positive monotonic association
+kafka,batch_size,Producer batch size,backlog_percent,Producer backlog (%),113,0.1479769296963714,0.132,499,0.2904,positive,very weak positive monotonic association
+kafka,partitions,Topic partitions,backlog_percent,Producer backlog (%),113,0.11400803801750713,0.246,499,0.4230769230769231,positive,very weak positive monotonic association
+kafka,consumer_fetch_wait_max_ms,Consumer fetch wait,backlog_percent,Producer backlog (%),113,0.05061452469111529,0.6,499,0.7202105263157894,positive,very weak positive monotonic association
+kafka,producer_queue_kbytes,Producer queue capacity,backlog_percent,Producer backlog (%),113,-0.045648633858291036,0.612,499,0.7202105263157894,negative,very weak negative monotonic association
+kafka,consumer_fetch_min_bytes,Consumer fetch minimum,backlog_percent,Producer backlog (%),113,0.031213555028046073,0.724,499,0.7769756097560975,positive,very weak positive monotonic association
+kafka,payload_size_bytes,Payload size,balanced_mib_per_sec,Balanced MiB/s,113,0.6753513304998553,0.002,499,0.008799999999999999,positive,moderate positive monotonic association
+kafka,producer_ranks,Producer MPI ranks,balanced_mib_per_sec,Balanced MiB/s,113,0.5699888988333082,0.002,499,0.008799999999999999,positive,moderate positive monotonic association
+kafka,consumer_ranks,Consumer MPI ranks,balanced_mib_per_sec,Balanced MiB/s,113,0.3484533953414314,0.002,499,0.008799999999999999,positive,weak positive monotonic association
+kafka,producer_queue_messages,Producer queue messages,balanced_mib_per_sec,Balanced MiB/s,113,-0.21117891842405692,0.052,499,0.1485,negative,weak negative monotonic association
+kafka,producer_queue_kbytes,Producer queue capacity,balanced_mib_per_sec,Balanced MiB/s,113,0.09234251120625984,0.336,499,0.5475555555555556,positive,very weak positive monotonic association
+kafka,consumer_fetch_message_max_bytes,Consumer fetch maximum,balanced_mib_per_sec,Balanced MiB/s,113,0.07823126824377548,0.382,499,0.5795862068965517,positive,very weak positive monotonic association
+kafka,batch_size,Producer batch size,balanced_mib_per_sec,Balanced MiB/s,113,0.06934755473975639,0.468,499,0.6435000000000001,positive,very weak positive monotonic association
+kafka,linger_ms,Producer linger,balanced_mib_per_sec,Balanced MiB/s,113,0.048157598632205624,0.622,499,0.7202105263157894,positive,very weak positive monotonic association
+kafka,partitions,Topic partitions,balanced_mib_per_sec,Balanced MiB/s,113,-0.03794578461791428,0.678,499,0.7649230769230769,negative,very weak negative monotonic association
+kafka,consumer_fetch_wait_max_ms,Consumer fetch wait,balanced_mib_per_sec,Balanced MiB/s,113,0.032558154274363794,0.718,499,0.7769756097560975,positive,very weak positive monotonic association
+kafka,consumer_fetch_min_bytes,Consumer fetch minimum,balanced_mib_per_sec,Balanced MiB/s,113,-0.011820332496281859,0.906,499,0.9060000000000001,negative,very weak negative monotonic association
+kafka,producer_ranks,Producer MPI ranks,balanced_records_per_sec,Balanced records/s,113,0.6439633224423248,0.002,499,0.008799999999999999,positive,moderate positive monotonic association
+kafka,payload_size_bytes,Payload size,balanced_records_per_sec,Balanced records/s,113,-0.6265297310966519,0.002,499,0.008799999999999999,negative,moderate negative monotonic association
+kafka,consumer_fetch_min_bytes,Consumer fetch minimum,balanced_records_per_sec,Balanced records/s,113,-0.25246994917938786,0.006,499,0.022000000000000002,negative,weak negative monotonic association
+kafka,consumer_ranks,Consumer MPI ranks,balanced_records_per_sec,Balanced records/s,113,-0.15018566555033994,0.106,499,0.2501052631578947,negative,very weak negative monotonic association
+kafka,producer_queue_kbytes,Producer queue capacity,balanced_records_per_sec,Balanced records/s,113,-0.13123507123581546,0.17,499,0.34,negative,very weak negative monotonic association
+kafka,producer_queue_messages,Producer queue messages,balanced_records_per_sec,Balanced records/s,113,0.10856800531109839,0.25,499,0.4230769230769231,positive,very weak positive monotonic association
+kafka,consumer_fetch_message_max_bytes,Consumer fetch maximum,balanced_records_per_sec,Balanced records/s,113,0.10371358766705274,0.25,499,0.4230769230769231,positive,very weak positive monotonic association
+kafka,partitions,Topic partitions,balanced_records_per_sec,Balanced records/s,113,-0.07255424466538461,0.428,499,0.6245161290322581,negative,very weak negative monotonic association
+kafka,batch_size,Producer batch size,balanced_records_per_sec,Balanced records/s,113,0.0451958796856854,0.606,499,0.7202105263157894,positive,very weak positive monotonic association
+kafka,consumer_fetch_wait_max_ms,Consumer fetch wait,balanced_records_per_sec,Balanced records/s,113,-0.016602010164450096,0.872,499,0.9004651162790698,negative,very weak negative monotonic association
+kafka,linger_ms,Producer linger,balanced_records_per_sec,Balanced records/s,113,-0.014805192401068945,0.88,499,0.9004651162790698,negative,very weak negative monotonic association
+kafka,producer_ranks,Producer MPI ranks,latency_p99_ms,p99 latency (ms),113,0.758874306583531,0.002,499,0.008799999999999999,positive,strong positive monotonic association
+kafka,consumer_ranks,Consumer MPI ranks,latency_p99_ms,p99 latency (ms),113,0.35132017631506257,0.002,499,0.008799999999999999,positive,weak positive monotonic association
+kafka,linger_ms,Producer linger,latency_p99_ms,p99 latency (ms),113,-0.33916918004958824,0.002,499,0.008799999999999999,negative,weak negative monotonic association
+kafka,payload_size_bytes,Payload size,latency_p99_ms,p99 latency (ms),113,0.25575832344202726,0.014,499,0.047384615384615386,positive,weak positive monotonic association
+kafka,producer_queue_messages,Producer queue messages,latency_p99_ms,p99 latency (ms),113,-0.1950976091931586,0.038,499,0.11942857142857143,negative,very weak negative monotonic association
+kafka,batch_size,Producer batch size,latency_p99_ms,p99 latency (ms),113,0.13545656222450914,0.158,499,0.33104761904761904,positive,very weak positive monotonic association
+kafka,consumer_fetch_message_max_bytes,Consumer fetch maximum,latency_p99_ms,p99 latency (ms),113,0.11741478143591237,0.206,499,0.39408695652173914,positive,very weak positive monotonic association
+kafka,partitions,Topic partitions,latency_p99_ms,p99 latency (ms),113,0.0927659473977548,0.358,499,0.5625714285714285,positive,very weak positive monotonic association
+kafka,consumer_fetch_min_bytes,Consumer fetch minimum,latency_p99_ms,p99 latency (ms),113,0.0658206512200084,0.44,499,0.6245161290322581,positive,very weak positive monotonic association
+kafka,consumer_fetch_wait_max_ms,Consumer fetch wait,latency_p99_ms,p99 latency (ms),113,0.061506859019790076,0.512,499,0.6826666666666666,positive,very weak positive monotonic association
+kafka,producer_queue_kbytes,Producer queue capacity,latency_p99_ms,p99 latency (ms),113,-0.06011425340434578,0.58,499,0.7202105263157894,negative,very weak negative monotonic association

@@ -1,0 +1,13 @@
+varied_limit,pending_limit_percent,flush_limit_seconds,failed_send_limit_percent,eligible,qualified,overdriven,highest_qualified_config,highest_balanced_endpoint_mibps
+pending_percent,2,10,0.1,113,92,21,cfg_096,2624.757291666667
+pending_percent,5,10,0.1,113,99,14,cfg_107,3001.52918917343
+pending_percent,10,10,0.1,113,103,10,cfg_101,3079.9830166212396
+flush_seconds,5,1,0.1,113,92,21,cfg_096,2624.757291666667
+flush_seconds,5,3,0.1,113,99,14,cfg_107,3001.52918917343
+flush_seconds,5,5,0.1,113,99,14,cfg_107,3001.52918917343
+flush_seconds,5,10,0.1,113,99,14,cfg_107,3001.52918917343
+flush_seconds,5,30,0.1,113,99,14,cfg_107,3001.52918917343
+failed_send_percent,5,10,0,113,99,14,cfg_107,3001.52918917343
+failed_send_percent,5,10,0.01,113,99,14,cfg_107,3001.52918917343
+failed_send_percent,5,10,0.1,113,99,14,cfg_107,3001.52918917343
+failed_send_percent,5,10,1,113,99,14,cfg_107,3001.52918917343

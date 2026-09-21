@@ -1,0 +1,23 @@
+{
+  "instrumentation": {
+    "disabled_median_balanced_mibps": 453.4119140625,
+    "enabled_1_in_10_median_balanced_mibps": 451.6388671875,
+    "latency_sample_every": 10,
+    "paired_overhead_fractions": [
+      0.004094820994809777,
+      -5.276857443037854e-05,
+      0.00418470283829711
+    ],
+    "required_cases_valid": true,
+    "sampling_decision_valid": true,
+    "threshold_percent": 3.0,
+    "throughput_overhead_fraction": 0.004094820994809777,
+    "throughput_overhead_percent": 0.4094820994809777,
+    "throughput_overhead_within_threshold": true
+  },
+  "measurement_limitations": {
+    "kafka_network_processor_idle_ratio": "Kafka 4.2 did not expose the legacy NetworkProcessorAvgIdlePercent MBean on the tested broker; the value is left unavailable and is not estimated."
+  },
+  "profile_selection": null,
+  "screening_selection": null
+}

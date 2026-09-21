@@ -1,0 +1,31 @@
+{
+  "backend_id": "kafka",
+  "eligible_case_count": 3,
+  "eligible_repeats_by_workload": {},
+  "expected_case_count": 3,
+  "extra_case_ids": [
+    "pilot_b01_o01_sample10_cfg074",
+    "pilot_b01_o02_off_cfg074",
+    "pilot_b02_o01_off_cfg074",
+    "pilot_b02_o02_sample10_cfg074",
+    "pilot_b03_o01_off_cfg074",
+    "pilot_b03_o02_sample10_cfg074"
+  ],
+  "format": "messaging-benchmark.workflow-result-verification.v1",
+  "ineligible_case_count": 0,
+  "ineligible_case_ids": [],
+  "ineligible_reasons": {},
+  "manifest": "results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/inputs/kafka-v2/campaigns/rate_calibration.csv",
+  "manifest_sha256": "d577258b54aa7d8a1690bba89c487a1610f2da8981ed7dcb7526ccefb24f95fb",
+  "max_clock_invalid_cases": 0,
+  "max_ineligible_cases": 0,
+  "min_eligible_repeats_per_workload": null,
+  "repair_clock_invalid_cases": true,
+  "repair_events": [],
+  "result_selection": "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/artifacts/v2-calibration-verify_result_selection.json",
+  "selected_results_root": "/mnt/vast-nhr/projects/nhr_ni_starter_27971/messaging-benchmark-29ffcb4/results/workflows/kafka/kafka_reproducible_standard96s_20260814T163308Z/selected-results/v2",
+  "tolerated_clock_invalid_case_ids": [],
+  "valid": true,
+  "verified_at": "2026-08-16T14:53:32+00:00",
+  "verified_case_count": 3
+}

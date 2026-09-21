@@ -1,0 +1,245 @@
+{
+  "instrumentation": {
+    "disabled_median_balanced_mibps": 453.4119140625,
+    "enabled_1_in_10_median_balanced_mibps": 451.6388671875,
+    "latency_sample_every": 10,
+    "paired_overhead_fractions": [
+      0.004094820994809777,
+      -5.276857443037854e-05,
+      0.00418470283829711
+    ],
+    "required_cases_valid": true,
+    "sampling_decision_valid": true,
+    "threshold_percent": 3.0,
+    "throughput_overhead_fraction": 0.004094820994809777,
+    "throughput_overhead_percent": 0.4094820994809777,
+    "throughput_overhead_within_threshold": true
+  },
+  "measurement_limitations": {
+    "kafka_network_processor_idle_ratio": "Kafka 4.2 did not expose the legacy NetworkProcessorAvgIdlePercent MBean on the tested broker; the value is left unavailable and is not estimated."
+  },
+  "profile_selection": {
+    "baseline_complete": true,
+    "maximum_load_anchors": [
+      "cfg_107",
+      "cfg_061",
+      "cfg_094",
+      "cfg_101"
+    ],
+    "profiles": [
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.0,
+        "latency_p99_ratio_to_B0": 1.0,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 33.86857269471125,
+        "median_gc_time_rate_p95_ms_per_sec": 8.793103448275863,
+        "median_latency_anchor_p99_ms": 544.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9419136793914791,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B0",
+        "qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "required_measurements_valid": true,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 1000.1236028427561
+      },
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.0156566785995558,
+        "latency_p99_ratio_to_B0": 0.5974264705882353,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 4.730073391238875,
+        "median_gc_time_rate_p95_ms_per_sec": 14.0,
+        "median_latency_anchor_p99_ms": 325.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9574507957525447,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B5",
+        "qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "required_measurements_valid": true,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 994.3017619283327
+      },
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.0161478520961698,
+        "latency_p99_ratio_to_B0": 0.5955882352941176,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 7.22037760416697,
+        "median_gc_time_rate_p95_ms_per_sec": 14.793103448275863,
+        "median_latency_anchor_p99_ms": 324.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9575832366635698,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B3",
+        "qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "required_measurements_valid": true,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 994.7920162079841
+      },
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.011283853197451,
+        "latency_p99_ratio_to_B0": 0.5772058823529411,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 0.0,
+        "median_gc_time_rate_p95_ms_per_sec": 15.965517241379311,
+        "median_latency_anchor_p99_ms": 314.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9525062927146027,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B2",
+        "qualified_counts": {
+          "cfg_061": 1,
+          "cfg_107": 1
+        },
+        "required_measurements_valid": false,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 987.8607174243667
+      },
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.0139101734471394,
+        "latency_p99_ratio_to_B0": 0.5863970588235294,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 0.0,
+        "median_gc_time_rate_p95_ms_per_sec": 15.586206896551724,
+        "median_latency_anchor_p99_ms": 319.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9576029401046164,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B4",
+        "qualified_counts": {
+          "cfg_061": 1,
+          "cfg_107": 1
+        },
+        "required_measurements_valid": false,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 993.2322404916885
+      },
+      {
+        "B0_qualified_counts": {
+          "cfg_061": 3,
+          "cfg_107": 3
+        },
+        "geometric_mean_median_throughput_ratio_to_B0": 1.0135433681821375,
+        "latency_p99_ratio_to_B0": 0.5974264705882353,
+        "max_request_queue_p95": 0.0,
+        "max_response_queue_p95": 0.0,
+        "median_anchor_throughput_iqr_mibps": 0.0,
+        "median_gc_time_rate_p95_ms_per_sec": 13.586206896551724,
+        "median_latency_anchor_p99_ms": 325.0,
+        "median_network_processor_idle_ratio": null,
+        "median_request_handler_idle_ratio": 0.9393434464794891,
+        "no_correctness_regression": true,
+        "passes_all_rules": false,
+        "profile_id": "B1",
+        "qualified_counts": {
+          "cfg_061": 1,
+          "cfg_107": 1
+        },
+        "required_measurements_valid": false,
+        "resource_limits_pass": true,
+        "worst_anchor_median_mibps": 986.806582397264
+      }
+    ],
+    "retained_B0": true,
+    "scope_statement": "The winner is the best eligible profile among B0-B5 for this single-broker GWDG environment, not a universal Kafka optimum.",
+    "sustainable_anchors": [
+      "cfg_107",
+      "cfg_061"
+    ],
+    "winner": "B0"
+  },
+  "screening_selection": {
+    "confirmation_profiles": [
+      "B0",
+      "B3",
+      "B5"
+    ],
+    "maximum_load_anchors": [
+      "cfg_107",
+      "cfg_061",
+      "cfg_094",
+      "cfg_101"
+    ],
+    "profiles": [
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0379995712785184,
+        "profile_id": "B5",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0348770797969387,
+        "profile_id": "B2",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0,
+        "profile_id": "B0",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0375646720313203,
+        "profile_id": "B4",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.040926790131593,
+        "profile_id": "B3",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      },
+      {
+        "geometric_mean_throughput_ratio_to_B0": 1.0371893092088063,
+        "profile_id": "B1",
+        "sustainable_anchor_qualified_count": 2,
+        "valid_run_count": 5
+      }
+    ],
+    "selection_rule": "valid-run count, sustainable-anchor qualification, then geometric mean throughput ratio to B0",
+    "sustainable_anchors": [
+      "cfg_107",
+      "cfg_061"
+    ]
+  }
+}

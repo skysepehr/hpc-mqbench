@@ -186,6 +186,21 @@ for filenames, report modes, traceability and known diagnostic limitations.
 Generated bottleneck messages are inspection aids, not established causes.
 Missing measurements must not be treated as zero or evidence of spare capacity.
 
+## Kafka Paper Companion Evidence
+
+The [companion evidence folder](Report/HPC_MQBench_Kafka_Evidence/README.md)
+contains the retained numerical inputs for the combined HPC-MQBench/Kafka paper:
+120 selected screening rows, 100 validation observations, auxiliary profile and
+instrumentation evidence, configuration/order manifests, verification scripts,
+and checksums. Its [artifact guide](Report/HPC_MQBench_Kafka_Evidence/ARTIFACT_GUIDE.md)
+maps every paper table and figure to its inputs. The manuscript snapshot is
+included for auditing; it is not an output of an ordinary benchmark run.
+
+Snapshot tag: `kafka-paper-evidence-v1`. The artifact README states the available
+checks, missing raw evidence, and current access/release limitations. Its
+`PROVENANCE.json` distinguishes the inspected code revision from the unknown
+campaign-time revision.
+
 ## Repository Layout
 
 ```text

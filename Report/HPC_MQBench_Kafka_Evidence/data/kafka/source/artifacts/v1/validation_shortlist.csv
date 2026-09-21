@@ -1,0 +1,11 @@
+selection_order,config_id,selection_categories,primary_rank,raw_throughput_rank,qualification_status,balanced_mib_per_sec,balanced_records_per_sec,pending_backlog_percent,flush_sec,failed_send_percent,payload_size_bytes,manifest_note
+1,cfg_107,"qualified_leader,qualification_rank_fill",1,4,qualified,3001.52918917343,384195.73621419905,2.7763840432461704,2.105923268944025,0.0,8192,seeded-mixed
+2,cfg_061,"qualified_leader,qualification_rank_fill",2,5,qualified,2998.191423418827,383768.50219760987,3.0257633267821618,1.9380622759927064,0.0,8192,seeded-mixed
+3,cfg_113,"qualified_leader,qualification_rank_fill",3,7,qualified,2961.4496509002006,379065.5553152257,3.9414258923652645,2.0406379669439048,0.0,8192,seeded-mixed
+4,cfg_101,"closest_backlog_boundary,high_throughput_transition,raw_throughput_upper_bound",100,1,overdriven,3079.9830166212396,197118.91306375933,5.599367805836672,2.8363780381623656,0.0,16384,seeded-mixed
+5,cfg_094,record_rate_pressure,79,100,qualified,999.76787109375,1023762.3,1.2294492479942103,0.3541236559394747,0.0,1024,seeded-mixed
+6,cfg_001,manifest_baseline,30,48,qualified,1767.094921875,452376.3,0.29551039022132725,0.08520233095623553,0.0,4096,baseline
+7,cfg_007,"controlled_one_factor,qualification_rank_fill",6,16,qualified,2698.7427476017588,690878.1433860502,4.571074643732795,2.9293800918385386,0.0,4096,one-factor:producer_ranks=64
+8,cfg_062,qualification_rank_fill,4,13,qualified,2783.412155708857,712553.5118614674,2.460949953852444,2.1689673189539462,0.0,4096,seeded-mixed
+9,cfg_049,qualification_rank_fill,5,15,qualified,2719.617285970418,696222.025208427,3.013436851542263,2.6951714637689292,0.0,4096,rank-pair:64x64
+10,cfg_096,qualification_rank_fill,7,19,qualified,2624.757291666667,167984.46666666667,0.1947098615504163,0.07107047503814101,0.0,16384,seeded-mixed

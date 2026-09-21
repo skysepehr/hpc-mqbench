@@ -1,0 +1,21 @@
+{
+  "backend_id": "kafka",
+  "baseline_config_id": "cfg_001",
+  "design_group_counts": {
+    "baseline": 1,
+    "one-factor": 43,
+    "rank-pair": 9,
+    "seeded-mixed": 67
+  },
+  "eligible_count": 113,
+  "errors": [],
+  "latency_valid_count": 113,
+  "qualification_mismatches": 0,
+  "qualified_count": 99,
+  "record_throughput_mismatches": 0,
+  "row_count": 120,
+  "throughput_mismatches": 0,
+  "unique_config_ids": 120,
+  "unique_parameter_vectors": 120,
+  "valid": true
+}

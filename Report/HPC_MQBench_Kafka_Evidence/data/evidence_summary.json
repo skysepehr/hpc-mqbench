@@ -1,0 +1,320 @@
+{
+  "audit_scope": "row-level recomputation from compact published CSV evidence",
+  "backend_id": "kafka",
+  "campaign_git_commit": null,
+  "campaign_worktree_dirty": false,
+  "common_contract_sha256": "cb4330b4c94380d9341ceeab9d43dd8b0b44df897c945933eade6103372cc660",
+  "execution": {
+    "exclusive_allocation": true,
+    "slurm": {
+      "constraint": null,
+      "partition": "standard96s",
+      "qos": "2h",
+      "time": "02:00:00"
+    },
+    "submitted_job_records": 12
+  },
+  "experimental_setup": {
+    "broker_profile": {
+      "fixed_semantics": {
+        "acks": "1",
+        "broker_count": 1,
+        "compression_type": "none",
+        "garbage_collector": "Java 17 server JVM default (G1)",
+        "java_major_version": 17,
+        "log_storage": "RAM-backed /dev/shm",
+        "network_interface": "ib0",
+        "replication_factor": 1,
+        "topic_partitions_varied_per_case": true
+      },
+      "profile_id": "V1_FIXED_B0",
+      "profile_sha256": "0db75402321b5c96c5fc2def4fe5cf950325084c71b94766f8d5d954cd7e6963",
+      "settings": {
+        "heap_opts": "-Xms8g -Xmx8g",
+        "log_segment_bytes": 1073741824,
+        "num_io_threads": 16,
+        "num_network_threads": 8,
+        "queued_max_requests": 1000,
+        "socket_receive_buffer_bytes": 1048576,
+        "socket_request_max_bytes": 104857600,
+        "socket_send_buffer_bytes": 1048576
+      }
+    },
+    "case_isolation": {
+      "clean_ram_backed_broker_storage_between_cases": true,
+      "restart_kafka_between_cases": true
+    },
+    "instrumentation": {
+      "clock_drift_limit_us": 250.0,
+      "clock_samples_before_and_after": 100,
+      "clock_uncertainty_limit_us": 250.0,
+      "correctness_identity_scope": "every record",
+      "deterministic_sampling_rule": "sequence_number modulo 10 equals zero",
+      "exact_correctness_accounting": true,
+      "latency_timestamp_sample_every": 10,
+      "record_envelope_on_every_record": true,
+      "record_identity": "producer rank plus sequence number"
+    },
+    "messaging": {
+      "acks": "1",
+      "broker_count": 1,
+      "compression_type": "none",
+      "replication_factor": 1,
+      "scenario": "simultaneous"
+    },
+    "phase1": {
+      "batch_size": 30,
+      "case_count": 120,
+      "consumer_rank_values": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64
+      ],
+      "job_count": 4,
+      "partition_values": [
+        60,
+        90,
+        120,
+        180,
+        240
+      ],
+      "payload_mode": "fixed_size",
+      "payload_size_values": [
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "producer_logical_source_max": 3200000,
+      "producer_logical_source_min": 800000,
+      "producer_rank_values": [
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64
+      ],
+      "send_pattern": "steady",
+      "target_records_per_sec": null,
+      "virtual_devices_per_producer_rank": 50000
+    },
+    "role_placement": [
+      "producer/controller node",
+      "single Kafka broker node",
+      "consumer node",
+      "monitoring/result node"
+    ],
+    "timing": {
+      "drain_timeout_sec": 60,
+      "measurement_sec": 30,
+      "pending_callbacks_snapshotted_before_flush": true,
+      "producer_flush_before_consumer_drain": true,
+      "producer_stop_at_measurement_end": true,
+      "warmup_sec": 15
+    },
+    "unavailable_in_campaign_artifacts": [
+      "compute-node processor model",
+      "per-node installed memory",
+      "nominal network link rate",
+      "Kafka distribution version",
+      "confluent-kafka version",
+      "librdkafka version",
+      "campaign-time repository commit"
+    ]
+  },
+  "mechanism_tests": [
+    {
+      "exercised_behavior": "Exact policy limits and just-over-limit cases are classified separately.",
+      "mechanism": "Qualification boundaries",
+      "source": "tests/smoke_test.py"
+    },
+    {
+      "exercised_behavior": "Corrupt envelopes, duplicates, and per-partition position regressions are exercised.",
+      "mechanism": "Envelope and ordering",
+      "source": "tests/smoke_test.py"
+    },
+    {
+      "exercised_behavior": "Negative latency and missing or invalid calibrated latency are rejected.",
+      "mechanism": "Latency validity",
+      "source": "tests/smoke_test.py"
+    },
+    {
+      "exercised_behavior": "A backend out-of-memory health signal makes a run ineligible.",
+      "mechanism": "Backend health",
+      "source": "tests/smoke_test.py"
+    },
+    {
+      "exercised_behavior": "Completed stages are reused, while input drift and missing completed artifacts fail the resume audit.",
+      "mechanism": "Resume and integrity",
+      "source": "tests/test_reproducible_workflow.py"
+    }
+  ],
+  "monitoring_scopes": [
+    "application",
+    "backend JMX/JVM",
+    "process",
+    "network interface",
+    "host",
+    "memory/storage"
+  ],
+  "phase1": {
+    "design_group_counts": {
+      "baseline": 1,
+      "one-factor": 43,
+      "rank-pair": 9,
+      "seeded-mixed": 67
+    },
+    "policy_audit": {
+      "ineligibility_reason_counts": {
+        "incomplete_execution": 0,
+        "invalid_envelope": 0,
+        "invalid_latency": 7,
+        "missing_duplicate_or_out_of_order": 0,
+        "unexplained_surplus": 1
+      },
+      "overdriven_exclusive_threshold_combinations": {
+        "pending_delivery": 8,
+        "pending_delivery+flush": 4,
+        "pending_delivery+flush+failed_sends": 2
+      },
+      "overdriven_marginal_threshold_counts": {
+        "failed_sends": 2,
+        "flush": 6,
+        "pending_delivery": 14
+      },
+      "pending_delivery_threshold_sensitivity": [
+        {
+          "failed_send_percent_max": 0.1,
+          "flush_sec_max": 10.0,
+          "ineligible": 7,
+          "overdriven": 23,
+          "producer_pending_delivery_percent_max": 1.0,
+          "qualified": 90
+        },
+        {
+          "failed_send_percent_max": 0.1,
+          "flush_sec_max": 10.0,
+          "ineligible": 7,
+          "overdriven": 21,
+          "producer_pending_delivery_percent_max": 2.0,
+          "qualified": 92
+        },
+        {
+          "failed_send_percent_max": 0.1,
+          "flush_sec_max": 10.0,
+          "ineligible": 7,
+          "overdriven": 14,
+          "producer_pending_delivery_percent_max": 5.0,
+          "qualified": 99
+        },
+        {
+          "failed_send_percent_max": 0.1,
+          "flush_sec_max": 10.0,
+          "ineligible": 7,
+          "overdriven": 10,
+          "producer_pending_delivery_percent_max": 10.0,
+          "qualified": 103
+        }
+      ]
+    },
+    "recomputation_mismatches": {},
+    "rows": 120,
+    "status_counts": {
+      "Ineligible": 7,
+      "Overdriven": 14,
+      "Qualified": 99
+    },
+    "unique_configurations": 120
+  },
+  "public_source_revision": "bca9a4d18892f5ebff80d474da6ba57a0da749d2",
+  "reference_backend_sources": [
+    "src/benchmark/backends/base.py",
+    "src/benchmark/backends/registry.py",
+    "src/benchmark/backends/kafka/adapter.py",
+    "src/benchmark/kafka_client.py",
+    "models/benchmark_config.py",
+    "src/benchmark/benchmark_controller.py",
+    "src/benchmark/roles.py",
+    "src/benchmark/payload_generator.py",
+    "src/benchmark/producer_worker.py",
+    "src/benchmark/consumer_worker.py",
+    "src/benchmark/send_patterns.py",
+    "src/benchmark/record_envelope.py",
+    "src/benchmark/clock_calibration.py",
+    "src/benchmark/qualification.py",
+    "src/benchmark/workflow/engine.py",
+    "scripts/start_brokers.sh",
+    "scripts/run_backend_batch.sh"
+  ],
+  "repeated_validation": [
+    {
+      "audit": {
+        "block_errors": [],
+        "case_rows": 50,
+        "complete_five_block_design": true,
+        "configurations": 10,
+        "eligible_case_rows": 50,
+        "ineligible_case_rows": 0,
+        "median_qualified_repeats_per_configuration": 2.0,
+        "median_throughput_cv_percent": 7.200881007846808,
+        "median_throughput_iqr_mib_per_sec": 312.282396476282,
+        "qualification_count_distribution": {
+          "0": 1,
+          "1": 0,
+          "2": 5,
+          "3": 1,
+          "4": 1,
+          "5": 2
+        },
+        "qualified_case_rows": 27,
+        "row_recomputation_mismatches": {},
+        "uniform_state_configurations": 3,
+        "uniform_state_percent": 30.0
+      },
+      "campaign_id": "v1_validation"
+    },
+    {
+      "audit": {
+        "block_errors": [],
+        "case_rows": 50,
+        "complete_five_block_design": true,
+        "configurations": 10,
+        "eligible_case_rows": 50,
+        "ineligible_case_rows": 0,
+        "median_qualified_repeats_per_configuration": 5.0,
+        "median_throughput_cv_percent": 2.3125117971950906,
+        "median_throughput_iqr_mib_per_sec": 69.37492235962623,
+        "qualification_count_distribution": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 6
+        },
+        "qualified_case_rows": 41,
+        "row_recomputation_mismatches": {},
+        "uniform_state_configurations": 7,
+        "uniform_state_percent": 70.0
+      },
+      "campaign_id": "v2_final_validation"
+    }
+  ],
+  "software_versions": {
+    "adapter_version": "1",
+    "backend_id": "kafka",
+    "git": "git version 2.43.7",
+    "java": "openjdk version \"17.0.11\" 2024-04-16",
+    "mpirun": "mpirun (Open MPI) 5.0.6",
+    "python": "3.11.9 (main, Mar 14 2025, 02:19:31) [GCC 14.2.0]",
+    "sbatch": "slurm 26.05.1"
+  },
+  "workflow_id": "kafka_reproducible_standard96s_20260814T163308Z"
+}

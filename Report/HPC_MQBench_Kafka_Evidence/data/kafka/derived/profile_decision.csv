@@ -1,0 +1,7 @@
+profile_id,settings,throughput_ratio,p99_ratio,measurements_valid,selected,decision
+B0,8/16 network/I/O threads; 8 GiB heap; 1 GiB segment,1.0,1.0,True,True,control retained because no candidate passed every rule
+B1,16/32 threads; 16 GiB heap; 1 GiB segment,1.0135433681821375,0.5974264705882353,False,False,required confirmation measurements incomplete
+B2,32/64 threads; 32 GiB heap; 1 GiB segment,1.011283853197451,0.5772058823529411,False,False,required confirmation measurements incomplete
+B3,48/96 threads; 32 GiB heap; 1 GiB segment,1.0161478520961698,0.5955882352941176,True,False,throughput ratio 1.0161 is below 1.03
+B4,48/96 threads; 64 GiB heap; 1 GiB segment,1.0139101734471394,0.5863970588235294,False,False,required confirmation measurements incomplete
+B5,"48/96 threads; 64 GiB heap; 2,147,483,647-B segment",1.0156566785995558,0.5974264705882353,True,False,throughput ratio 1.0157 is below 1.03
