@@ -8,8 +8,10 @@ a shared MPI workload and measurement contract, Slurm orchestration, immutable
 campaign manifests, restartable workflows, and backend adapters. Apache Kafka
 and Apache Pulsar are currently implemented.
 
-This source-only repository excludes benchmark results, generated papers,
-runtime binaries, credentials, and site-specific environment files.
+This repository contains benchmark code, retained Kafka evidence, and the
+instructions needed to run and verify them. Manuscripts, publication figures,
+generated narrative reports, runtime binaries, credentials, and site-specific
+environment files are excluded from the current tree.
 
 ## What It Measures
 
@@ -186,18 +188,20 @@ for filenames, report modes, traceability and known diagnostic limitations.
 Generated bottleneck messages are inspection aids, not established causes.
 Missing measurements must not be treated as zero or evidence of spare capacity.
 
-## Kafka Paper Companion Evidence
+## Retained Kafka Evidence
 
 The [companion evidence folder](Report/HPC_MQBench_Kafka_Evidence/README.md)
 contains the retained numerical inputs for the combined HPC-MQBench/Kafka paper:
 120 selected screening rows, 100 validation observations, auxiliary profile and
 instrumentation evidence, configuration/order manifests, verification scripts,
 and checksums. Its [artifact guide](Report/HPC_MQBench_Kafka_Evidence/ARTIFACT_GUIDE.md)
-maps every paper table and figure to its inputs. The manuscript snapshot is
-included for auditing; it is not an output of an ordinary benchmark run.
+documents the datasets and numerical checks. Verification uses the retained
+data directly and does not require a manuscript, PDF, or LaTeX installation.
 
-Snapshot tag: `kafka-paper-evidence-v1`. The artifact README states the available
-checks, missing raw evidence, and current access/release limitations. Its
+Use the commit of your checkout to identify this code-and-data package. The
+historical tag `kafka-paper-evidence-v1` identifies the earlier package, which
+included publication files; it does not identify the cleaned current tree.
+The artifact README states the available checks and missing raw evidence. Its
 `PROVENANCE.json` distinguishes the inspected code revision from the unknown
 campaign-time revision.
 

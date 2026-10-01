@@ -66,8 +66,15 @@ tools/*.zip
 .DS_Store
 *.swp
 
-# Explicitly published paper evidence; other reports remain local.
+# Explicitly published machine-readable evidence; other reports remain local.
 !Report/
 Report/*
 !Report/HPC_MQBench_Kafka_Evidence/
 Report/HPC_MQBench_Kafka_Evidence/build/
+# Keep manuscript sources, bibliography, figures, and narrative exports local.
+Report/HPC_MQBench_Kafka_Evidence/figures/
+Report/HPC_MQBench_Kafka_Evidence/*.pdf
+Report/HPC_MQBench_Kafka_Evidence/*.tex
+Report/HPC_MQBench_Kafka_Evidence/*.bib
+Report/HPC_MQBench_Kafka_Evidence/*.html
+Report/HPC_MQBench_Kafka_Evidence/*.docx

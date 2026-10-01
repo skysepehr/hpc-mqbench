@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Plot Kafka screening evidence from the copied, unchanged result table.
 
-Run with a Python environment containing matplotlib. Writes one vector PDF.
+Run explicitly with a Python environment containing matplotlib. Writes one
+local vector PDF under build/; it is not included in the tracked evidence.
 All 120 observations appear in the throughput panel; the latency panel omits
 seven observations whose latency measurements failed the eligibility gate.
 """
@@ -16,7 +17,7 @@ from matplotlib.ticker import FixedLocator, FuncFormatter, NullLocator
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data/kafka/derived/phase1_configuration_outcomes.csv'
-DEST = ROOT / 'figures/kafka_operating_limits.pdf'
+DEST = ROOT / 'build/figures/kafka_operating_limits.pdf'
 rows = list(csv.DictReader(SOURCE.open()))
 assert len(rows) == 120
 eligible = [r for r in rows if r['eligible'] == 'True']

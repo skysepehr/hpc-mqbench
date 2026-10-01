@@ -1,87 +1,86 @@
-# HPC-MQBench: Kafka companion evidence
+# HPC-MQBench: retained Kafka evidence
 
-This folder contains the retained evidence and verification scripts for
-**HPC-MQBench: Qualification-First Benchmarking on Slurm — Design and Evaluation
-with Apache Kafka**, by Sepehr Mahmoodian and Julian Kunkel.
-
-The evidence belongs to the reported campaign. It is not a new benchmark run,
-and it is not a complete raw campaign archive. The manuscript PDF and its single
-LaTeX source are included as a publication snapshot so the table and figure
-checks are self-contained; the benchmark itself does not generate this paper.
+This folder contains campaign data, configurations, provenance, and analysis
+code. It contains no manuscript, bibliography, rendered figure, or narrative
+publication report. The retained evidence is not a complete raw campaign archive.
 
 ## Contents
 
 | Location | Contents |
 | --- | --- |
 | `data/audit/` | 120 selected screening rows; 50 V1 and 50 V2 validation observations. |
-| `data/kafka/source/` | Retained screening/validation bundles, instrumentation and calibration rows, profile experiments and decisions, shortlists, block manifests, available jobs, workflow/provenance records, and contracts. |
-| `supplement/` | Derived policy/ranking sensitivities, allocation and order mapping, per-anchor profile comparisons, and six reviewed profile configurations. |
-| `scripts/` | Integrity, numerical, prose-claim, supplement, and plotting checks. |
-| `ARTIFACT_GUIDE.md` | Every paper table and figure mapped to its inputs, plus evidence and calculation boundaries. |
-| `PROVENANCE.json` | Exact inspected source revision and hashes, observation counts, access status, and unavailable historical evidence. |
-| `MANIFEST.json`, `SHA256SUMS` | Complete portable file inventory, sizes, roles, and SHA-256 hashes. |
-| `hpc_mqbench_paper.tex`, `.pdf`, `references.bib`, `figures/` | Checked manuscript snapshot and figure. |
+| `data/kafka/source/` | Retained case and summary tables, instrumentation/calibration and profile experiments, decisions, shortlists, block manifests, available job identifiers, workflow records, and contracts. |
+| `data/kafka/derived/` | Derived configuration outcomes, sensitivity and resource summaries, and profile comparisons. |
+| `supplement/` | Derived policy/ranking sensitivities, allocation/order mapping, per-anchor comparisons, and six reviewed profile configurations. |
+| `scripts/` | Integrity verification, numerical checks, supplemental analysis, and optional plotting code. |
+| `ARTIFACT_GUIDE.md` | Dataset paths, calculation scope, configuration identity, and missing inputs. |
+| `PROVENANCE.json` | Inspected source revision, observation counts, and historical evidence limitations. |
+| `MANIFEST.json`, `SHA256SUMS` | Exact package inventory, sizes, roles, and SHA-256 hashes. |
 
-The profile table has 119 rows: **69 auxiliary observations** (6 instrumentation,
-3 calibration, 30 profile screening, 30 profile confirmation) and the **same
-50 V2 validation observations** included in the audit tables. Repeated file
-representations do not add experiments. These are campaign-specific auxiliary
-experiments, not a claim that every ordinary benchmark invocation executes 69
-additional tests. The 120 selected screening rows omit the original cfg_103 and
-its superseded repair; the retained repair history explains the 291 executed
-cases versus 289 selected main-plus-auxiliary observations.
+The complete-profile table has 119 rows: 69 auxiliary observations (6
+instrumentation, 3 calibration, 30 profile screening, 30 profile confirmation)
+and the same 50 V2 validation observations included in the audit tables.
+Duplicate file representations are not extra experiments. The 69 auxiliary
+observations belong to this campaign; they are not mandatory additional tests
+in every ordinary benchmark invocation. The selected screening table keeps the
+last repair of `cfg_103`; repair history accounts for 291 executed cases versus
+289 selected main and auxiliary observations.
 
-## Verify the supplied artifact
+## Verify
 
-Requires Python 3 and Poppler (`pdftotext`, `pdfinfo`); no Kafka cluster or Slurm
-allocation is required. From this folder, run:
+Requires Python 3.10+ with the standard library; no broker, Slurm allocation,
+TeX, or PDF tools are required. From this folder, run:
+
+```sh
+make verify
+```
+
+Equivalent commands, if Make is unavailable:
 
 ```sh
 python3 -B scripts/verify_artifact.py
-python3 -B scripts/build_referee_supplement.py --check
-python3 -B scripts/verify_paper.py
-python3 -B scripts/verify_claims.py
+python3 -B scripts/verify_evidence.py
+python3 -B scripts/verify_analysis.py
 ```
 
-These commands do not rewrite the supplied evidence, manifest, or checksums.
-Integrity checks cover every packaged file, including original nested checksum
-lists. The numerical checks recompute quantities supported by retained rows;
-they do not reconstruct raw measurements that are absent.
+These checks do not rewrite files. Integrity verification checks every
+packaged file and the original nested checksum lists as retained evidence.
+Numerical verification recomputes supported quantities from the retained rows
+and checks the supplemental files. It does not inspect a paper or reconstruct
+absent raw measurements. Run without Python's `-O` optimization option.
 
-When this folder is kept at `Report/HPC_MQBench_Kafka_Evidence` in the source
-repository, the paper verifier additionally exercises the available source
-implementation. In a standalone copy those guarded source checks are skipped.
-The current source revision is distinct from the **unknown campaign-time
-revision**; see `PROVENANCE.json`. The same distinction applies to the current
-histogram and diagnostic logic: checking current code does not prove historical
-code identity.
+When kept at this repository path, verification also checks selected current
+source behavior and source-manifest hashes. A standalone copy explicitly
+reports those source checks as skipped. The current source revision is distinct
+from the unknown campaign-time revision; see `PROVENANCE.json`.
 
-## Rebuild the paper or derived checks
+## Optional local analysis
 
-The supplied PDF can be audited without TeX. To rebuild it, install pdfLaTeX and
-BibTeX, then run `make pdf`. The supplied plot can be regenerated with
-`make figures` when matplotlib is available. For ShareLaTeX/Overleaf upload the
-single `.tex`, `references.bib`, and `figures/kafka_operating_limits.pdf`.
+To check the supplemental outputs alone:
 
-Rebuilding can change file bytes, so check the supplied integrity **before**
-rebuilding. Maintainers intentionally updating a snapshot can refresh its
-inventory with `python3 -B scripts/verify_artifact.py --write-manifest`.
-Ordinary verification never refreshes it. `make verify` runs all four checks.
+```sh
+python3 -B scripts/build_referee_supplement.py --check
+```
 
-## Availability and limitations
+Omitting `--check` regenerates their CSV/JSON files from the retained evidence.
+The optional `scripts/plot_operating_limits.py` needs matplotlib and writes a
+local plot to ignored `build/figures/`; `make verify` does not generate it.
+
+After an intentional package edit, maintainers can refresh its inventory with
+`python3 -B scripts/verify_artifact.py --write-manifest`. Ordinary verification
+never refreshes hashes. Check supplied integrity before regenerating files.
+
+## Provenance and limitations
 
 Repository: <https://github.com/skysepehr/hpc-mqbench>.
-The evidence snapshot is identified by tag `kafka-paper-evidence-v1`; an ordinary
-Git tag is not a GitHub immutable release. Anonymous access returned HTTP 404
-when checked on 22 September 2026, although authenticated Git access succeeded.
-Public access and GitHub release-immutability protection remain unverified.
-No DOI, public release, or complete experimental reproducibility is claimed.
+Identify this package by the commit of your checkout. The historical tag
+`kafka-paper-evidence-v1` identifies an earlier package containing publication
+files, not this code-and-data package. No DOI or immutable release is claimed.
 
-Missing inputs include raw per-rank timings, latency histograms/clock exchanges,
-monitoring traces, raw iperf3 output, exact campaign Kafka/client versions and
-source commit, complete node inventory, and the explicit V2 batch-to-job mapping.
-Retained endpoint rates, latency percentiles, and monitoring aggregates remain
-reported summaries. The guide states what can be recomputed from them.
+Missing inputs include raw per-rank timings, latency histograms and clock
+exchanges, monitoring traces, raw iperf3 output, exact campaign Kafka/client
+versions and source commit, a complete node inventory, and the explicit V2
+batch-to-job mapping. Endpoint rates, latency percentiles, and monitoring
+aggregates remain retained summaries.
 
-The package uses the repository's [MIT License](LICENSE). Please cite the paper
-and identify the evidence snapshot when reusing these data.
+The package uses the repository's [MIT License](LICENSE).

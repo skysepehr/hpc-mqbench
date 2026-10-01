@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Check manuscript prose claims from retained rows without changing any files.
+"""Check numerical analysis regressions against retained rows without writes.
 
-Complements verify_paper.py: checks screening examples, workload contrasts,
-correlations, the Appendix A workload levels, and additional resource/anchor
-claims. It does not reconstruct raw timing, latency histograms, or monitoring
-traces. Requires only Python's standard library and the companion data folder.
+Complements verify_evidence.py with workload contrasts, correlations,
+configuration levels, resource summaries, and calibration/anchor checks.
+It does not inspect a manuscript or reconstruct raw timing, latency histograms,
+or monitoring traces. Requires only Python's standard library and artifact data.
 """
 
 from __future__ import annotations
@@ -58,6 +58,8 @@ def spearman(left: list[float], right: list[float]) -> float:
 
 
 def main() -> int:
+    if not __debug__:
+        raise SystemExit("Verification requires assertions: do not use Python -O or PYTHONOPTIMIZE.")
     rows = read_csv(AUDIT / "phase1_cases.csv")
     by_id = {row["config_id"]: row for row in rows}
     eligible = [row for row in rows if row["eligible"].lower() == "true"]
@@ -65,11 +67,11 @@ def main() -> int:
     require((len(rows), len(by_id), len(eligible), len(qualified)) == (120, 120, 113, 99),
             "Unexpected screening population")
     require([int(row["surplus_records"]) for row in rows if int(row["surplus_records"])] == [83350],
-            "Screening surplus-record claim")
+            "Screening surplus-record count")
     require(sum(row["latency_valid"].lower() == "false" for row in rows) == 7,
             "Seven screening latency-invalid observations")
 
-    # Expected values are the rounded observations cited in the manuscript.
+    # Fixed numerical regressions are rounded values from the retained observations.
     examples = [
         ("cfg_001", "1,767.1", "269", "0.296"),
         ("cfg_101", "3,080.0", None, "5.599"),
@@ -132,10 +134,10 @@ def main() -> int:
     baseline = by_id["cfg_001"]
     for field, expected in expected_levels.items():
         require(sorted({int(number(row, field)) for row in rows}) == expected,
-                f"Appendix A screened levels: {field}")
+                f"Screened configuration levels: {field}")
     expected_baseline = [40, 40, 120, 1048576, 20, 4096, 1000000, 1048576, 1048576, 50, 8388608]
     require([int(number(baseline, field)) for field in expected_levels] == expected_baseline,
-            "Appendix A baseline settings")
+            "Baseline settings")
 
     contrasts = [("producer_ranks", 64, "2,698.7", "52.7", "9810"),
                  ("payload_size_bytes", 8192, "2,546.8", "44.1", "11100"),
@@ -204,10 +206,10 @@ def main() -> int:
             require(math.isclose(number(row, field), expected, rel_tol=1e-12),
                     f"Latency-anchor setting: {field}")
 
-    print("Additional manuscript claims verified: 120 screening rows (113 eligible, 99 qualified); "
+    print("Additional numerical analysis checks passed: 120 screening rows (113 eligible, 99 qualified); "
           "7 cited configurations, 4 workload cohorts, 11 setting ranges/baseline, "
           "4 positive contrasts, 7 non-improving parameter groups, 2 correlations; "
-          "50 final observations, request/interface summaries, 3 record-rate claims, "
+          "50 final observations, request/interface summaries, 3 record-rate summaries, "
           "3 calibration runs and 12 latency-anchor observations.")
     print("No files or checksums changed. Raw timing, latency and monitoring inputs are not reconstructed.")
     return 0

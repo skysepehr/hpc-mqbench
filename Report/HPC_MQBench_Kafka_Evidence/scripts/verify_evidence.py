@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
-"""Independently verify row evidence, paper claims, and generated artifacts."""
+"""Verify retained observations, derived CSVs, and analysis without a manuscript.
+
+Requires only Python's standard library. This read-only check does not inspect
+paper text, figures, references, PDF layout, or raw data absent from this compact
+artifact. Current-source probes are reported separately and do not establish the
+unavailable campaign-time source revision. Use verify_artifact.py for inventory
+and checksum verification.
+"""
 
 from __future__ import annotations
 
-import argparse
 from collections import Counter, defaultdict
 import csv
 import hashlib
@@ -205,33 +211,21 @@ def verify_repeats(summary: dict) -> None:
 
 
 def verify_validation_blocks() -> None:
-    """Recompute the new block-level figure from counters and batch provenance."""
-    tex = (ROOT / "hpc_mqbench_paper.tex").read_text(encoding="utf-8")
-    figures = re.findall(r"\\begin\{figure\}.*?\\end\{figure\}", tex, flags=re.S)
-    figure = next(item for item in figures if r"\label{fig:validation-blocks}" in item)
-    plotted = re.findall(r"coordinates\s*\{([^}]+)\}", figure)
-    assert len(plotted) == 4
-    series = []
-    pending_series = []
-    for filename in ("v1_validation_repeats.csv", "v2_validation_repeats.csv"):
+    """Check block membership, qualification counts, and allocation provenance."""
+    expected_counts = ((3, 3, 3, 9, 9), (9, 9, 8, 7, 8))
+    expected_pending = ((14.695, 14.567, 12.642, 3.815, 1.360),
+                        (1.469, 1.359, 1.237, 1.042, 1.072))
+    for index, filename in enumerate(("v1_validation_repeats.csv", "v2_validation_repeats.csv")):
         rows = read_csv(AUDIT / filename)
-        counts = []
-        pending = []
         for block in range(1, 6):
             group = [row for row in rows if integer(row, "block") == block]
             assert len(group) == 10 and len({row["config_id"] for row in group}) == 10
-            counts.append((block, sum(classify(row)[0] == "Qualified" for row in group)))
+            assert sum(classify(row)[0] == "Qualified" for row in group) == expected_counts[index][block - 1]
             selected = next(row for row in group if row["config_id"] == "cfg_007")
-            pending.append((block, round(classify(selected)[1]["pending_ratio"], 3)))
+            assert round(classify(selected)[1]["pending_ratio"], 3) == expected_pending[index][block - 1]
             batches = {re.search(r"/batch_(\d+)", row["source_report"]).group(1)
                        for row in group}
             assert batches == ({"001"} if block <= 3 else {"002"})
-        series.append(counts)
-        pending_series.append(pending)
-    for coordinates, expected in zip(plotted, series + pending_series):
-        actual = [(int(x), float(y)) for x, y in re.findall(
-            r"\((\d+),([\d.]+)\)", coordinates)]
-        assert actual == expected, (actual, expected)
     jobs = read_csv(DATA / "kafka/source/artifacts/slurm_job_ids.csv")
     for stage in ("v1-validation-submit", "v2-final-submit"):
         selected_jobs = [row for row in jobs if row["stage"] == stage]
@@ -239,8 +233,8 @@ def verify_validation_blocks() -> None:
         assert all(row["status"] == "completed" for row in selected_jobs)
 
 
-def verify_latency_and_plot_scope() -> None:
-    """Check the explained latency grid and that log axes omit no observations."""
+def verify_latency_and_derived_outcomes() -> None:
+    """Compare derived outcomes with audit rows; probe the current histogram code."""
     rows = read_csv(AUDIT / "phase1_cases.csv")
     plotted = read_csv(DATA / "kafka/derived/phase1_configuration_outcomes.csv")
     by_id = {row["config_id"]: row for row in rows}
@@ -248,13 +242,13 @@ def verify_latency_and_plot_scope() -> None:
     for row in plotted:
         source = by_id[row["config_id"]]
         pending = num(row, "backlog_percent")
-        assert 0.01 < pending < 100, "log-axis limit would omit a screening case"
+        assert 0 <= pending <= 100
         assert close(pending, num(source, "pending_backlog_percent"))
         assert close(num(row, "balanced_mib_per_sec"), num(source, "balanced_mib_per_sec"))
-        assert 0 <= num(row, "balanced_mib_per_sec") < 3575
+        assert num(row, "balanced_mib_per_sec") >= 0
         if truth(source["eligible"]):
             assert close(num(row, "latency_p99_ms"), num(source, "latency_p99_us") / 1000)
-            assert 10 < num(row, "latency_p99_ms") < 70000
+            assert num(row, "latency_p99_ms") >= 0
     example = by_id["cfg_090"]
     assert num(example, "latency_p99_us") == 19500
     assert integer(example, "latency_sample_count") == 360455
@@ -285,6 +279,9 @@ def verify_latency_and_plot_scope() -> None:
         assert merged.percentile_ns(99.9) == 90_000_000_000
         assert not merged.record_ns(-1)
         assert merged.count == 100 and merged.negative_count == 1
+        print("Current-source histogram probes: passed.")
+    else:
+        print("Current-source histogram probes: SKIPPED (source file not present).")
 
 
 def verify_contract(summary: dict) -> None:
@@ -335,10 +332,9 @@ def verify_mechanism_test_sources(summary: dict) -> None:
         assert row["bytes"] > 0
         assert re.fullmatch(r"[0-9a-f]{64}", row["sha256"])
 
-    # The checked-in manifest keeps a standalone paper build independent of the
-    # parent repository.  When the parent source tree is present, additionally
-    # verify both the recorded hashes and the concrete test constructs cited by
-    # the implementation-audit table.
+    # The retained source manifest is independently usable. When the matching
+    # parent source tree is present, also check its hashes and test constructs.
+    # These are static checks, not execution of the project's test suite.
     repository = ROOT.parents[1]
     smoke_path = repository / "tests/smoke_test.py"
     workflow_path = repository / "tests/test_reproducible_workflow.py"
@@ -357,85 +353,50 @@ def verify_mechanism_test_sources(summary: dict) -> None:
             assert marker in smoke
         for marker in ("checksum drift", "missing artifact"):
             assert marker in workflow
-
-
-def verify_tex() -> None:
-    tex_files = list(ROOT.rglob("*.tex"))
-    assert tex_files == [ROOT / "hpc_mqbench_paper.tex"], "paper must have one LaTeX source"
-    tex = tex_files[0].read_text(encoding="utf-8")
-    assert not re.search(r"\\(?:input|include)\{", tex), "external LaTeX include"
-    labels = re.findall(r"\\label\{([^}]+)\}", tex)
-    refs = re.findall(r"\\(?:ref|eqref)\{([^}]+)\}", tex)
-    assert len(labels) == len(set(labels)), "duplicate LaTeX labels"
-    assert not set(refs) - set(labels), "undefined LaTeX labels"
-    citations = set()
-    for group in re.findall(r"\\cite(?:p|t)?\{([^}]+)\}", tex):
-        citations.update(group.split(","))
-    bib = (ROOT / "references.bib").read_text()
-    bibkey_list = re.findall(r"@\w+\{([^,]+),", bib)
-    bibkeys = set(bibkey_list)
-    assert len(bibkey_list) == len(bibkeys), "duplicate bibliography keys"
-    assert citations == bibkeys, "undefined or unused bibliography entries"
-    for section in ("Benchmark Design", "Measurement and Qualification",
-                    "Experimental Setup",
-                    "Kafka Performance Evaluation", "Conclusion", "Code and Evidence Availability"):
-        assert f"\\section{{{section}}}" in tex
-    pdf = ROOT / "hpc_mqbench_paper.pdf"
-    pdf_text = subprocess.check_output(["pdftotext", str(pdf), "-"], text=True)
-    metadata = subprocess.check_output(["pdfinfo", str(pdf)], text=True)
-    excluded_name = "pul" + "sar"
-    assert excluded_name not in (tex + bib + pdf_text + metadata).lower()
-    assert "??" not in pdf_text
-    log_path = ROOT / "build/hpc_mqbench_paper.log"
-    if log_path.is_file():
-        log = log_path.read_text()
-        assert "Overfull" not in log
-        assert "undefined" not in log.lower()
+        print("Current-source manifest hashes and static test markers: passed.")
     else:
-        print("Build log absent: checked supplied source/PDF; compile diagnostics require make pdf")
-
-
-def inline_table(label: str) -> str:
-    tex = (ROOT / "hpc_mqbench_paper.tex").read_text(encoding="utf-8")
-    tables = re.findall(r"\\begin\{table\}.*?\\end\{table\}", tex, flags=re.S)
-    matches = [table for table in tables if f"\\label{{{label}}}" in table]
-    assert len(matches) == 1, f"missing or duplicate table: {label}"
-    return matches[0]
+        print("Current-source manifest checks: SKIPPED (source tests not present).")
 
 
 def verify_kafka_evaluation() -> None:
-    """Check every printed numeric result-table cell against retained case rows."""
-    tex = inline_table("tab:kafka-final")
+    """Recompute retained validation-summary cells from all repeated case rows."""
     screening = {r["config_id"]: r for r in read_csv(AUDIT / "phase1_cases.csv")}
-    repeats = defaultdict(list)
-    for row in read_csv(AUDIT / "v2_validation_repeats.csv"):
-        repeats[row["config_id"]].append(row)
-    table_rows = [line for line in tex.splitlines()
-                  if line.startswith(r"\texttt{cfg\_") and " & " in line]
-    assert len(table_rows) == 10
-    final_ids = []
-    for line in table_rows:
-        cells = [cell.strip().rstrip("\\").strip() for cell in line.split(" & ")]
-        config = "cfg_" + re.search(r"cfg\\_(\d+)", cells[0]).group(1)
-        rows = repeats[config]
-        assert len(rows) == 5
-        final_ids.append(config)
-        def med(field): return median(num(r, field) for r in rows)
-        vals = [num(r, "balanced_mib_per_sec") for r in rows]
-        quartiles = quantiles(vals, n=4, method="inclusive")
-        expected = [
-            f'{sum(classify(r)[0] == "Qualified" for r in rows)}/5',
-            f'{median(vals):,.1f}',
-            f'{quartiles[2] - quartiles[0]:,.1f}',
-            f'{med("latency_p99_us") / 1000:,.0f}',
-            f'{med("pending_backlog_percent"):.3f}',
-            f'{med("flush_sec"):.3f}',
-        ]
-        assert cells[1:] == expected, (config, cells[1:], expected)
-    summary_path = ROOT / "data/kafka/source/artifacts/v2/validation_summary.csv"
-    ranking = sorted(read_csv(summary_path), key=lambda r: int(r["validation_rank"]))
-    assert final_ids == [r["original_config_id"] for r in ranking]
-    assert final_ids[0] == "cfg_007"
+    for stage in ("v1", "v2"):
+        repeats = defaultdict(list)
+        for row in read_csv(AUDIT / f"{stage}_validation_repeats.csv"):
+            repeats[row["config_id"]].append(row)
+        summary_path = DATA / f"kafka/source/artifacts/{stage}/validation_summary.csv"
+        ranking = sorted(read_csv(summary_path), key=lambda r: integer(r, "validation_rank"))
+        assert len(ranking) == 10
+        assert [integer(r, "validation_rank") for r in ranking] == list(range(1, 11))
+        assert {r["original_config_id"] for r in ranking} == set(repeats)
+        if stage == "v2":
+            assert ranking[0]["original_config_id"] == "cfg_007"
+        for retained in ranking:
+            rows = repeats[retained["original_config_id"]]
+            assert len(rows) == integer(retained, "repeats") == 5
+            values = [num(r, "balanced_mib_per_sec") for r in rows]
+            quartiles = quantiles(values, n=4, method="inclusive")
+            expected = {
+                "qualified_count": sum(classify(r)[0] == "Qualified" for r in rows),
+                "eligible_count": sum(classify(r)[0] != "Ineligible" for r in rows),
+                "median_balanced_mib_per_sec": median(values),
+                "mean_balanced_mib_per_sec": mean(values),
+                "min_balanced_mib_per_sec": min(values),
+                "max_balanced_mib_per_sec": max(values),
+                "iqr_balanced_mib_per_sec": quartiles[2] - quartiles[0],
+                "stdev_balanced_mib_per_sec": stdev(values),
+                "cv_balanced_mib_per_sec": stdev(values) / mean(values),
+            }
+            for field in ("producer_mib_per_sec", "consumer_mib_per_sec",
+                          "balanced_records_per_sec", "producer_records_per_sec",
+                          "consumer_records_per_sec", "pending_backlog_percent",
+                          "flush_sec", "failed_send_percent", "latency_p99_us"):
+                expected[f"median_{field}"] = median(num(r, field) for r in rows)
+            for field in ("pending_backlog_percent", "flush_sec", "failed_send_percent"):
+                expected[f"max_{field}"] = max(num(r, field) for r in rows)
+            for field, value in expected.items():
+                assert close(num(retained, field), value), (stage, retained["original_config_id"], field)
     winner = screening["cfg_007"]
     baseline = screening["cfg_001"]
     fields = ["producer_ranks", "consumer_ranks", "partitions", "batch_size",
@@ -461,7 +422,7 @@ def verify_kafka_evaluation() -> None:
 
 
 def verify_backlog_and_resources() -> None:
-    """Check the new sensitivity table, resource table and reported ranges."""
+    """Compare sensitivity/resource CSVs with retained cases and check ranges."""
     rows = read_csv(AUDIT / "phase1_cases.csv")
     qualified = [r for r in rows if classify(r)[0] == "Qualified"]
     overloaded = [r for r in rows if classify(r)[0] == "Overdriven"]
@@ -474,19 +435,22 @@ def verify_backlog_and_resources() -> None:
     assert f'{max(num(r,"flush_sec") for r in overloaded):.3f}' == "25.126"
     assert f'{min(num(r,"flush_sec") for r in overloaded):.3f}' == "2.836"
     eligible = qualified + overloaded
-    tex = inline_table("tab:kafka-backlog-sensitivity")
-    for limit in (2, 5, 10):
-        q = [r for r in eligible if num(r,"pending_backlog_percent") <= limit
-             and num(r,"flush_sec") <= 10 and num(r,"failed_send_percent") <= .1]
-        best = max(q, key=lambda r: num(r,"balanced_mib_per_sec"))
-        cfg = best["config_id"].replace("_",r"\_")
-        expected = (f'{limit} & {len(q)} & {len(eligible)-len(q)} & '
-                    f'\\texttt{{{cfg}}} & {num(best,"balanced_mib_per_sec"):,.1f}')
-        assert expected in tex, expected
+    sensitivity = read_csv(DATA / "kafka/derived/backlog_sensitivity.csv")
+    assert len(sensitivity) == 3
+    assert {num(r, "backlog_threshold_percent") for r in sensitivity} == {2, 5, 10}
+    for retained in sensitivity:
+        limit = num(retained, "backlog_threshold_percent")
+        qualified_at_limit = [r for r in eligible if num(r, "pending_backlog_percent") <= limit
+                              and num(r, "flush_sec") <= 10 and num(r, "failed_send_percent") <= .1]
+        best = max(qualified_at_limit, key=lambda r: num(r, "balanced_mib_per_sec"))
+        assert integer(retained, "eligible_count") == len(eligible)
+        assert integer(retained, "qualified_count") == len(qualified_at_limit)
+        assert integer(retained, "overdriven_eligible_count") == len(eligible) - len(qualified_at_limit)
+        assert retained["highest_qualified_config_id"] == best["config_id"]
+        assert close(num(retained, "highest_qualified_balanced_mib_per_sec"), num(best, "balanced_mib_per_sec"))
     raw = read_csv(ROOT / "data/kafka/source/analysis/v2/complete-profile/kafka_broker_tuning_v2_cases.csv")
     final = [r for r in raw if r["stage"] == "final_validation"]
     assert len(final) == 50
-    network_table = inline_table("tab:network-probes")
     for blocks, count, producer_gbit, consumer_gbit in [
             ((1, 2, 3), 30, "10.134", "9.968"),
             ((4, 5), 20, "10.492", "10.597")]:
@@ -501,9 +465,6 @@ def verify_backlog_and_resources() -> None:
         producer_mb, consumer_mb = pairs.pop()
         assert f"{producer_mb * 8 / 1000:.3f}" == producer_gbit
         assert f"{consumer_mb * 8 / 1000:.3f}" == consumer_gbit
-        expected = (f"{blocks[0]}--{blocks[-1]} & {count} & "
-                    f"{producer_gbit} & {consumer_gbit}")
-        assert expected in network_table, expected
     assert {integer(r,"sample_count") for r in final} == {29,30}
     for row in final:
         for field in ("kafka_request_queue_size_mean", "kafka_response_queue_size_mean",
@@ -519,29 +480,37 @@ def verify_backlog_and_resources() -> None:
         assert f'{max(vals):.{precision}f}' == high
     assert f'{max(num(r,"jvm_heap_used_gb_p95") for r in final):.2f}' == "5.26"
     assert f'{max(num(r,"tmpfs_used_percent_max") for r in final):.2f}' == "56.46"
-    table = inline_table("tab:kafka-resources")
-    printed = [l for l in table.splitlines() if l.startswith(r"\texttt{cfg\_")]
-    assert len(printed) == 6
-    for line in printed:
-        cells = [c.strip().rstrip("\\").strip() for c in line.split(" & ")]
-        config = "cfg_" + re.search(r"cfg\\_(\d+)", cells[0]).group(1)
-        cases = [r for r in final if r["anchor_id"] == config]
-        assert len(cases) == 5
-        def med(field): return median(num(r,field) for r in cases)
-        expected = [
-            f'{med("cpu_allocated_percent_mean"):.2f}',
-            f'{med("kafka_jmx_bytes_in_counter_rate_mean")/1048576:,.0f} / '
-            f'{med("kafka_jmx_bytes_out_counter_rate_mean")/1048576:,.0f}',
-            f'{100*med("kafka_request_handler_idle_ratio_mean"):.1f}',
-            f'{med("jvm_heap_used_gb_mean"):.2f}',
-            f'{med("jvm_gc_time_rate_ms_per_sec_mean"):.2f}',
-            f'{max(num(r,"tmpfs_used_percent_max") for r in cases):.1f}',
-        ]
-        assert cells[1:] == expected, (config,cells[1:],expected)
+    summaries = read_csv(DATA / "kafka/derived/resource_summary.csv")
+    assert len(summaries) == 10 and len({row["config_id"] for row in summaries}) == 10
+    field_mapping = {
+        "cpu_allocated_percent_mean": ("cpu_allocated_percent_mean", 1),
+        "cpu_allocated_percent_p95": ("cpu_allocated_percent_p95", 1),
+        "ib0_rx_mibps_mean": ("ib0_rx_mibps_mean", 1),
+        "ib0_tx_mibps_mean": ("ib0_tx_mibps_mean", 1),
+        "jmx_in_mib_per_sec": ("kafka_jmx_bytes_in_counter_rate_mean", 1 / 1048576),
+        "jmx_out_mib_per_sec": ("kafka_jmx_bytes_out_counter_rate_mean", 1 / 1048576),
+        "request_queue_size_mean": ("kafka_request_queue_size_mean", 1),
+        "response_queue_size_mean": ("kafka_response_queue_size_mean", 1),
+        "request_handler_idle_ratio_mean": ("kafka_request_handler_idle_ratio_mean", 1),
+        "request_queue_time_p99_ms_mean": ("kafka_request_queue_time_p99_ms_mean", 1),
+        "broker_total_time_p99_ms_mean": ("kafka_total_time_p99_ms_mean", 1),
+        "jvm_heap_used_gb_mean": ("jvm_heap_used_gb_mean", 1),
+        "jvm_gc_ms_per_sec_mean": ("jvm_gc_time_rate_ms_per_sec_mean", 1),
+    }
+    for retained in summaries:
+        cases = [r for r in final if r["anchor_id"] == retained["config_id"]]
+        assert len(cases) == integer(retained, "repeat_count") == 5
+        assert integer(retained, "qualified_repeats") == sum(truth(r["qualified"]) for r in cases)
+        assert close(num(retained, "max_tmpfs_used_percent"), max(num(r, "tmpfs_used_percent_max") for r in cases))
+        for destination, (source, factor) in field_mapping.items():
+            values = [num(row, source) * factor for row in cases]
+            quartiles = quantiles(values, n=4, method="inclusive")
+            assert close(num(retained, f"median_{destination}"), median(values)), destination
+            assert close(num(retained, f"iqr_median_{destination}"), quartiles[2] - quartiles[0]), destination
 
 
-def verify_publication_disclosures() -> None:
-    """Recompute added pilot and campaign-history claims from retained evidence."""
+def verify_campaign_history() -> None:
+    """Recompute pilot overhead and check retained campaign/repair history."""
     source = DATA / "kafka/source"
     cases = read_csv(source / "analysis/v2/complete-profile/kafka_broker_tuning_v2_cases.csv")
     counts = Counter(row["stage"] for row in cases)
@@ -605,19 +574,6 @@ def verify_referee_supplement() -> None:
         else:
             expected = (99, "cfg_107")
         assert (integer(row, "qualified"), row["highest_qualified_config"]) == expected
-    policy_table = inline_table("tab:kafka-backlog-sensitivity")
-    groups = [("flush_seconds", [1], "1"),
-              ("flush_seconds", [3, 5, 10, 30], "3, 5, 10, 30"),
-              ("failed_send_percent", [0, .01, .1, 1], "0, 0.01, 0.1, 1")]
-    for dimension, limits, displayed in groups:
-        field = "flush_limit_seconds" if dimension == "flush_seconds" else "failed_send_limit_percent"
-        selected = [r for r in rows if r["varied_limit"] == dimension and num(r, field) in limits]
-        assert len(selected) == len(limits)
-        for row in selected:
-            cfg = row["highest_qualified_config"].replace("_", r"\_")
-            expected_line = (f'{displayed} & {row["qualified"]} & {row["overdriven"]} & '
-                             f'\\texttt{{{cfg}}} & {num(row, "highest_balanced_endpoint_mibps"):,.1f}')
-            assert expected_line in policy_table
     ranking = read_csv(ROOT / "supplement/qualified_only_ranking.csv")
     assert len(ranking) == 20
     changes = {(r["stage"], r["config_id"]): (integer(r, "implemented_rank"), integer(r, "qualified_only_rank"))
@@ -633,7 +589,6 @@ def verify_referee_supplement() -> None:
     profiles = read_csv(ROOT / "supplement/profile_anchor_comparison.csv")
     retained = review["retained_profile_selection"]
     profile_cases = read_csv(DATA / "kafka/source/analysis/v2/complete-profile/kafka_broker_tuning_v2_cases.csv")
-    profile_table = inline_table("tab:broker-profiles")
     for path in sorted((ROOT / "supplement/reviewed_broker_profiles").glob("B*.json")):
         payload = json.loads(path.read_text())
         declared = payload.pop("profile_sha256")
@@ -641,12 +596,7 @@ def verify_referee_supplement() -> None:
         assert calculated == declared
         assert any(r["broker_profile_id"] == path.stem and r["broker_profile_sha256"] == declared for r in profile_cases)
         settings = payload["settings"]
-        heap_gib = int(re.search(r"-Xmx(\d+)G", settings["heap_opts"], re.I)[1])
-        segment = settings["log_segment_bytes"]
-        segment_tex = r"$2^{30}$" if segment == 2**30 else r"$2^{31}-1$"
-        assert segment in (2**30, 2**31-1)
-        expected_line = f'{path.stem} & {settings["num_network_threads"]} & {settings["num_io_threads"]} & {heap_gib} & {segment_tex}'
-        assert expected_line in profile_table
+        assert settings["log_segment_bytes"] in (2**30, 2**31 - 1)
     for decision in retained["profiles"]:
         profile = decision["profile_id"]
         if profile not in ("B0", "B3", "B5"):
@@ -656,11 +606,6 @@ def verify_referee_supplement() -> None:
         assert close(num(group["latency_anchor"], "p99_ratio_to_B0"), decision["latency_p99_ratio_to_B0"])
         for anchor, count in decision["qualified_counts"].items():
             assert integer(group[anchor], "qualified") == count
-    tex = (ROOT / "hpc_mqbench_paper.tex").read_text()
-    assert "balanced throughput" not in tex.lower()
-    assert "20260728" in tex and "0.0157" in tex
-    assert r"$2^{30}$" in tex and r"$2^{31}-1$" in tex
-    assert "producer-rank candidate" in tex
     source = ROOT.parents[1] / "scripts/analyze_broker_tuning_v2.py"
     if source.is_file():
         code = runpy.run_path(str(source))
@@ -679,61 +624,32 @@ def verify_referee_supplement() -> None:
                 {"status": "completed", "label": "producer_to_broker", "megabytes_per_second": value}
             ]}})["producer_to_broker_iperf_MBps"]
             assert parsed == (float(value) if value in (0.001, 1, 10000) else None)
-
-
-def write_checksums() -> None:
-    suffixes = {".tex", ".bib", ".py", ".md", ".json", ".csv", ".pdf", ".png"}
-    excluded = {
-        "SHA256SUMS",
-        "hpc_mqbench_paper.aux",
-        "hpc_mqbench_paper.bbl",
-        "hpc_mqbench_paper.blg",
-        "hpc_mqbench_paper.log",
-        "hpc_mqbench_paper.out",
-        "hpc_mqbench_paper.toc",
-        "hpc_mqbench_paper.lof",
-        "hpc_mqbench_paper.lot",
-    }
-    records = []
-    for path in sorted(ROOT.rglob("*")):
-        if not path.is_file() or any(part.startswith(".") or part in ("build", "__pycache__") for part in path.relative_to(ROOT).parts) or path.name in excluded or (path.suffix not in suffixes and path.name != "Makefile"):
-            continue
-        records.append(f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.relative_to(ROOT)}")
-    (ROOT / "SHA256SUMS").write_text("\n".join(records) + "\n", encoding="utf-8")
+        print("Current-source profile-selection and probe-parsing checks: passed.")
+    else:
+        print("Current-source profile/probe checks: SKIPPED (source file not present).")
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--write-checksums", action="store_true",
-                        help="Refresh the local manuscript checksum list after successful checks")
-    args = parser.parse_args()
+    if not __debug__:
+        raise SystemExit("Verification requires assertions: do not use Python -O or PYTHONOPTIMIZE.")
     summary = json.loads((DATA / "evidence_summary.json").read_text(encoding="utf-8"))
     verify_contract(summary)
     verify_phase1(summary)
     verify_repeats(summary)
     verify_validation_blocks()
-    verify_latency_and_plot_scope()
+    verify_latency_and_derived_outcomes()
     verify_mechanism_test_sources(summary)
-    verify_tex()
     verify_kafka_evaluation()
     verify_backlog_and_resources()
-    verify_publication_disclosures()
+    verify_campaign_history()
     verify_referee_supplement()
-
-    assert (ROOT / "figures/kafka_operating_limits.pdf").is_file()
-    for label in ("tab:parameter-space", "tab:kafka-backlog-sensitivity",
-                  "tab:kafka-final", "tab:kafka-resources"):
-        assert "\t" not in inline_table(label)
-
-    pdf = ROOT / "hpc_mqbench_paper.pdf"
-    assert pdf.is_file() and pdf.stat().st_size > 10_000
-    if args.write_checksums:
-        write_checksums()
     print(
-        "Paper verification passed: row-level formulas, states, repeated blocks and figure, "
-        "latency estimator and plot scope, mechanism-test inventory, Kafka result/resource tables, "
-        "pilot and repair disclosures, referee supplement and profile/probe checks, LaTeX/PDF scope, and manuscript consistency"
+        "Evidence verification passed: row formulas, qualification, repeated blocks, "
+        "derived outcomes, validation summaries, backlog sensitivity, resource summaries, "
+        "campaign history, and supplemental analyses."
     )
+    print("No manuscript, figures, references, or PDF inspected. No files or checksums changed.")
+    print("Historical raw latency/timing/monitoring inputs and campaign source revision are not reconstructed.")
     return 0
 
 

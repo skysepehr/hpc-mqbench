@@ -4,7 +4,7 @@
 Run ``python3 scripts/verify_artifact.py`` from any directory. Maintainers may
 rebuild MANIFEST.json and SHA256SUMS with ``--write-manifest`` after an intentional
 change. This checks inventory, integrity, and observation counts; run
-``scripts/verify_paper.py`` separately for the manuscript's numerical checks.
+``scripts/verify_evidence.py`` separately for numerical and analysis checks.
 """
 
 from __future__ import annotations
@@ -86,10 +86,6 @@ def role(path: str) -> str:
         return "supplementary_analysis_or_configuration"
     if path.startswith("scripts/"):
         return "verification_or_analysis_script"
-    if path.startswith("figures/"):
-        return "manuscript_figure"
-    if Path(path).suffix in {".tex", ".pdf", ".bib"}:
-        return "manuscript"
     if path == "PROVENANCE.json":
         return "source_and_evidence_provenance"
     if path.startswith("LICENSE"):

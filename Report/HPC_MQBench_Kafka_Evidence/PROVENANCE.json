@@ -4,7 +4,6 @@
   "prepared_date": "2026-09-22",
   "repository_url": "https://github.com/skysepehr/hpc-mqbench",
   "artifact_folder": "Report/HPC_MQBench_Kafka_Evidence",
-  "evidence_tag": "kafka-paper-evidence-v1",
   "inspected_repository_commit": "145d847120975ba347410969a0bf2a6ba3a5d25b",
   "earlier_reviewed_source_commit": "bca9a4d18892f5ebff80d474da6ba57a0da749d2",
   "campaign_source_commit": null,
@@ -108,7 +107,7 @@
     "checked_date": "2026-09-22",
     "git_ssh_access_verified": true,
     "github_immutable_release_created": false,
-    "note": "An ordinary Git tag identifies a snapshot but is not protected by GitHub release immutability. Public access and an immutable release remain to be established."
+    "note": "Historical access check from the recorded date; not a statement of current repository visibility. The ordinary original evidence tag is not a GitHub immutable release."
   },
   "missing_evidence": [
     "campaign-time source commit",
@@ -120,5 +119,12 @@
     "complete campaign-time per-node hardware inventory",
     "explicit V2 batch-to-numeric-job association"
   ],
-  "historical_paths": "Paths and nested manifests retained in data/ describe original source locations; they are not portable inventories of this package. MANIFEST.json and root SHA256SUMS inventory this package."
+  "historical_paths": "Paths and nested manifests retained in data/ describe original source locations; they are not portable inventories of this package. MANIFEST.json and root SHA256SUMS inventory this package.",
+  "original_evidence_tag": "kafka-paper-evidence-v1",
+  "package_revision": {
+    "prepared_date": "2026-10-01",
+    "kind": "code-and-data-only",
+    "base_repository_commit": "e19b219b509ce3684408fe4c7c55c8fa629bbe00",
+    "note": "Publication files removed from the current tree. The original evidence tag identifies the older package. Use the checkout commit to identify this revised package. Retained data and supplemental CSV/JSON bytes are unchanged."
+  }
 }

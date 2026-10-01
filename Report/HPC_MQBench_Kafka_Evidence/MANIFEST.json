@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "ARTIFACT_GUIDE.md",
-      "bytes": 14085,
-      "sha256": "b7befb0508f7f3280a74515077c4cc1d165eac5c711ae0df4c9fdbaef11e34e7",
+      "bytes": 5033,
+      "sha256": "1b74071aa55725905794a7a97c993659c50096cbe16dedeb67318ce4b719fd7d",
       "role": "documentation_or_supporting_file"
     },
     {
@@ -15,20 +15,20 @@
     },
     {
       "path": "Makefile",
-      "bytes": 708,
-      "sha256": "3c20661c6b8c403ac43ee9ec026fa22f92f6ab647d346052f41b342fa2b7b033",
+      "bytes": 181,
+      "sha256": "a96e3548f340f3fe2b594ba9a657824d570f875753d904290dbef1903658eb97",
       "role": "documentation_or_supporting_file"
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 4944,
-      "sha256": "35e8ebbd3712903a614e655ac5b9ba075f471f174d5bfbb3543cb3eb201b9053",
+      "bytes": 5371,
+      "sha256": "08ea7a3da17b6c18eff4f23f28cf5c5671cd2b5069407255f89147b56cb7f306",
       "role": "source_and_evidence_provenance"
     },
     {
       "path": "README.md",
-      "bytes": 5044,
-      "sha256": "29894f276d5a6016188ac581b0d75b8a090213651e18f5124bf21dad9c18f67e",
+      "bytes": 4232,
+      "sha256": "b14aaa5172b3d6952942a4ea0faf0edc486a0a310e7da69442dbcd0110022296",
       "role": "documentation_or_supporting_file"
     },
     {
@@ -854,30 +854,6 @@
       "role": "measurement_contract_or_provenance"
     },
     {
-      "path": "figures/kafka_operating_limits.pdf",
-      "bytes": 23971,
-      "sha256": "e262abaccf36a52e537c1f694d769ca11645bf140b4a1b43cfbaa3db759272b2",
-      "role": "manuscript_figure"
-    },
-    {
-      "path": "hpc_mqbench_paper.pdf",
-      "bytes": 605196,
-      "sha256": "2bb6494cc11eda2fc98e2736009a7515f0f8dba5e059282406ab1de12b561bcf",
-      "role": "manuscript"
-    },
-    {
-      "path": "hpc_mqbench_paper.tex",
-      "bytes": 67861,
-      "sha256": "070d8963bfd6daaaa4d1be89860a9bd87507e28b9891770946ee402c7633088c",
-      "role": "manuscript"
-    },
-    {
-      "path": "references.bib",
-      "bytes": 13164,
-      "sha256": "c27dc918e9b664e92a4b0a2702b7847d58402fd1bf4fbbd307c9a2930d4877aa",
-      "role": "manuscript"
-    },
-    {
       "path": "scripts/build_referee_supplement.py",
       "bytes": 10809,
       "sha256": "5d53157547c351e46627d8503261a1170b527d88f396ca827b4de01b678a16e2",
@@ -885,32 +861,32 @@
     },
     {
       "path": "scripts/plot_operating_limits.py",
-      "bytes": 4974,
-      "sha256": "7c35cb70dc77129b8a5836ea66daad17e7742a9fe3174f41b2361cccd4e9e49d",
+      "bytes": 5054,
+      "sha256": "32ea2589094e2e17be73e7469bbf7a83720977d919c8cc1a8e64c904bc87f8b8",
+      "role": "verification_or_analysis_script"
+    },
+    {
+      "path": "scripts/verify_analysis.py",
+      "bytes": 11913,
+      "sha256": "f6742818ce95f7c6f293c6a410743a05fabd15988bebeb1fc96033a728fdbda9",
       "role": "verification_or_analysis_script"
     },
     {
       "path": "scripts/verify_artifact.py",
-      "bytes": 8833,
-      "sha256": "3d1e8a0a72ccd22698f7805480bb27c969c2df9012dc122efbd53c03db9b25eb",
+      "bytes": 8679,
+      "sha256": "087ceb55aab9689b598e33867dc86c249b98075b129aa8ed1f50e688b9876cbc",
       "role": "verification_or_analysis_script"
     },
     {
-      "path": "scripts/verify_claims.py",
-      "bytes": 11787,
-      "sha256": "64ac3424f969f95bb1ab20d79ed85cd8d87c48fcbbb7dc0a69845ec317745833",
-      "role": "verification_or_analysis_script"
-    },
-    {
-      "path": "scripts/verify_paper.py",
-      "bytes": 37217,
-      "sha256": "a5fa7dbd76f644453f2b6837385bd4498dd963a6477b31e061cf7878f2f036ee",
+      "path": "scripts/verify_evidence.py",
+      "bytes": 34321,
+      "sha256": "ef8748566941c3187a7a9f59be64403007d4c010428efa3e869ece35b2248f76",
       "role": "verification_or_analysis_script"
     },
     {
       "path": "supplement/README.md",
-      "bytes": 4031,
-      "sha256": "e30bd003fe6b6cf35c80a54524dc1ebdb5e6cd1dad9ffde880dcaaf5466ff150",
+      "bytes": 2304,
+      "sha256": "011a4ed920541600787c2b52d340711e343bd93367087b37f08099998dfc5e2e",
       "role": "supplementary_analysis_or_configuration"
     },
     {
